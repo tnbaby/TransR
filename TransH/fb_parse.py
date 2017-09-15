@@ -1,5 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
+import pickle
+import numpy
 
 def calc_sum(list1, list2):
 	s = 0
@@ -15,13 +17,13 @@ def parseline(line):
 			vec += [float(i)]
         return vec
 
-f = open("entity2vec.txtbern","r")
-#f = open("entity2vec.unif","r")
+f = open("entity2vec.bern","r")
 data = f.readlines()
 f.close()
 entityvec = []
 for i in data:
 	entityvec += [parseline(i)]
+print len(entityvec), len(entityvec[0])
 
 f = open("../FB15k/entity2id.txt","r")
 data = f.readlines()
@@ -55,13 +57,16 @@ for tag in soup.find_all("span", class_="wb-itemlink-id"):
 for tag in soup.find_all("span",  class_="wb-itemlink-label"):
 	print "search first result: ",tag.string
 	break
-
+#for ii in xrange(len(relationvec)):
+	#tmp = raw_input("press any key to continue!")
 #calcuate the sum and sort
 k = entity2id[wiki2fb[inp_str[1:len(inp_str)-1]]]
 candidate_list = {}
 f = open("notfound","w")
 for i in xrange(len(entitylist)):
+#	for ii in xrange(len(relationvec)):
 	try:
+	#		candidate_list[fb2wiki[entitylist[i]]] = calc_sum(numpy.add(entityvec[k], relationvec[ii]), entityvec[i])
 		candidate_list[fb2wiki[entitylist[i]]] = calc_sum(entityvec[k], entityvec[i])
 	except KeyError:
 		f.write(entitylist[i]+"\n")
@@ -82,6 +87,7 @@ for i in simlist:
 	res = requests.get("https://www.wikidata.org/wiki/"+i)
 	res.encoding = 'utf-8'
 	soup = BeautifulSoup(res.text,"html.parser")
-#	for tag in soup.find_all("span", class_="wikibase-title-label"):
-#		print tag.string
-	for tag in soup.find_all("span", class_="wikibase-labelview-text"):		print tag.string	
+	for tag in soup.find_all("span", class_="wikibase-title-label"):
+		print tag.string,"-->",
+	for tag in soup.find_all("span", class_="wikibase-descriptionview-text"):	
+		print tag.string	

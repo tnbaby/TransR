@@ -216,7 +216,7 @@ private:
 					norm(entity_tmp[fb_l[i]],A_tmp[fb_r[i]]);
 					norm(entity_tmp[j],A_tmp[fb_r[i]]);
          		}
-				
+
            		A = A_tmp;
            		relation_vec = relation_tmp;
            		entity_vec = entity_tmp;
@@ -401,8 +401,8 @@ void prepare()
     	right_var[i]=sum3/sum1-sqr(right_mean[i]);
     }
 
-    for (int i=0; i<relation_num; i++)
-    	cout<<i<<'\t'<<id2relation[i]<<' '<<left_mean[i]<<' '<<right_mean[i]<<endl;
+//    for (int i=0; i<relation_num; i++)
+//    	cout<<i<<'\t'<<id2relation[i]<<' '<<left_mean[i]<<' '<<right_mean[i]<<endl;
 
     fclose(f_kb);
 
