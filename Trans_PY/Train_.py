@@ -22,11 +22,18 @@ entity_vec = []
 ok = {}
 
 dim = 100
-rate = 0.001
+rate = 0.01
 margin = 1.0 
 method = "bern"
 
 L1_FLAG = True
+
+
+def normalize(miu, sigma, mimi, maxi):
+	n = random.gauss(miu, sigma)
+	while n < mimi or n > maxi:
+		n = (maxi - mimi) * random.random() + random.gauss(miu, sigma)
+	return n
 
 def parseline(line):
 	vec = []
@@ -178,8 +185,10 @@ for key, value in right_entity.items():
 #relation_vec = mat([[random.uniform(-6.0/sqrt(dim), 6.0/sqrt(dim)) for i in xrange(dim)] for i in xrange(relation_num)])
 #entity_vec = [[random.uniform(-6.0/sqrt(dim), 6.0/sqrt(dim)) for i in xrange(dim)] for i in xrange(entity_num)]
 #relation_vec = [[random.uniform(-6.0/sqrt(dim), 6.0/sqrt(dim)) for i in xrange(dim)] for i in xrange(relation_num)]
-entity_vec = [[random.gauss(0, 1.0/dim) for i in xrange(dim)] for i in xrange(entity_num)]
-relation_vec = [[random.gauss(0, 1.0/dim) for i in xrange(dim)] for i in xrange(relation_num)]
+#entity_vec = [[random.gauss(0, 1.0/dim) for i in xrange(dim)] for i in xrange(entity_num)]
+#relation_vec = [[random.gauss(0, 1.0/dim) for i in xrange(dim)] for i in xrange(relation_num)]
+entity_vec = [[normalize(0,1.0/dim, -6.0/sqrt(dim), 6.0/sqrt(dim)) for i in xrange(dim)] for i in xrange(entity_num)]
+relation_vec = [[normalize(0,1.0/dim, -6.0/sqrt(dim), 6.0/sqrt(dim)) for i in xrange(dim)] for i in xrange(relation_num)]
 
 for i in xrange(len(entity_vec)):
 	entity_vec[i] /= norm(entity_vec[i])
@@ -203,21 +212,21 @@ for epoch in xrange(nepoch):
 		entity_tmp = entity_vec
 #		batch_start = datetime.datetime.now()
 		for k in xrange(batchsize):
-			i = random.randint(0, len(fb_h)-1)
-			j = random.randint(0, entity_num-1)
+			i = (random.randint(0, len(fb_h)-1) * random.randint(0, len(fb_h)-1))%len(fb_h)
+			j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
 			pr = right_num[fb_r[i]]/(right_num[fb_r[i]]+left_num[fb_r[i]])
 			if(method=="unif"):
 				pr = 0.5 
 			if(random.uniform(0, 1)<pr):
 				while ok.has_key((str(fb_h[i])+"@"+str(fb_r[i])+"@"+str(j))):
-					j=random.randint(0, entity_num-1)
+					j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
 #				s = datetime.datetime.now()
 				train_kb(fb_h[i], fb_t[i], fb_r[i], fb_h[i], j, fb_r[i])
 #				e = datetime.datetime.now()
 #				print "train_kb:", (e - s).microseconds
 			else:
 				while ok.has_key((str(j)+"@"+str(fb_r[i])+"@"+str(fb_t[i]))):
-					j=random.randint(0, entity_num-1)
+					j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
 				train_kb(fb_h[i], fb_t[i], fb_r[i], j, fb_t[i], fb_r[i])
 	                relation_tmp[fb_r[i]] /=  norm(relation_tmp[fb_r[i]])
 			entity_tmp[fb_h[i]] /= norm(entity_tmp[fb_h[i]])
