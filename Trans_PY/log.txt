@@ -1,0 +1,5 @@
+nohup: 忽略输入
+  File "Train_.py", line 221
+    relation_tmp[fb_r[i]] /=  norm(relation_tmp[fb_r[i]])
+                                                        ^
+IndentationError: unindent does not match any outer indentation level
