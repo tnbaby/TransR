@@ -54,7 +54,6 @@ def train_kb(e1_a, e2_a, rel_a, e1_b, e2_b, rel_b):
 	#	e = datetime.datetime.now()
 	#	print "gradient: ", (e - s).microseconds
 def calc_sum(e1, e2, rel):
-	global entity_vec, relation_vec, L1_FLAG
 	sum1 = mat(entity_vec[e2]) - mat(entity_vec[e1]) - mat(relation_vec[rel])
 	sum1 = sum1.getA()[0]
 	if L1_FLAG:
