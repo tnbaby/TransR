@@ -1,6 +1,6 @@
 import random
 from math import sqrt
-from numpy import mat 
+from numpy import mat
 from numpy.linalg import norm
 import pickle
 import numpy
@@ -23,7 +23,7 @@ ok = {}
 
 dim = 100
 rate = 0.01
-margin = 1.0 
+margin = 1.0
 method = "bern"
 
 L1_FLAG = True
@@ -62,7 +62,7 @@ def calc_sum(e1, e2, rel):
 	#		sum1 = sum1 + abs(entity_vec[e2][i]-entity_vec[e1][i]-relation_vec[rel][i])
 		sum1 = sum(abs(sum1))
 	else:
-	#	for i in xrange(dim):	
+	#	for i in xrange(dim):
 	#		sum1 = sum1 + (entity_vec[e2][i]-entity_vec[e1][i]-relation_vec[rel][i])**2
 		sum1 = sum(sum1**2)
 	return sum1
@@ -103,7 +103,7 @@ def gradient(e1_a, e2_a, rel_a, e1_b, e2_b, rel_b):
 		x[x <= 0] = -1
 	relation_tmp[rel_b] = relation_tmp[rel_b] - rate*x
 	entity_tmp[e1_b] = entity_tmp[e1_b] - rate*x
-	entity_tmp[e2_b] = entity_tmp[e2_b] + rate*x	
+	entity_tmp[e2_b] = entity_tmp[e2_b] + rate*x
 # perpare function
 f = open(datapath+"entity2id.txt","r")
 data = f.readlines()
@@ -163,7 +163,7 @@ for i in data:
 	fb_t += [entity2id[right]]
 	fb_r += [relation2id[rel]]
 	#ok = {entity2id[left]:{relation2id[rel]:{entity2id[right]:1}}}
-	ok = {(str(entity2id[left])+"@"+str(relation2id[rel])+"@"+str(entity2id[right])):1}
+	ok[(str(entity2id[left])+"@"+str(relation2id[rel])+"@"+str(entity2id[right]))] = 1
 for key, value in left_entity.items():
 	sum1 = 0
 	sum2 = 0
@@ -216,7 +216,7 @@ for epoch in xrange(nepoch):
 			j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
 			pr = right_num[fb_r[i]]/(right_num[fb_r[i]]+left_num[fb_r[i]])
 			if(method=="unif"):
-				pr = 0.5 
+				pr = 0.5
 			if(random.uniform(0, 1)<pr):
 				while ok.has_key((str(fb_h[i])+"@"+str(fb_r[i])+"@"+str(j))):
 					j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
@@ -234,9 +234,9 @@ for epoch in xrange(nepoch):
 			entity_tmp[j] /= norm(entity_tmp[j])
 		entity_vec = entity_tmp
 		relation_vec = relation_tmp
-#		batch_end = datetime.datetime.now()	
+#		batch_end = datetime.datetime.now()
 #		print "batch ", batch, (batch_end - batch_start).microseconds
-	end = datetime.datetime.now()             
+	end = datetime.datetime.now()
 	print "epoch:", epoch, res, "time: ", (end - start).seconds, " rate: ", rate, "gradient:", count
 	if rate_flag:
 		tmp = numpy.mean(rate_flag)
