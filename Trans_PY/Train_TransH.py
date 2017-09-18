@@ -1,6 +1,6 @@
 import random
 from math import sqrt
-from numpy import mat 
+from numpy import mat
 from numpy.linalg import norm
 import pickle
 import numpy
@@ -27,7 +27,7 @@ right_candidate_ok = {}
 
 dim = 100
 rate = 0.01
-margin = 1.0 
+margin = 1.0
 method = "bern"
 
 L1_FLAG = True
@@ -50,7 +50,7 @@ def normA(a, A):
 			break
 	norm(A)
 	return a, A
-		
+
 def parseline(line):
 	vec = []
 	for i in line.split("\t"):
@@ -80,7 +80,7 @@ def calc_sum(e1, e2, rel):
 	#		sum1 = sum1 + abs(entity_vec[e2][i]-entity_vec[e1][i]-relation_vec[rel][i])
 		sum1 = sum(abs(sum1))
 	else:
-	#	for i in xrange(dim):	
+	#	for i in xrange(dim):
 	#		sum1 = sum1 + (entity_vec[e2][i]-entity_vec[e1][i]-relation_vec[rel][i])**2
 		sum1 = sum(sum1**2)
 	return sum1
@@ -121,7 +121,7 @@ def gradient(e1, e2, rel, belta):
 	A_tmp[rel] = (mat(A_tmp[rel]) - mat(belta*rate*x*tmp2)).getA()[0]
 	A_tmp[rel] += belta*rate*sum_x*entity_vec[e1]
 	A_tmp[rel] = (mat(A_tmp[rel]) - mat(belta*rate*sum_x*entity_vec[e2])).getA()[0]
-	
+
 	relation_tmp[rel] /= norm(relation_tmp[rel])
 	entity_tmp[e1] /= norm(entity_tmp[e1])
 	entity_tmp[e2] /= norm(entity_tmp[e2])
@@ -257,7 +257,7 @@ for eval1 in xrange(neval):
 			j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
 			pr = right_mean[fb_r[i]]/(right_mean[fb_r[i]]+left_mean[fb_r[i]])
 			if(method=="unif"):
-				pr = 0.5 
+				pr = 0.5
 			if(random.uniform(0, 1)<pr):
 				while ok.has_key((str(fb_h[i])+"@"+str(fb_r[i])+"@"+str(j))):
 					j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
@@ -279,9 +279,9 @@ for eval1 in xrange(neval):
 		A = A_tmp
 		entity_vec = entity_tmp
 		relation_vec = relation_tmp
-#		batch_end = datetime.datetime.now()	
+#		batch_end = datetime.datetime.now()
 #		print "batch ", batch, (batch_end - batch_start).microseconds
-	end = datetime.datetime.now()             
+	end = datetime.datetime.now()
 	print "epoch:", eval1, res, "time: ", (end - start).seconds, " rate: ", rate, "gradient:", count
 	if rate_flag:
 		tmp = numpy.mean(rate_flag)
@@ -300,9 +300,9 @@ for eval1 in xrange(neval):
 				cnt = cnt + 1
         else:
 		rate_flag += [res]
-	f1 = open("relation2vec."+method, "w")
-	f2 = open("entity2vec."+method, "w")
-	f3 = open("A."+method, "w")
+	f1 = open("TransH_relation2vec."+method, "w")
+	f2 = open("TransH_entity2vec."+method, "w")
+	f3 = open("TransH_A."+method, "w")
 	pickle.dump(relation_vec, f1)
 	pickle.dump(entity_vec, f2)
 	pickle.dump(A, f3)
