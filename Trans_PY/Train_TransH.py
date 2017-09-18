@@ -32,7 +32,12 @@ method = "bern"
 
 L1_FLAG = True
 
-
+def norm1(vec):
+	k = norm(vec)
+	if k > 1:
+		vec /= k
+	return vec
+ 
 def normalize(miu, sigma, mimi, maxi):
 	n = random.gauss(miu, sigma)
 	while n < mimi or n > maxi:
@@ -122,9 +127,9 @@ def gradient(e1, e2, rel, belta):
 	A_tmp[rel] += belta*rate*sum_x*entity_vec[e1]
 	A_tmp[rel] = (mat(A_tmp[rel]) - mat(belta*rate*sum_x*entity_vec[e2])).getA()[0]
 	
-	relation_tmp[rel] /= norm(relation_tmp[rel])
-	entity_tmp[e1] /= norm(entity_tmp[e1])
-	entity_tmp[e2] /= norm(entity_tmp[e2])
+	relation_tmp[rel] = norm1(relation_tmp[rel])
+	entity_tmp[e1] = norm1(entity_tmp[e1])
+	entity_tmp[e2] = norm1(entity_tmp[e2])
 	A_tmp[rel] /= norm(A_tmp[rel])
 	relation_tmp[rel], A_tmp[rel] = normA(relation_tmp[rel], A_tmp[rel])
 
@@ -229,7 +234,7 @@ relation_vec = [[normalize(0,1.0/dim, -1, 1) for i in xrange(dim)] for i in xran
 A = [[normalize(0, 1.0/dim, -1, 1) for i in xrange(dim)] for i in xrange(relation_num)]
 
 for i in xrange(entity_num):
-	entity_vec[i] /= norm(entity_vec[i])
+	entity_vec[i] = norm1(entity_vec[i])
 	#entity_vec[i] = entity_vec[i] / len(entity_vec[i])
 for i in xrange(relation_num):
 	A[i] /= norm(A[i])
@@ -269,10 +274,10 @@ for eval1 in xrange(neval):
 				while ok.has_key((str(j)+"@"+str(fb_r[i])+"@"+str(fb_t[i]))):
 					j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
 				train_kb(fb_h[i], fb_t[i], fb_r[i], j, fb_t[i], fb_r[i])
-	                relation_tmp[fb_r[i]] /=  norm(relation_tmp[fb_r[i]])
-			entity_tmp[fb_h[i]] /= norm(entity_tmp[fb_h[i]])
-			entity_tmp[fb_t[i]] /= norm(entity_tmp[fb_t[i]])
-			entity_tmp[j] /= norm(entity_tmp[j])
+	                relation_tmp[fb_r[i]] =  norm1(relation_tmp[fb_r[i]])
+			entity_tmp[fb_h[i]] = norm1(entity_tmp[fb_h[i]])
+			entity_tmp[fb_t[i]] = norm1(entity_tmp[fb_t[i]])
+			entity_tmp[j] = norm1(entity_tmp[j])
 			entity_tmp[fb_h[i]], A_tmp[fb_r[i]] = normA(entity_tmp[fb_h[i]], A_tmp[fb_r[i]])
 			entity_tmp[fb_t[i]], A_tmp[fb_r[i]] = normA(entity_tmp[fb_t[i]], A_tmp[fb_r[i]])
 			entity_tmp[j], A_tmp[fb_r[i]] = normA(entity_tmp[j], A_tmp[fb_r[i]])

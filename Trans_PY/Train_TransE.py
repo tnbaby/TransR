@@ -28,7 +28,11 @@ method = "bern"
 
 L1_FLAG = True
 
-
+def norm1(vec):
+	k = norm(vec)
+	if k > 1:
+		vec /= k
+	return vec
 def normalize(miu, sigma, mimi, maxi):
 	n = random.gauss(miu, sigma)
 	while n < mimi or n > maxi:
@@ -190,7 +194,7 @@ entity_vec = [[normalize(0,1.0/dim, -6.0/sqrt(dim), 6.0/sqrt(dim)) for i in xran
 relation_vec = [[normalize(0,1.0/dim, -6.0/sqrt(dim), 6.0/sqrt(dim)) for i in xrange(dim)] for i in xrange(relation_num)]
 
 for i in xrange(len(entity_vec)):
-	entity_vec[i] /= norm(entity_vec[i])
+	entity_vec[i] =  norm1(entity_vec[i])
 	#entity_vec[i] = entity_vec[i] / len(entity_vec[i])
 
 #bfgs function
@@ -227,10 +231,10 @@ for epoch in xrange(nepoch):
 				while ok.has_key((str(j)+"@"+str(fb_r[i])+"@"+str(fb_t[i]))):
 					j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
 				train_kb(fb_h[i], fb_t[i], fb_r[i], j, fb_t[i], fb_r[i])
-	                relation_tmp[fb_r[i]] /=  norm(relation_tmp[fb_r[i]])
-			entity_tmp[fb_h[i]] /= norm(entity_tmp[fb_h[i]])
-			entity_tmp[fb_t[i]] /= norm(entity_tmp[fb_t[i]])
-			entity_tmp[j] /= norm(entity_tmp[j])
+	                relation_tmp[fb_r[i]] = norm1(relation_tmp[fb_r[i]])
+			entity_tmp[fb_h[i]] = norm1(entity_tmp[fb_h[i]])
+			entity_tmp[fb_t[i]] = norm1(entity_tmp[fb_t[i]])
+			entity_tmp[j] = norm1(entity_tmp[j])
 		entity_vec = entity_tmp
 		relation_vec = relation_tmp
 #		batch_end = datetime.datetime.now()	
