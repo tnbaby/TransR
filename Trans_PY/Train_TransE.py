@@ -1,6 +1,6 @@
 import random
 from math import sqrt
-from numpy import mat 
+from numpy import mat
 from numpy.linalg import norm
 import pickle
 import numpy
@@ -23,7 +23,7 @@ ok = {}
 
 dim = 100
 rate = 0.01
-margin = 1.0 
+margin = 1.0
 method = "bern"
 
 L1_FLAG = True
@@ -36,7 +36,7 @@ def norm1(vec):
 def normalize(miu, sigma, mimi, maxi):
 	n = random.gauss(miu, sigma)
 	while n < mimi or n > maxi:
-		n = (maxi - mimi) * random.random() + random.gauss(miu, sigma)
+		n = (maxi - mimi) * random.uniform(-1, 1) + random.gauss(miu, sigma)
 	return n
 
 def parseline(line):
@@ -58,14 +58,13 @@ def train_kb(e1_a, e2_a, rel_a, e1_b, e2_b, rel_b):
 	#	e = datetime.datetime.now()
 	#	print "gradient: ", (e - s).microseconds
 def calc_sum(e1, e2, rel):
-	sum1 = mat(entity_vec[e2]) - mat(entity_vec[e1]) - mat(relation_vec[rel])
-	sum1 = sum1.getA()[0]
+	sum1 = (mat(entity_vec[e2]) - mat(entity_vec[e1]) - mat(relation_vec[rel])).getA()[0]
 	if L1_FLAG:
 	#	for i in xrange(dim):
 	#		sum1 = sum1 + abs(entity_vec[e2][i]-entity_vec[e1][i]-relation_vec[rel][i])
 		sum1 = sum(abs(sum1))
 	else:
-	#	for i in xrange(dim):	
+	#	for i in xrange(dim):
 	#		sum1 = sum1 + (entity_vec[e2][i]-entity_vec[e1][i]-relation_vec[rel][i])**2
 		sum1 = sum(sum1**2)
 	return sum1
@@ -98,15 +97,15 @@ def gradient(e1_a, e2_a, rel_a, e1_b, e2_b, rel_b):
 		x[x <= 0] = -1
 	relation_tmp[rel_a] = relation_tmp[rel_a] + rate*x
 	entity_tmp[e1_a] = entity_tmp[e1_a] + rate*x
-	entity_tmp[e2_a] = entity_tmp[e2_a] - rate*x
+	entity_tmp[e2_a] = (mat(entity_tmp[e2_a]) - mat(rate*x)).getA()[0]
 	x = 2*(mat(entity_vec[e2_b]) - mat(entity_vec[e1_b]) - mat(relation_vec[rel_b]))
 	x = x.getA()[0]
 	if L1_FLAG:
 		x[x > 0] = 1
 		x[x <= 0] = -1
-	relation_tmp[rel_b] = relation_tmp[rel_b] - rate*x
-	entity_tmp[e1_b] = entity_tmp[e1_b] - rate*x
-	entity_tmp[e2_b] = entity_tmp[e2_b] + rate*x	
+	relation_tmp[rel_b] = (mat(relation_tmp[rel_b]) - mat(rate*x)).getA()[0]
+	entity_tmp[e1_b] = (mat(entity_tmp[e1_b]) - mat(rate*x)).getA()[0]
+	entity_tmp[e2_b] = entity_tmp[e2_b] + rate*x
 # perpare function
 f = open(datapath+"entity2id.txt","r")
 data = f.readlines()
@@ -206,20 +205,20 @@ cnt = 0
 rate_flag = []
 
 print "relation_num: ", relation_num, "entity_num: ", entity_num
+relation_tmp = relation_vec
+entity_tmp = entity_vec
 for epoch in xrange(nepoch):
 	res = 0
 	count = 0
 	start = datetime.datetime.now()
 	for batch in xrange(nbatches):
-		relation_tmp = relation_vec
-		entity_tmp = entity_vec
 #		batch_start = datetime.datetime.now()
 		for k in xrange(batchsize):
 			i = (random.randint(0, len(fb_h)-1) * random.randint(0, len(fb_h)-1))%len(fb_h)
 			j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
 			pr = right_num[fb_r[i]]/(right_num[fb_r[i]]+left_num[fb_r[i]])
 			if(method=="unif"):
-				pr = 0.5 
+				pr = 0.5
 			if(random.uniform(0, 1)<pr):
 				while ok.has_key((str(fb_h[i])+"@"+str(fb_r[i])+"@"+str(j))):
 					j = (random.randint(0, entity_num-1) * random.randint(0, entity_num-1))%entity_num
@@ -237,9 +236,9 @@ for epoch in xrange(nepoch):
 			entity_tmp[j] = norm1(entity_tmp[j])
 		entity_vec = entity_tmp
 		relation_vec = relation_tmp
-#		batch_end = datetime.datetime.now()	
+#		batch_end = datetime.datetime.now()
 #		print "batch ", batch, (batch_end - batch_start).microseconds
-	end = datetime.datetime.now()             
+	end = datetime.datetime.now()
 	print "epoch:", epoch, res, "time: ", (end - start).seconds, " rate: ", rate, "gradient:", count
 	if rate_flag:
 		tmp = numpy.mean(rate_flag)
