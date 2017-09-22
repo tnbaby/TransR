@@ -98,7 +98,7 @@ class Train{
 			for (int i=0; i<entity_num; i++)
 			{
 				for (int ii=0; ii<n; ii++)
-				entity_vec[i][ii] = randn(0,1.0/n,-1,1);
+					entity_vec[i][ii] = randn(0,1.0/n,-1,1);
 			}
 
 			bfgs();
@@ -215,58 +215,6 @@ class Train{
 						norm(entity_tmp[fb_l[i]],A_tmp[fb_r[i]]);
 						norm(entity_tmp[j],A_tmp[fb_r[i]]);
 					}
-<<<<<<< HEAD
-=======
-                	norm(entity_tmp[fb_h[i]]);
-                	norm(entity_tmp[fb_l[i]]);
-                	norm(entity_tmp[j]);
-					norm(entity_tmp[fb_h[i]],A_tmp[fb_r[i]]);
-					norm(entity_tmp[fb_l[i]],A_tmp[fb_r[i]]);
-					norm(entity_tmp[j],A_tmp[fb_r[i]]);
-         		}
-
-           		A = A_tmp;
-           		relation_vec = relation_tmp;
-           		entity_vec = entity_tmp;
-           	}
-           		cout<<eval<<' '<<res<<endl;
-                FILE* f1 = fopen(("A."+version).c_str(),"w");
-                FILE* f2 = fopen(("relation2vec."+version).c_str(),"w");
-                FILE* f3 = fopen(("entity2vec."+version).c_str(),"w");
-                times+=1;
-                for (int i=0; i<relation_num; i++)
-                {
-                    for (int ii=0; ii<n; ii++)
-                        fprintf(f2,"%.6lf\t",relation_vec[i][ii]);
-                    fprintf(f2,"\n");
-                }
-                for (int i=0; i<relation_num; i++)
-                {
-                	for (int jj=0; jj<n; jj++)
-                		fprintf(f1,"%.6lf\t",A[i][jj]);
-                	fprintf(f1,"\n");
-                }
-                for (int i=0; i<entity_num; i++)
-                {
-                    for (int ii=0; ii<n; ii++)
-                        fprintf(f3,"%.6lf\t",entity_vec[i][ii]);
-                    fprintf(f3,"\n");
-                }
-                fclose(f1);
-                fclose(f2);
-                fclose(f3);
-        }
-    }
-    double res1;
-    double calc_sum(int e1,int e2,int rel)
-    {
-        double tmp1=0,tmp2=0;
-        for (int jj=0; jj<n; jj++)
-        {
-        	tmp1+=A[rel][jj]*entity_vec[e1][jj];
-            tmp2+=A[rel][jj]*entity_vec[e2][jj];
-        }
->>>>>>> 1ab9b02bdde62c4d0ba4c7ccee92e4f21a258e69
 
 					A = A_tmp;
 					relation_vec = relation_tmp;
@@ -452,13 +400,8 @@ void prepare()
 		right_var[i]=sum3/sum1-sqr(right_mean[i]);
 	}
 
-<<<<<<< HEAD
 	for (int i=0; i<relation_num; i++)
 		cout<<i<<'\t'<<id2relation[i]<<' '<<left_mean[i]<<' '<<right_mean[i]<<endl;
-=======
-//    for (int i=0; i<relation_num; i++)
-//    	cout<<i<<'\t'<<id2relation[i]<<' '<<left_mean[i]<<' '<<right_mean[i]<<endl;
->>>>>>> 1ab9b02bdde62c4d0ba4c7ccee92e4f21a258e69
 
 	fclose(f_kb);
 

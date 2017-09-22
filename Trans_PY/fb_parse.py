@@ -17,7 +17,7 @@ def parseline(line):
 			vec += [float(i)]
         return vec
 
-f = open("entity2vec.bern","r")
+f = open("TransH_entity2vec.bern","r")
 entityvec = pickle.load(f)
 f.close()
 #f = open("p_relation2vec.bern", "r")
@@ -89,5 +89,5 @@ for i in simlist:
 	soup = BeautifulSoup(res.text,"html.parser")
 	for tag in soup.find_all("span", class_="wikibase-title-label"):
 		print tag.string,"-->",
-	for tag in soup.find_all("span", class_="wikibase-descriptionview-text"):	
-		print tag.string	
+	for tag in soup.find_all("span", class_="wikibase-descriptionview-text"):
+		print tag.string
