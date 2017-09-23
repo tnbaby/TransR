@@ -1,1051 +1,4258 @@
 nohup: 忽略输入
-relation_num:  1345 entity_num:  14951
-epoch: 0 133294.562433 time:  52  rate:  0.01 gradient: 135715
-epoch: 1 44142.3801168 time:  45  rate:  0.01 gradient: 58506
-epoch: 2 25771.1806031 time:  43  rate:  0.01 gradient: 38024
-epoch: 3 17730.2013212 time:  42  rate:  0.01 gradient: 28184
-epoch: 4 14267.6867356 time:  42  rate:  0.01 gradient: 23065
-epoch: 5 12193.278387 time:  41  rate:  0.01 gradient: 19902
-epoch: 6 10636.6151177 time:  41  rate:  0.01 gradient: 17660
-epoch: 7 9621.90174717 time:  41  rate:  0.01 gradient: 15911
-epoch: 8 8608.02823148 time:  41  rate:  0.01 gradient: 14593
-epoch: 9 7937.98346591 time:  41  rate:  0.01 gradient: 13558
-epoch: 10 7582.841077 time:  40  rate:  0.01 gradient: 12905
-epoch: 11 7118.64963796 time:  40  rate:  0.01 gradient: 12130
-epoch: 12 6892.36553507 time:  40  rate:  0.01 gradient: 11733
-epoch: 13 6458.21762744 time:  39  rate:  0.01 gradient: 11072
-epoch: 14 6307.00570263 time:  39  rate:  0.01 gradient: 10732
-epoch: 15 5905.93262163 time:  39  rate:  0.01 gradient: 10260
-epoch: 16 5716.62112036 time:  39  rate:  0.01 gradient: 9863
-epoch: 17 5612.34722488 time:  39  rate:  0.01 gradient: 9643
-epoch: 18 5399.2048633 time:  39  rate:  0.01 gradient: 9418
-epoch: 19 5216.53412859 time:  39  rate:  0.01 gradient: 9148
-epoch: 20 5085.28448992 time:  39  rate:  0.01 gradient: 8885
-epoch: 21 4919.32581026 time:  39  rate:  0.01 gradient: 8641
-epoch: 22 4845.03268665 time:  39  rate:  0.01 gradient: 8467
-epoch: 23 4665.69227972 time:  39  rate:  0.01 gradient: 8338
-epoch: 24 4635.416396 time:  39  rate:  0.01 gradient: 8208
-epoch: 25 4557.2468996 time:  39  rate:  0.01 gradient: 7972
-epoch: 26 4416.92767454 time:  39  rate:  0.01 gradient: 7787
-epoch: 27 4363.74746012 time:  39  rate:  0.01 gradient: 7596
-epoch: 28 4275.14233358 time:  39  rate:  0.01 gradient: 7452
-epoch: 29 4200.46440015 time:  39  rate:  0.01 gradient: 7423
-epoch: 30 4222.32014167 time:  39  rate:  0.01 gradient: 7535
-epoch: 31 4128.55340611 time:  39  rate:  0.01 gradient: 7329
-epoch: 32 4119.01638161 time:  38  rate:  0.01 gradient: 7220
-epoch: 33 4008.66762188 time:  38  rate:  0.01 gradient: 7033
-epoch: 34 3957.23112886 time:  39  rate:  0.01 gradient: 7056
-epoch: 35 3841.95568879 time:  39  rate:  0.01 gradient: 6873
-epoch: 36 3889.85332689 time:  39  rate:  0.01 gradient: 6843
-epoch: 37 3879.68020173 time:  39  rate:  0.01 gradient: 6759
-epoch: 38 3808.21393788 time:  39  rate:  0.01 gradient: 6675
-epoch: 39 3821.2046161 time:  39  rate:  0.01 gradient: 6683
-epoch: 40 3739.73110163 time:  39  rate:  0.01 gradient: 6605
-epoch: 41 3854.31222787 time:  39  rate:  0.01 gradient: 6531
-epoch: 42 3622.83334356 time:  38  rate:  0.01 gradient: 6418
-epoch: 43 3633.91973025 time:  39  rate:  0.01 gradient: 6533
-epoch: 44 3555.92074618 time:  39  rate:  0.01 gradient: 6303
-epoch: 45 3556.59368407 time:  38  rate:  0.01 gradient: 6291
-epoch: 46 3459.06953706 time:  39  rate:  0.01 gradient: 6184
-epoch: 47 3468.23615291 time:  38  rate:  0.01 gradient: 6155
-epoch: 48 3443.52930719 time:  38  rate:  0.01 gradient: 6162
-epoch: 49 3393.11325879 time:  39  rate:  0.01 gradient: 5940
-epoch: 50 3493.95560413 time:  38  rate:  0.01 gradient: 6112
-epoch: 51 3456.3964222 time:  39  rate:  0.01 gradient: 6040
-epoch: 52 3398.61741724 time:  39  rate:  0.01 gradient: 6063
-epoch: 53 3291.24841269 time:  38  rate:  0.01 gradient: 5886
-epoch: 54 3388.66706205 time:  39  rate:  0.01 gradient: 6000
-epoch: 55 3351.7248822 time:  39  rate:  0.01 gradient: 5959
-epoch: 56 3360.70742884 time:  39  rate:  0.01 gradient: 5982
-epoch: 57 3282.2083455 time:  38  rate:  0.01 gradient: 5879
-epoch: 58 3272.30620251 time:  39  rate:  0.01 gradient: 5781
-epoch: 59 3309.69308476 time:  38  rate:  0.01 gradient: 5903
-epoch: 60 3279.92940134 time:  38  rate:  0.01 gradient: 5750
-epoch: 61 3290.90357492 time:  39  rate:  0.01 gradient: 5823
-epoch: 62 3285.92538086 time:  39  rate:  0.01 gradient: 5754
-epoch: 63 3219.41962728 time:  39  rate:  0.01 gradient: 5750
-epoch: 64 3174.60450474 time:  39  rate:  0.01 gradient: 5685
-epoch: 65 3116.62585332 time:  39  rate:  0.01 gradient: 5571
-epoch: 66 3252.85895181 time:  39  rate:  0.01 gradient: 5741
-epoch: 67 3231.42879108 time:  39  rate:  0.01 gradient: 5602
-change rate:  0.001
-epoch: 68 2847.28066648 time:  38  rate:  0.001 gradient: 5001
-epoch: 69 2586.0853332 time:  39  rate:  0.001 gradient: 4519
-epoch: 70 2392.94161952 time:  38  rate:  0.001 gradient: 4205
-epoch: 71 2343.89404199 time:  38  rate:  0.001 gradient: 4072
-epoch: 72 2192.0069404 time:  38  rate:  0.001 gradient: 3845
-epoch: 73 2142.51605312 time:  38  rate:  0.001 gradient: 3783
-epoch: 74 2023.35058165 time:  38  rate:  0.001 gradient: 3502
-epoch: 75 2127.24661566 time:  38  rate:  0.001 gradient: 3668
-epoch: 76 1960.9227067 time:  38  rate:  0.001 gradient: 3430
-epoch: 77 1894.40957632 time:  38  rate:  0.001 gradient: 3285
-epoch: 78 1906.22456104 time:  38  rate:  0.001 gradient: 3363
-epoch: 79 1959.32497707 time:  38  rate:  0.001 gradient: 3291
-epoch: 80 1787.55375959 time:  38  rate:  0.001 gradient: 3134
-epoch: 81 1813.52805245 time:  38  rate:  0.001 gradient: 3213
-epoch: 82 1771.0587195 time:  38  rate:  0.001 gradient: 3139
-epoch: 83 1815.98160315 time:  38  rate:  0.001 gradient: 3050
-epoch: 84 1696.26277279 time:  38  rate:  0.001 gradient: 3008
-epoch: 85 1807.73613105 time:  38  rate:  0.001 gradient: 3163
-epoch: 86 1691.31528315 time:  38  rate:  0.001 gradient: 2984
-epoch: 87 1612.59273457 time:  38  rate:  0.001 gradient: 2804
-epoch: 88 1588.07012902 time:  38  rate:  0.001 gradient: 2855
-epoch: 89 1686.83455445 time:  38  rate:  0.001 gradient: 2954
-epoch: 90 1595.89715789 time:  38  rate:  0.001 gradient: 2812
-epoch: 91 1591.07263406 time:  38  rate:  0.001 gradient: 2763
-epoch: 92 1570.97324193 time:  38  rate:  0.001 gradient: 2742
-epoch: 93 1543.59883617 time:  38  rate:  0.001 gradient: 2777
-epoch: 94 1619.22289758 time:  38  rate:  0.001 gradient: 2878
-epoch: 95 1529.24915771 time:  38  rate:  0.001 gradient: 2768
-epoch: 96 1541.0202774 time:  38  rate:  0.001 gradient: 2697
-epoch: 97 1536.57226691 time:  38  rate:  0.001 gradient: 2789
-epoch: 98 1559.93007105 time:  38  rate:  0.001 gradient: 2736
-epoch: 99 1492.77530199 time:  38  rate:  0.001 gradient: 2655
-epoch: 100 1510.22864815 time:  38  rate:  0.001 gradient: 2642
-epoch: 101 1494.13551491 time:  38  rate:  0.001 gradient: 2658
-epoch: 102 1493.73519537 time:  38  rate:  0.001 gradient: 2668
-epoch: 103 1464.81692198 time:  38  rate:  0.001 gradient: 2596
-epoch: 104 1365.98662758 time:  38  rate:  0.001 gradient: 2498
-epoch: 105 1506.56097176 time:  38  rate:  0.001 gradient: 2684
-change rate:  0.0001
-epoch: 106 1390.09336362 time:  38  rate:  0.0001 gradient: 2520
-epoch: 107 1422.22598993 time:  38  rate:  0.0001 gradient: 2528
-epoch: 108 1454.75015159 time:  38  rate:  0.0001 gradient: 2527
-epoch: 109 1416.21212882 time:  38  rate:  0.0001 gradient: 2434
-epoch: 110 1396.5986114 time:  38  rate:  0.0001 gradient: 2458
-epoch: 111 1405.91539513 time:  38  rate:  0.0001 gradient: 2506
-epoch: 112 1395.74028652 time:  38  rate:  0.0001 gradient: 2501
-epoch: 113 1434.20572823 time:  38  rate:  0.0001 gradient: 2522
-epoch: 114 1346.2103882 time:  38  rate:  0.0001 gradient: 2362
-epoch: 115 1437.30728011 time:  38  rate:  0.0001 gradient: 2586
-epoch: 116 1401.18451922 time:  38  rate:  0.0001 gradient: 2463
-epoch: 117 1381.57282705 time:  38  rate:  0.0001 gradient: 2411
-epoch: 118 1394.36076929 time:  38  rate:  0.0001 gradient: 2494
-epoch: 119 1461.00360453 time:  38  rate:  0.0001 gradient: 2588
-change rate:  0.001
-epoch: 120 1403.22923293 time:  38  rate:  0.001 gradient: 2565
-epoch: 121 1453.40582183 time:  38  rate:  0.001 gradient: 2556
-epoch: 122 1340.92703922 time:  38  rate:  0.001 gradient: 2415
-epoch: 123 1396.83821179 time:  39  rate:  0.001 gradient: 2471
-epoch: 124 1445.34380393 time:  39  rate:  0.001 gradient: 2539
-epoch: 125 1346.32051602 time:  38  rate:  0.001 gradient: 2482
-epoch: 126 1443.93961726 time:  38  rate:  0.001 gradient: 2525
-epoch: 127 1340.35078141 time:  38  rate:  0.001 gradient: 2392
-epoch: 128 1394.89969926 time:  38  rate:  0.001 gradient: 2437
-epoch: 129 1401.81602923 time:  38  rate:  0.001 gradient: 2471
-epoch: 130 1315.92321683 time:  38  rate:  0.001 gradient: 2424
-epoch: 131 1299.30868269 time:  38  rate:  0.001 gradient: 2321
-epoch: 132 1322.82227596 time:  39  rate:  0.001 gradient: 2296
-epoch: 133 1245.36292417 time:  38  rate:  0.001 gradient: 2240
-epoch: 134 1287.14980185 time:  38  rate:  0.001 gradient: 2341
-epoch: 135 1318.81421204 time:  38  rate:  0.001 gradient: 2363
-epoch: 136 1248.33490513 time:  38  rate:  0.001 gradient: 2271
-epoch: 137 1258.71125656 time:  38  rate:  0.001 gradient: 2270
-epoch: 138 1263.09386697 time:  39  rate:  0.001 gradient: 2279
-epoch: 139 1272.42484618 time:  38  rate:  0.001 gradient: 2262
-change rate:  0.0001
-epoch: 140 1278.10707919 time:  38  rate:  0.0001 gradient: 2316
-epoch: 141 1257.26981463 time:  38  rate:  0.0001 gradient: 2347
-epoch: 142 1225.32135346 time:  38  rate:  0.0001 gradient: 2151
-epoch: 143 1193.35973997 time:  39  rate:  0.0001 gradient: 2143
-epoch: 144 1224.77904657 time:  38  rate:  0.0001 gradient: 2260
-epoch: 145 1315.58779981 time:  38  rate:  0.0001 gradient: 2258
-epoch: 146 1226.58434805 time:  38  rate:  0.0001 gradient: 2213
-epoch: 147 1279.68704099 time:  38  rate:  0.0001 gradient: 2293
-epoch: 148 1280.45704723 time:  38  rate:  0.0001 gradient: 2207
-epoch: 149 1315.02687818 time:  38  rate:  0.0001 gradient: 2284
-epoch: 150 1303.662446 time:  38  rate:  0.0001 gradient: 2247
-epoch: 151 1293.47711401 time:  39  rate:  0.0001 gradient: 2330
-epoch: 152 1200.37282714 time:  38  rate:  0.0001 gradient: 2147
-epoch: 153 1282.51328313 time:  38  rate:  0.0001 gradient: 2326
-epoch: 154 1194.11389849 time:  38  rate:  0.0001 gradient: 2206
-epoch: 155 1255.41685925 time:  39  rate:  0.0001 gradient: 2238
-epoch: 156 1223.37318992 time:  38  rate:  0.0001 gradient: 2231
-epoch: 157 1275.00137879 time:  38  rate:  0.0001 gradient: 2204
-epoch: 158 1201.53691138 time:  38  rate:  0.0001 gradient: 2246
-epoch: 159 1243.52066865 time:  38  rate:  0.0001 gradient: 2221
-epoch: 160 1201.16755404 time:  38  rate:  0.0001 gradient: 2162
-epoch: 161 1222.45713877 time:  38  rate:  0.0001 gradient: 2194
-epoch: 162 1280.6348663 time:  38  rate:  0.0001 gradient: 2265
-epoch: 163 1223.53681442 time:  38  rate:  0.0001 gradient: 2210
-epoch: 164 1277.38840729 time:  38  rate:  0.0001 gradient: 2261
-epoch: 165 1190.56503382 time:  38  rate:  0.0001 gradient: 2178
-epoch: 166 1215.16399812 time:  38  rate:  0.0001 gradient: 2141
-epoch: 167 1156.55476497 time:  38  rate:  0.0001 gradient: 2120
-epoch: 168 1204.37907515 time:  38  rate:  0.0001 gradient: 2195
-epoch: 169 1269.10505418 time:  38  rate:  0.0001 gradient: 2183
-change rate:  0.001
-epoch: 170 1242.04567009 time:  38  rate:  0.001 gradient: 2151
-epoch: 171 1216.22143332 time:  38  rate:  0.001 gradient: 2227
-epoch: 172 1208.22241484 time:  38  rate:  0.001 gradient: 2187
-epoch: 173 1173.9840125 time:  38  rate:  0.001 gradient: 2150
-epoch: 174 1221.86197855 time:  38  rate:  0.001 gradient: 2243
-epoch: 175 1183.01486719 time:  38  rate:  0.001 gradient: 2227
-epoch: 176 1192.33719851 time:  38  rate:  0.001 gradient: 2191
-epoch: 177 1203.06894916 time:  38  rate:  0.001 gradient: 2106
-epoch: 178 1150.03974631 time:  38  rate:  0.001 gradient: 2068
-epoch: 179 1191.93794055 time:  38  rate:  0.001 gradient: 2127
-epoch: 180 1143.30108675 time:  38  rate:  0.001 gradient: 2108
-epoch: 181 1219.29827794 time:  38  rate:  0.001 gradient: 2207
-epoch: 182 1190.4857329 time:  38  rate:  0.001 gradient: 2115
-epoch: 183 1202.03420365 time:  38  rate:  0.001 gradient: 2082
-epoch: 184 1189.49852965 time:  38  rate:  0.001 gradient: 2149
-epoch: 185 1272.2913164 time:  38  rate:  0.001 gradient: 2224
-epoch: 186 1169.93364608 time:  38  rate:  0.001 gradient: 2080
-epoch: 187 1151.88160875 time:  38  rate:  0.001 gradient: 2105
-epoch: 188 1252.17798034 time:  38  rate:  0.001 gradient: 2204
-epoch: 189 1208.00019946 time:  38  rate:  0.001 gradient: 2121
-epoch: 190 1185.19359372 time:  38  rate:  0.001 gradient: 2040
-epoch: 191 1100.14774006 time:  38  rate:  0.001 gradient: 2043
-epoch: 192 1158.89028261 time:  38  rate:  0.001 gradient: 2085
-epoch: 193 1140.28398833 time:  38  rate:  0.001 gradient: 2026
-epoch: 194 1209.10216463 time:  38  rate:  0.001 gradient: 2090
-epoch: 195 1109.21340387 time:  38  rate:  0.001 gradient: 2053
-epoch: 196 1114.11282824 time:  38  rate:  0.001 gradient: 2074
-epoch: 197 1200.07236592 time:  38  rate:  0.001 gradient: 2116
-change rate:  0.0001
-epoch: 198 1079.53489387 time:  38  rate:  0.0001 gradient: 1966
-epoch: 199 1128.57726554 time:  38  rate:  0.0001 gradient: 2045
-epoch: 200 1053.01665072 time:  38  rate:  0.0001 gradient: 1996
-epoch: 201 1065.36087221 time:  38  rate:  0.0001 gradient: 1950
-epoch: 202 1132.56072892 time:  38  rate:  0.0001 gradient: 2076
-epoch: 203 1136.60363182 time:  38  rate:  0.0001 gradient: 2008
-epoch: 204 1122.57692974 time:  38  rate:  0.0001 gradient: 2007
-epoch: 205 1112.49511798 time:  38  rate:  0.0001 gradient: 1993
-epoch: 206 1117.30943069 time:  38  rate:  0.0001 gradient: 2015
-epoch: 207 1083.92434804 time:  38  rate:  0.0001 gradient: 2000
-epoch: 208 1135.50495906 time:  38  rate:  0.0001 gradient: 2033
-epoch: 209 1064.09474455 time:  38  rate:  0.0001 gradient: 1952
-epoch: 210 1142.39448393 time:  39  rate:  0.0001 gradient: 2117
-epoch: 211 1076.38848517 time:  38  rate:  0.0001 gradient: 1987
-epoch: 212 1093.22356362 time:  38  rate:  0.0001 gradient: 2036
-epoch: 213 1070.67637563 time:  38  rate:  0.0001 gradient: 1971
-epoch: 214 1104.76658124 time:  41  rate:  0.0001 gradient: 2030
-epoch: 215 1067.14491613 time:  43  rate:  0.0001 gradient: 1933
-epoch: 216 1140.76765457 time:  43  rate:  0.0001 gradient: 2027
-epoch: 217 1033.61409682 time:  43  rate:  0.0001 gradient: 1933
-epoch: 218 1157.7357385 time:  43  rate:  0.0001 gradient: 2054
-epoch: 219 1151.47096375 time:  39  rate:  0.0001 gradient: 2025
-change rate:  0.001
-epoch: 220 1094.50795768 time:  38  rate:  0.001 gradient: 1967
-epoch: 221 1088.50794964 time:  39  rate:  0.001 gradient: 1983
-epoch: 222 1073.72473598 time:  38  rate:  0.001 gradient: 1998
-epoch: 223 1076.1339684 time:  38  rate:  0.001 gradient: 1994
-epoch: 224 1100.46780782 time:  38  rate:  0.001 gradient: 2036
-epoch: 225 1123.44948697 time:  38  rate:  0.001 gradient: 2077
-epoch: 226 1146.58702089 time:  38  rate:  0.001 gradient: 2053
-epoch: 227 1110.03926533 time:  38  rate:  0.001 gradient: 2054
-epoch: 228 1054.75607755 time:  39  rate:  0.001 gradient: 1987
-epoch: 229 1078.61108382 time:  38  rate:  0.001 gradient: 1930
-epoch: 230 1121.11803992 time:  38  rate:  0.001 gradient: 1968
-epoch: 231 1088.14623599 time:  38  rate:  0.001 gradient: 1980
-epoch: 232 1042.03731956 time:  38  rate:  0.001 gradient: 1934
-epoch: 233 1037.24886517 time:  38  rate:  0.001 gradient: 1907
-change rate:  0.0001
-epoch: 234 1146.30123924 time:  39  rate:  0.0001 gradient: 1983
-epoch: 235 1017.03087429 time:  38  rate:  0.0001 gradient: 1894
-epoch: 236 1106.16681255 time:  38  rate:  0.0001 gradient: 1922
-epoch: 237 1019.35843324 time:  38  rate:  0.0001 gradient: 1957
-epoch: 238 1125.18594749 time:  38  rate:  0.0001 gradient: 2008
-epoch: 239 1074.53398396 time:  38  rate:  0.0001 gradient: 1932
-epoch: 240 1066.65161957 time:  38  rate:  0.0001 gradient: 1979
-epoch: 241 1098.64889089 time:  43  rate:  0.0001 gradient: 1927
-epoch: 242 1027.57105637 time:  43  rate:  0.0001 gradient: 1850
-epoch: 243 1114.22075353 time:  43  rate:  0.0001 gradient: 1947
-epoch: 244 1009.65243615 time:  43  rate:  0.0001 gradient: 1849
-epoch: 245 1060.37316579 time:  43  rate:  0.0001 gradient: 1897
-epoch: 246 1017.58173666 time:  43  rate:  0.0001 gradient: 1927
-epoch: 247 1128.34666637 time:  43  rate:  0.0001 gradient: 1995
-epoch: 248 1043.16138274 time:  39  rate:  0.0001 gradient: 1872
-epoch: 249 1096.52589075 time:  38  rate:  0.0001 gradient: 1941
-epoch: 250 1009.22003401 time:  38  rate:  0.0001 gradient: 1834
-epoch: 251 1036.89967319 time:  38  rate:  0.0001 gradient: 1910
-epoch: 252 1040.91780745 time:  38  rate:  0.0001 gradient: 1865
-epoch: 253 1015.87133481 time:  38  rate:  0.0001 gradient: 1884
-epoch: 254 1022.105696 time:  38  rate:  0.0001 gradient: 1906
-epoch: 255 1018.63133322 time:  38  rate:  0.0001 gradient: 1885
-epoch: 256 1063.45873156 time:  38  rate:  0.0001 gradient: 1928
-epoch: 257 1097.63121171 time:  38  rate:  0.0001 gradient: 1991
-epoch: 258 1062.62106907 time:  38  rate:  0.0001 gradient: 1906
-epoch: 259 990.588255338 time:  39  rate:  0.0001 gradient: 1860
-epoch: 260 1001.29575369 time:  39  rate:  0.0001 gradient: 1818
-epoch: 261 1090.28579945 time:  39  rate:  0.0001 gradient: 1978
-change rate:  0.001
-epoch: 262 1056.64928179 time:  39  rate:  0.001 gradient: 1912
-epoch: 263 1068.35542757 time:  39  rate:  0.001 gradient: 1936
-epoch: 264 1053.59199086 time:  39  rate:  0.001 gradient: 1840
-epoch: 265 1029.21186692 time:  38  rate:  0.001 gradient: 1909
-epoch: 266 1016.31073704 time:  38  rate:  0.001 gradient: 1853
-epoch: 267 1067.59814665 time:  38  rate:  0.001 gradient: 1984
-epoch: 268 1033.86687452 time:  38  rate:  0.001 gradient: 1906
-epoch: 269 1040.97660732 time:  38  rate:  0.001 gradient: 1874
-epoch: 270 979.795030236 time:  38  rate:  0.001 gradient: 1885
-epoch: 271 999.821841756 time:  38  rate:  0.001 gradient: 1806
-epoch: 272 983.778115506 time:  38  rate:  0.001 gradient: 1867
-epoch: 273 1047.11701274 time:  38  rate:  0.001 gradient: 1874
-epoch: 274 1007.63597776 time:  38  rate:  0.001 gradient: 1861
-epoch: 275 1017.45958888 time:  38  rate:  0.001 gradient: 1855
-epoch: 276 1014.63425044 time:  38  rate:  0.001 gradient: 1864
-epoch: 277 1057.4362561 time:  38  rate:  0.001 gradient: 1864
-change rate:  0.0001
-epoch: 278 1014.2094337 time:  38  rate:  0.0001 gradient: 1859
-epoch: 279 1023.64078148 time:  38  rate:  0.0001 gradient: 1841
-epoch: 280 996.044467596 time:  39  rate:  0.0001 gradient: 1807
-epoch: 281 1040.26754717 time:  38  rate:  0.0001 gradient: 1878
-epoch: 282 999.491708264 time:  38  rate:  0.0001 gradient: 1794
-epoch: 283 984.074698427 time:  38  rate:  0.0001 gradient: 1856
-epoch: 284 1012.13822987 time:  38  rate:  0.0001 gradient: 1846
-epoch: 285 1043.98242364 time:  38  rate:  0.0001 gradient: 1913
-epoch: 286 1081.00844438 time:  38  rate:  0.0001 gradient: 1908
-epoch: 287 999.062614302 time:  38  rate:  0.0001 gradient: 1866
-epoch: 288 952.650682207 time:  38  rate:  0.0001 gradient: 1812
-epoch: 289 996.290810208 time:  38  rate:  0.0001 gradient: 1885
-epoch: 290 974.719861301 time:  38  rate:  0.0001 gradient: 1826
-epoch: 291 1009.61469225 time:  38  rate:  0.0001 gradient: 1845
-change rate:  0.001
-epoch: 292 1014.8950043 time:  38  rate:  0.001 gradient: 1837
-epoch: 293 999.888629257 time:  38  rate:  0.001 gradient: 1821
-epoch: 294 967.274487756 time:  38  rate:  0.001 gradient: 1824
-epoch: 295 1016.07109497 time:  38  rate:  0.001 gradient: 1816
-epoch: 296 980.497175282 time:  43  rate:  0.001 gradient: 1847
-epoch: 297 971.287977626 time:  43  rate:  0.001 gradient: 1726
-epoch: 298 1017.1936866 time:  43  rate:  0.001 gradient: 1865
-epoch: 299 1030.14082811 time:  43  rate:  0.001 gradient: 1838
-epoch: 300 969.436874294 time:  39  rate:  0.001 gradient: 1802
-epoch: 301 1059.33341609 time:  39  rate:  0.001 gradient: 1856
-epoch: 302 945.530797542 time:  38  rate:  0.001 gradient: 1733
-epoch: 303 1038.50708285 time:  38  rate:  0.001 gradient: 1849
-epoch: 304 999.520479184 time:  39  rate:  0.001 gradient: 1834
-epoch: 305 992.337319285 time:  43  rate:  0.001 gradient: 1834
-epoch: 306 1046.21874114 time:  43  rate:  0.001 gradient: 1874
-epoch: 307 928.215407833 time:  43  rate:  0.001 gradient: 1780
-epoch: 308 979.081465175 time:  43  rate:  0.001 gradient: 1769
-epoch: 309 920.682064023 time:  43  rate:  0.001 gradient: 1757
-epoch: 310 962.843904646 time:  43  rate:  0.001 gradient: 1834
-epoch: 311 1006.69354362 time:  43  rate:  0.001 gradient: 1795
-epoch: 312 962.542888725 time:  43  rate:  0.001 gradient: 1782
-epoch: 313 964.235700147 time:  43  rate:  0.001 gradient: 1746
-epoch: 314 1035.64292969 time:  43  rate:  0.001 gradient: 1863
-epoch: 315 961.75616279 time:  43  rate:  0.001 gradient: 1786
-epoch: 316 960.503933664 time:  43  rate:  0.001 gradient: 1772
-epoch: 317 891.049670073 time:  43  rate:  0.001 gradient: 1657
-epoch: 318 943.985908446 time:  43  rate:  0.001 gradient: 1782
-epoch: 319 954.199599195 time:  43  rate:  0.001 gradient: 1755
-change rate:  0.0001
-epoch: 320 953.158406737 time:  43  rate:  0.0001 gradient: 1779
-epoch: 321 979.62454477 time:  43  rate:  0.0001 gradient: 1820
-epoch: 322 973.570005062 time:  43  rate:  0.0001 gradient: 1831
-epoch: 323 889.458998284 time:  43  rate:  0.0001 gradient: 1701
-epoch: 324 902.465512184 time:  43  rate:  0.0001 gradient: 1704
-epoch: 325 940.088109909 time:  43  rate:  0.0001 gradient: 1792
-epoch: 326 1000.18967316 time:  43  rate:  0.0001 gradient: 1835
-epoch: 327 973.880475769 time:  43  rate:  0.0001 gradient: 1759
-epoch: 328 889.834755804 time:  43  rate:  0.0001 gradient: 1689
-epoch: 329 943.119937697 time:  43  rate:  0.0001 gradient: 1721
-epoch: 330 946.886082971 time:  43  rate:  0.0001 gradient: 1716
-epoch: 331 998.456520229 time:  43  rate:  0.0001 gradient: 1768
-change rate:  0.001
-epoch: 332 893.916850041 time:  43  rate:  0.001 gradient: 1680
-epoch: 333 920.85394958 time:  43  rate:  0.001 gradient: 1727
-epoch: 334 937.880647919 time:  43  rate:  0.001 gradient: 1747
-epoch: 335 947.828631478 time:  43  rate:  0.001 gradient: 1757
-epoch: 336 940.507235025 time:  43  rate:  0.001 gradient: 1713
-epoch: 337 918.649753663 time:  43  rate:  0.001 gradient: 1713
-epoch: 338 1022.00452163 time:  43  rate:  0.001 gradient: 1801
-epoch: 339 920.347911539 time:  43  rate:  0.001 gradient: 1665
-epoch: 340 931.25235754 time:  43  rate:  0.001 gradient: 1759
-epoch: 341 911.540617314 time:  43  rate:  0.001 gradient: 1724
-epoch: 342 947.790683927 time:  43  rate:  0.001 gradient: 1744
-epoch: 343 911.264871887 time:  43  rate:  0.001 gradient: 1677
-epoch: 344 959.82368578 time:  43  rate:  0.001 gradient: 1815
-epoch: 345 940.973456612 time:  43  rate:  0.001 gradient: 1765
-epoch: 346 982.963273867 time:  43  rate:  0.001 gradient: 1740
-epoch: 347 957.215150615 time:  43  rate:  0.001 gradient: 1719
-epoch: 348 946.551383626 time:  43  rate:  0.001 gradient: 1716
-epoch: 349 956.502819007 time:  43  rate:  0.001 gradient: 1774
-epoch: 350 908.33663631 time:  43  rate:  0.001 gradient: 1760
-epoch: 351 893.179833366 time:  43  rate:  0.001 gradient: 1684
-epoch: 352 912.291530241 time:  43  rate:  0.001 gradient: 1744
-epoch: 353 894.858589924 time:  43  rate:  0.001 gradient: 1679
-change rate:  0.0001
-epoch: 354 922.033444349 time:  43  rate:  0.0001 gradient: 1633
-epoch: 355 935.301736498 time:  43  rate:  0.0001 gradient: 1732
-epoch: 356 930.733841645 time:  43  rate:  0.0001 gradient: 1729
-epoch: 357 912.46468678 time:  43  rate:  0.0001 gradient: 1697
-epoch: 358 899.44685608 time:  43  rate:  0.0001 gradient: 1662
-epoch: 359 855.330935314 time:  43  rate:  0.0001 gradient: 1615
-epoch: 360 886.80048812 time:  43  rate:  0.0001 gradient: 1640
-epoch: 361 877.619285815 time:  43  rate:  0.0001 gradient: 1646
-epoch: 362 953.310365101 time:  43  rate:  0.0001 gradient: 1754
-epoch: 363 905.152409444 time:  43  rate:  0.0001 gradient: 1699
-epoch: 364 913.095669247 time:  43  rate:  0.0001 gradient: 1663
-epoch: 365 924.89966341 time:  44  rate:  0.0001 gradient: 1711
-epoch: 366 894.523707817 time:  44  rate:  0.0001 gradient: 1696
-epoch: 367 958.578293998 time:  43  rate:  0.0001 gradient: 1711
-epoch: 368 816.574724836 time:  43  rate:  0.0001 gradient: 1570
-epoch: 369 883.164917388 time:  43  rate:  0.0001 gradient: 1654
-epoch: 370 912.619233631 time:  43  rate:  0.0001 gradient: 1692
-epoch: 371 904.392090059 time:  43  rate:  0.0001 gradient: 1687
-epoch: 372 860.386400356 time:  43  rate:  0.0001 gradient: 1658
-epoch: 373 918.353345637 time:  43  rate:  0.0001 gradient: 1725
-epoch: 374 895.321090095 time:  43  rate:  0.0001 gradient: 1621
-epoch: 375 869.225738855 time:  43  rate:  0.0001 gradient: 1663
-epoch: 376 881.953940483 time:  43  rate:  0.0001 gradient: 1639
-epoch: 377 855.230569461 time:  43  rate:  0.0001 gradient: 1564
-epoch: 378 895.980397963 time:  43  rate:  0.0001 gradient: 1635
-epoch: 379 849.92965526 time:  43  rate:  0.0001 gradient: 1591
-epoch: 380 911.580357879 time:  43  rate:  0.0001 gradient: 1631
-epoch: 381 827.071542666 time:  43  rate:  0.0001 gradient: 1583
-epoch: 382 894.069704414 time:  43  rate:  0.0001 gradient: 1614
-epoch: 383 880.915418301 time:  38  rate:  0.0001 gradient: 1662
-epoch: 384 865.196091631 time:  38  rate:  0.0001 gradient: 1597
-epoch: 385 839.560229364 time:  38  rate:  0.0001 gradient: 1616
-epoch: 386 871.546584343 time:  38  rate:  0.0001 gradient: 1667
-epoch: 387 890.830768911 time:  38  rate:  0.0001 gradient: 1641
-change rate:  0.001
-epoch: 388 856.218663572 time:  38  rate:  0.001 gradient: 1649
-epoch: 389 915.455286271 time:  38  rate:  0.001 gradient: 1674
-epoch: 390 913.970437884 time:  38  rate:  0.001 gradient: 1679
-epoch: 391 823.623294963 time:  38  rate:  0.001 gradient: 1620
-epoch: 392 913.64770642 time:  38  rate:  0.001 gradient: 1667
-epoch: 393 906.850154307 time:  38  rate:  0.001 gradient: 1657
-epoch: 394 874.978918959 time:  38  rate:  0.001 gradient: 1619
-epoch: 395 841.869425516 time:  38  rate:  0.001 gradient: 1575
-epoch: 396 873.200549657 time:  38  rate:  0.001 gradient: 1641
-epoch: 397 969.814046872 time:  38  rate:  0.001 gradient: 1773
-epoch: 398 936.747791876 time:  38  rate:  0.001 gradient: 1700
-epoch: 399 885.492415437 time:  38  rate:  0.001 gradient: 1725
-epoch: 400 899.924056976 time:  38  rate:  0.001 gradient: 1663
-epoch: 401 842.701790453 time:  39  rate:  0.001 gradient: 1615
-epoch: 402 875.226954183 time:  38  rate:  0.001 gradient: 1637
-epoch: 403 882.135883966 time:  38  rate:  0.001 gradient: 1666
-change rate:  0.0001
-epoch: 404 895.788845385 time:  38  rate:  0.0001 gradient: 1622
-epoch: 405 794.888768355 time:  38  rate:  0.0001 gradient: 1574
-epoch: 406 928.844919987 time:  38  rate:  0.0001 gradient: 1657
-epoch: 407 885.739292975 time:  38  rate:  0.0001 gradient: 1641
-epoch: 408 886.108145244 time:  38  rate:  0.0001 gradient: 1650
-epoch: 409 876.20988459 time:  38  rate:  0.0001 gradient: 1639
-epoch: 410 889.627998479 time:  38  rate:  0.0001 gradient: 1664
-epoch: 411 834.443668204 time:  38  rate:  0.0001 gradient: 1570
-epoch: 412 875.943680271 time:  38  rate:  0.0001 gradient: 1573
-epoch: 413 871.47503315 time:  38  rate:  0.0001 gradient: 1631
-epoch: 414 857.428889523 time:  38  rate:  0.0001 gradient: 1596
-epoch: 415 875.612724531 time:  38  rate:  0.0001 gradient: 1652
-epoch: 416 841.567672841 time:  38  rate:  0.0001 gradient: 1574
-epoch: 417 842.158888315 time:  38  rate:  0.0001 gradient: 1609
-epoch: 418 898.463899665 time:  38  rate:  0.0001 gradient: 1642
-epoch: 419 839.712185888 time:  38  rate:  0.0001 gradient: 1626
-epoch: 420 879.718137934 time:  38  rate:  0.0001 gradient: 1607
-epoch: 421 835.935040748 time:  38  rate:  0.0001 gradient: 1650
-epoch: 422 898.801614327 time:  38  rate:  0.0001 gradient: 1684
-epoch: 423 859.571015319 time:  38  rate:  0.0001 gradient: 1620
-epoch: 424 920.331300436 time:  38  rate:  0.0001 gradient: 1636
-epoch: 425 851.427750411 time:  38  rate:  0.0001 gradient: 1587
-epoch: 426 860.104876105 time:  38  rate:  0.0001 gradient: 1627
-epoch: 427 818.728742926 time:  38  rate:  0.0001 gradient: 1580
-epoch: 428 892.28880583 time:  38  rate:  0.0001 gradient: 1653
-epoch: 429 867.091433025 time:  38  rate:  0.0001 gradient: 1566
-epoch: 430 867.145693628 time:  38  rate:  0.0001 gradient: 1605
-epoch: 431 877.651875958 time:  38  rate:  0.0001 gradient: 1596
-epoch: 432 830.324571177 time:  38  rate:  0.0001 gradient: 1576
-epoch: 433 858.745820871 time:  38  rate:  0.0001 gradient: 1584
-epoch: 434 827.40997401 time:  38  rate:  0.0001 gradient: 1556
-epoch: 435 818.750684475 time:  38  rate:  0.0001 gradient: 1578
-epoch: 436 847.659871189 time:  38  rate:  0.0001 gradient: 1592
-epoch: 437 767.783603899 time:  38  rate:  0.0001 gradient: 1472
-epoch: 438 876.907645951 time:  38  rate:  0.0001 gradient: 1591
-epoch: 439 835.272630553 time:  39  rate:  0.0001 gradient: 1615
-epoch: 440 898.790757371 time:  38  rate:  0.0001 gradient: 1600
-epoch: 441 847.47285193 time:  38  rate:  0.0001 gradient: 1590
-epoch: 442 841.895329688 time:  38  rate:  0.0001 gradient: 1558
-epoch: 443 790.796071069 time:  38  rate:  0.0001 gradient: 1539
-epoch: 444 878.288080206 time:  38  rate:  0.0001 gradient: 1599
-epoch: 445 846.271164298 time:  38  rate:  0.0001 gradient: 1609
-epoch: 446 827.728174329 time:  38  rate:  0.0001 gradient: 1545
-epoch: 447 859.12386251 time:  38  rate:  0.0001 gradient: 1566
-epoch: 448 856.260708196 time:  39  rate:  0.0001 gradient: 1632
-epoch: 449 831.223953484 time:  38  rate:  0.0001 gradient: 1564
-epoch: 450 865.485806671 time:  38  rate:  0.0001 gradient: 1569
-epoch: 451 842.728183044 time:  38  rate:  0.0001 gradient: 1537
-epoch: 452 854.28785541 time:  38  rate:  0.0001 gradient: 1612
-epoch: 453 836.420785126 time:  38  rate:  0.0001 gradient: 1514
-epoch: 454 873.2579116 time:  39  rate:  0.0001 gradient: 1643
-epoch: 455 808.063432669 time:  38  rate:  0.0001 gradient: 1566
-epoch: 456 861.207975465 time:  38  rate:  0.0001 gradient: 1594
-epoch: 457 863.910027355 time:  39  rate:  0.0001 gradient: 1639
-change rate:  0.001
-epoch: 458 823.347783023 time:  39  rate:  0.001 gradient: 1569
-epoch: 459 832.961149318 time:  39  rate:  0.001 gradient: 1561
-epoch: 460 868.631233519 time:  40  rate:  0.001 gradient: 1673
-epoch: 461 873.96669969 time:  38  rate:  0.001 gradient: 1573
-epoch: 462 844.519010067 time:  38  rate:  0.001 gradient: 1612
-epoch: 463 815.141398663 time:  38  rate:  0.001 gradient: 1550
-epoch: 464 829.987073791 time:  38  rate:  0.001 gradient: 1570
-epoch: 465 876.742162986 time:  38  rate:  0.001 gradient: 1674
-epoch: 466 852.900039397 time:  38  rate:  0.001 gradient: 1585
-epoch: 467 876.770123435 time:  38  rate:  0.001 gradient: 1605
-change rate:  0.0001
-epoch: 468 854.790893332 time:  38  rate:  0.0001 gradient: 1611
-epoch: 469 868.276489001 time:  43  rate:  0.0001 gradient: 1605
-epoch: 470 812.767699545 time:  43  rate:  0.0001 gradient: 1553
-epoch: 471 883.617702133 time:  43  rate:  0.0001 gradient: 1618
-epoch: 472 826.612264284 time:  43  rate:  0.0001 gradient: 1529
-epoch: 473 842.763247878 time:  43  rate:  0.0001 gradient: 1599
-epoch: 474 849.167784569 time:  43  rate:  0.0001 gradient: 1591
-epoch: 475 867.678014404 time:  43  rate:  0.0001 gradient: 1543
-epoch: 476 871.947850496 time:  43  rate:  0.0001 gradient: 1637
-epoch: 477 842.232146012 time:  43  rate:  0.0001 gradient: 1550
-epoch: 478 888.039937253 time:  43  rate:  0.0001 gradient: 1665
-epoch: 479 843.497842556 time:  43  rate:  0.0001 gradient: 1627
-epoch: 480 850.900325637 time:  43  rate:  0.0001 gradient: 1585
-epoch: 481 822.326283077 time:  43  rate:  0.0001 gradient: 1571
-epoch: 482 785.351964974 time:  43  rate:  0.0001 gradient: 1558
-epoch: 483 771.678818295 time:  43  rate:  0.0001 gradient: 1543
-epoch: 484 904.026059619 time:  43  rate:  0.0001 gradient: 1634
-epoch: 485 808.468444108 time:  42  rate:  0.0001 gradient: 1522
-epoch: 486 884.875972435 time:  43  rate:  0.0001 gradient: 1609
-epoch: 487 809.26772572 time:  43  rate:  0.0001 gradient: 1560
-epoch: 488 824.21286479 time:  43  rate:  0.0001 gradient: 1554
-epoch: 489 874.25034313 time:  43  rate:  0.0001 gradient: 1586
-epoch: 490 785.236698292 time:  43  rate:  0.0001 gradient: 1512
-epoch: 491 853.514115532 time:  43  rate:  0.0001 gradient: 1561
-epoch: 492 840.550220625 time:  43  rate:  0.0001 gradient: 1572
-epoch: 493 827.070844024 time:  43  rate:  0.0001 gradient: 1560
-epoch: 494 862.298105968 time:  43  rate:  0.0001 gradient: 1595
-epoch: 495 818.317341771 time:  43  rate:  0.0001 gradient: 1538
-epoch: 496 848.762759939 time:  43  rate:  0.0001 gradient: 1585
-epoch: 497 824.421441712 time:  43  rate:  0.0001 gradient: 1538
-epoch: 498 830.578411353 time:  42  rate:  0.0001 gradient: 1571
-epoch: 499 844.293081319 time:  43  rate:  0.0001 gradient: 1575
-change rate:  0.001
-epoch: 500 852.841880889 time:  43  rate:  0.001 gradient: 1563
-epoch: 501 792.525522357 time:  43  rate:  0.001 gradient: 1506
-epoch: 502 841.502342919 time:  43  rate:  0.001 gradient: 1568
-epoch: 503 888.597512838 time:  43  rate:  0.001 gradient: 1596
-epoch: 504 817.548763046 time:  43  rate:  0.001 gradient: 1599
-epoch: 505 810.113166666 time:  43  rate:  0.001 gradient: 1587
-epoch: 506 823.268946372 time:  43  rate:  0.001 gradient: 1536
-epoch: 507 871.615289863 time:  43  rate:  0.001 gradient: 1616
-epoch: 508 818.14260405 time:  43  rate:  0.001 gradient: 1587
-epoch: 509 828.384475527 time:  43  rate:  0.001 gradient: 1536
-epoch: 510 847.091688335 time:  43  rate:  0.001 gradient: 1567
-epoch: 511 859.440976674 time:  43  rate:  0.001 gradient: 1581
-epoch: 512 816.953435526 time:  43  rate:  0.001 gradient: 1506
-epoch: 513 852.945564793 time:  43  rate:  0.001 gradient: 1602
-epoch: 514 890.778291649 time:  43  rate:  0.001 gradient: 1665
-epoch: 515 824.196035538 time:  43  rate:  0.001 gradient: 1547
-epoch: 516 839.400656106 time:  43  rate:  0.001 gradient: 1575
-epoch: 517 878.791360728 time:  43  rate:  0.001 gradient: 1594
-change rate:  0.0001
-epoch: 518 826.323675523 time:  43  rate:  0.0001 gradient: 1585
-epoch: 519 882.10545827 time:  43  rate:  0.0001 gradient: 1578
-epoch: 520 797.873078415 time:  43  rate:  0.0001 gradient: 1488
-epoch: 521 822.704314319 time:  43  rate:  0.0001 gradient: 1577
-epoch: 522 821.666708197 time:  43  rate:  0.0001 gradient: 1532
-epoch: 523 819.704645121 time:  43  rate:  0.0001 gradient: 1572
-epoch: 524 835.016801804 time:  43  rate:  0.0001 gradient: 1557
-epoch: 525 830.947871342 time:  43  rate:  0.0001 gradient: 1540
-epoch: 526 857.937357929 time:  43  rate:  0.0001 gradient: 1606
-epoch: 527 798.767964514 time:  43  rate:  0.0001 gradient: 1549
-epoch: 528 832.709371821 time:  43  rate:  0.0001 gradient: 1576
-epoch: 529 848.03250565 time:  43  rate:  0.0001 gradient: 1520
-change rate:  0.001
-epoch: 530 792.050656181 time:  43  rate:  0.001 gradient: 1530
-epoch: 531 825.999910071 time:  43  rate:  0.001 gradient: 1570
-epoch: 532 826.675680207 time:  43  rate:  0.001 gradient: 1567
-epoch: 533 857.196275948 time:  43  rate:  0.001 gradient: 1566
-epoch: 534 833.284996556 time:  43  rate:  0.001 gradient: 1536
-epoch: 535 804.421106479 time:  43  rate:  0.001 gradient: 1517
-epoch: 536 796.750218867 time:  43  rate:  0.001 gradient: 1490
-epoch: 537 797.132099747 time:  43  rate:  0.001 gradient: 1520
-epoch: 538 802.905211714 time:  43  rate:  0.001 gradient: 1538
-epoch: 539 847.519535415 time:  43  rate:  0.001 gradient: 1565
-change rate:  0.0001
-epoch: 540 858.181716206 time:  43  rate:  0.0001 gradient: 1548
-epoch: 541 848.082098329 time:  43  rate:  0.0001 gradient: 1543
-epoch: 542 770.003246397 time:  43  rate:  0.0001 gradient: 1492
-epoch: 543 865.089123635 time:  43  rate:  0.0001 gradient: 1523
-epoch: 544 834.588512963 time:  43  rate:  0.0001 gradient: 1592
-epoch: 545 827.281494047 time:  43  rate:  0.0001 gradient: 1508
-epoch: 546 827.714950324 time:  43  rate:  0.0001 gradient: 1512
-epoch: 547 809.211734337 time:  43  rate:  0.0001 gradient: 1496
-epoch: 548 812.83300346 time:  43  rate:  0.0001 gradient: 1556
-epoch: 549 813.682175256 time:  43  rate:  0.0001 gradient: 1508
-epoch: 550 839.777289016 time:  42  rate:  0.0001 gradient: 1499
-epoch: 551 803.393548478 time:  43  rate:  0.0001 gradient: 1506
-epoch: 552 828.879596559 time:  43  rate:  0.0001 gradient: 1552
-epoch: 553 874.416046352 time:  43  rate:  0.0001 gradient: 1571
-change rate:  0.001
-epoch: 554 820.338597636 time:  43  rate:  0.001 gradient: 1552
-epoch: 555 847.47993053 time:  43  rate:  0.001 gradient: 1571
-epoch: 556 814.350436279 time:  43  rate:  0.001 gradient: 1558
-epoch: 557 831.405054874 time:  43  rate:  0.001 gradient: 1555
-epoch: 558 794.901008576 time:  43  rate:  0.001 gradient: 1486
-epoch: 559 837.942058523 time:  43  rate:  0.001 gradient: 1454
-epoch: 560 789.370489257 time:  43  rate:  0.001 gradient: 1496
-epoch: 561 826.425686912 time:  43  rate:  0.001 gradient: 1585
-epoch: 562 775.454173324 time:  43  rate:  0.001 gradient: 1508
-epoch: 563 807.929811965 time:  43  rate:  0.001 gradient: 1513
-epoch: 564 808.568142942 time:  38  rate:  0.001 gradient: 1511
-epoch: 565 819.284018686 time:  38  rate:  0.001 gradient: 1523
-epoch: 566 798.155310247 time:  38  rate:  0.001 gradient: 1504
-epoch: 567 804.574165722 time:  38  rate:  0.001 gradient: 1536
-epoch: 568 871.728988946 time:  38  rate:  0.001 gradient: 1616
-epoch: 569 746.62470497 time:  38  rate:  0.001 gradient: 1477
-epoch: 570 825.10121142 time:  38  rate:  0.001 gradient: 1521
-epoch: 571 832.486714317 time:  38  rate:  0.001 gradient: 1497
-epoch: 572 802.935647289 time:  38  rate:  0.001 gradient: 1529
-epoch: 573 795.930033141 time:  38  rate:  0.001 gradient: 1483
-epoch: 574 836.497286189 time:  38  rate:  0.001 gradient: 1502
-epoch: 575 793.782545356 time:  38  rate:  0.001 gradient: 1475
-epoch: 576 810.071014959 time:  38  rate:  0.001 gradient: 1513
-epoch: 577 789.532727252 time:  38  rate:  0.001 gradient: 1496
-epoch: 578 738.705505629 time:  38  rate:  0.001 gradient: 1449
-epoch: 579 796.012633872 time:  38  rate:  0.001 gradient: 1553
-change rate:  0.0001
-epoch: 580 811.391743297 time:  38  rate:  0.0001 gradient: 1549
-epoch: 581 768.004077011 time:  38  rate:  0.0001 gradient: 1493
-epoch: 582 758.328525418 time:  43  rate:  0.0001 gradient: 1477
-epoch: 583 836.266547906 time:  43  rate:  0.0001 gradient: 1551
-epoch: 584 762.797485083 time:  43  rate:  0.0001 gradient: 1489
-epoch: 585 766.756831269 time:  43  rate:  0.0001 gradient: 1472
-epoch: 586 764.306046511 time:  43  rate:  0.0001 gradient: 1479
-epoch: 587 748.961666413 time:  42  rate:  0.0001 gradient: 1467
-epoch: 588 762.131228829 time:  43  rate:  0.0001 gradient: 1432
-epoch: 589 807.063361825 time:  38  rate:  0.0001 gradient: 1465
-epoch: 590 807.014344743 time:  38  rate:  0.0001 gradient: 1537
-epoch: 591 817.224955476 time:  38  rate:  0.0001 gradient: 1581
-epoch: 592 851.358264936 time:  38  rate:  0.0001 gradient: 1550
-epoch: 593 771.941833096 time:  38  rate:  0.0001 gradient: 1470
-epoch: 594 733.929343553 time:  38  rate:  0.0001 gradient: 1424
-epoch: 595 744.247350093 time:  38  rate:  0.0001 gradient: 1427
-change rate:  0.001
-epoch: 596 737.717611596 time:  38  rate:  0.001 gradient: 1495
-epoch: 597 784.424951357 time:  38  rate:  0.001 gradient: 1557
-epoch: 598 762.35802982 time:  38  rate:  0.001 gradient: 1456
-epoch: 599 812.864640321 time:  38  rate:  0.001 gradient: 1437
-epoch: 600 781.183358914 time:  38  rate:  0.001 gradient: 1519
-epoch: 601 758.667346097 time:  38  rate:  0.001 gradient: 1450
-epoch: 602 750.40361024 time:  38  rate:  0.001 gradient: 1465
-epoch: 603 767.36161077 time:  38  rate:  0.001 gradient: 1448
-epoch: 604 770.783224935 time:  38  rate:  0.001 gradient: 1445
-epoch: 605 808.880149077 time:  38  rate:  0.001 gradient: 1519
-change rate:  0.0001
-epoch: 606 836.711325914 time:  38  rate:  0.0001 gradient: 1535
-epoch: 607 768.187865648 time:  38  rate:  0.0001 gradient: 1456
-epoch: 608 763.323220458 time:  39  rate:  0.0001 gradient: 1456
-epoch: 609 750.554715416 time:  38  rate:  0.0001 gradient: 1468
-epoch: 610 776.35781892 time:  38  rate:  0.0001 gradient: 1491
-epoch: 611 848.003724789 time:  38  rate:  0.0001 gradient: 1516
-epoch: 612 818.703751858 time:  38  rate:  0.0001 gradient: 1475
-epoch: 613 808.146704403 time:  38  rate:  0.0001 gradient: 1533
-epoch: 614 782.374596746 time:  38  rate:  0.0001 gradient: 1426
-epoch: 615 745.229898286 time:  38  rate:  0.0001 gradient: 1430
-epoch: 616 763.886088433 time:  38  rate:  0.0001 gradient: 1442
-epoch: 617 773.93579849 time:  38  rate:  0.0001 gradient: 1489
-epoch: 618 818.107249801 time:  38  rate:  0.0001 gradient: 1519
-epoch: 619 775.529846999 time:  38  rate:  0.0001 gradient: 1477
-change rate:  0.001
-epoch: 620 789.19596652 time:  38  rate:  0.001 gradient: 1445
-epoch: 621 761.270097944 time:  38  rate:  0.001 gradient: 1461
-epoch: 622 810.204493718 time:  38  rate:  0.001 gradient: 1508
-epoch: 623 746.589878298 time:  38  rate:  0.001 gradient: 1410
-epoch: 624 769.757107587 time:  38  rate:  0.001 gradient: 1471
-epoch: 625 774.945972734 time:  38  rate:  0.001 gradient: 1489
-epoch: 626 757.858800087 time:  38  rate:  0.001 gradient: 1435
-epoch: 627 713.171399535 time:  38  rate:  0.001 gradient: 1377
-epoch: 628 785.938563951 time:  38  rate:  0.001 gradient: 1494
-epoch: 629 823.771888367 time:  38  rate:  0.001 gradient: 1535
-epoch: 630 788.224327044 time:  38  rate:  0.001 gradient: 1503
-epoch: 631 731.569086239 time:  38  rate:  0.001 gradient: 1473
-epoch: 632 740.959773639 time:  38  rate:  0.001 gradient: 1450
-epoch: 633 778.639910476 time:  38  rate:  0.001 gradient: 1481
-epoch: 634 764.757507635 time:  38  rate:  0.001 gradient: 1458
-epoch: 635 735.156612891 time:  38  rate:  0.001 gradient: 1438
-epoch: 636 782.76952632 time:  38  rate:  0.001 gradient: 1494
-epoch: 637 790.595416783 time:  38  rate:  0.001 gradient: 1457
-change rate:  0.0001
-epoch: 638 780.831199458 time:  38  rate:  0.0001 gradient: 1462
-epoch: 639 809.734184294 time:  38  rate:  0.0001 gradient: 1515
-epoch: 640 817.197725677 time:  38  rate:  0.0001 gradient: 1506
-epoch: 641 752.809470373 time:  38  rate:  0.0001 gradient: 1444
-epoch: 642 757.095013181 time:  38  rate:  0.0001 gradient: 1483
-epoch: 643 713.560929017 time:  38  rate:  0.0001 gradient: 1383
-epoch: 644 752.304714545 time:  38  rate:  0.0001 gradient: 1374
-epoch: 645 783.126292146 time:  39  rate:  0.0001 gradient: 1504
-epoch: 646 738.515186142 time:  38  rate:  0.0001 gradient: 1475
-epoch: 647 777.918165649 time:  39  rate:  0.0001 gradient: 1481
-epoch: 648 705.735490784 time:  38  rate:  0.0001 gradient: 1380
-epoch: 649 771.441833448 time:  38  rate:  0.0001 gradient: 1507
-epoch: 650 790.156681056 time:  38  rate:  0.0001 gradient: 1452
-epoch: 651 742.892864169 time:  38  rate:  0.0001 gradient: 1378
-epoch: 652 772.032101732 time:  38  rate:  0.0001 gradient: 1477
-epoch: 653 778.947903682 time:  38  rate:  0.0001 gradient: 1501
-epoch: 654 765.529237446 time:  38  rate:  0.0001 gradient: 1466
-epoch: 655 759.895788383 time:  38  rate:  0.0001 gradient: 1414
-epoch: 656 809.062016779 time:  38  rate:  0.0001 gradient: 1485
-epoch: 657 742.599605523 time:  38  rate:  0.0001 gradient: 1446
-epoch: 658 725.602188492 time:  38  rate:  0.0001 gradient: 1350
-epoch: 659 759.437544972 time:  38  rate:  0.0001 gradient: 1437
-change rate:  0.001
-epoch: 660 734.31353904 time:  38  rate:  0.001 gradient: 1420
-epoch: 661 739.92414784 time:  38  rate:  0.001 gradient: 1418
-epoch: 662 768.22782605 time:  38  rate:  0.001 gradient: 1477
-epoch: 663 751.160024195 time:  38  rate:  0.001 gradient: 1525
-epoch: 664 742.925190349 time:  38  rate:  0.001 gradient: 1429
-epoch: 665 802.207665655 time:  38  rate:  0.001 gradient: 1470
-epoch: 666 752.705330244 time:  38  rate:  0.001 gradient: 1442
-epoch: 667 751.406620981 time:  38  rate:  0.001 gradient: 1433
-change rate:  0.0001
-epoch: 668 776.892810008 time:  38  rate:  0.0001 gradient: 1458
-epoch: 669 759.771352327 time:  38  rate:  0.0001 gradient: 1364
-epoch: 670 761.464270228 time:  38  rate:  0.0001 gradient: 1456
-epoch: 671 798.990270783 time:  38  rate:  0.0001 gradient: 1529
-epoch: 672 777.714400446 time:  38  rate:  0.0001 gradient: 1485
-epoch: 673 726.818121937 time:  38  rate:  0.0001 gradient: 1413
-epoch: 674 722.320642865 time:  38  rate:  0.0001 gradient: 1421
-epoch: 675 756.364739717 time:  38  rate:  0.0001 gradient: 1418
-epoch: 676 799.145484505 time:  38  rate:  0.0001 gradient: 1489
-epoch: 677 734.849605059 time:  38  rate:  0.0001 gradient: 1455
-epoch: 678 738.916184503 time:  38  rate:  0.0001 gradient: 1420
-epoch: 679 802.128100429 time:  38  rate:  0.0001 gradient: 1487
-epoch: 680 727.48892609 time:  38  rate:  0.0001 gradient: 1422
-epoch: 681 735.878275732 time:  43  rate:  0.0001 gradient: 1421
-epoch: 682 769.831796004 time:  43  rate:  0.0001 gradient: 1467
-epoch: 683 731.376391344 time:  43  rate:  0.0001 gradient: 1408
-epoch: 684 763.397283316 time:  43  rate:  0.0001 gradient: 1471
-epoch: 685 718.713434214 time:  43  rate:  0.0001 gradient: 1424
-epoch: 686 746.55577504 time:  43  rate:  0.0001 gradient: 1412
-epoch: 687 719.327819485 time:  43  rate:  0.0001 gradient: 1398
-epoch: 688 727.95084411 time:  43  rate:  0.0001 gradient: 1400
-epoch: 689 788.868335608 time:  43  rate:  0.0001 gradient: 1478
-change rate:  0.001
-epoch: 690 717.317336237 time:  43  rate:  0.001 gradient: 1429
-epoch: 691 721.430384592 time:  43  rate:  0.001 gradient: 1410
-epoch: 692 701.525519936 time:  43  rate:  0.001 gradient: 1396
-epoch: 693 730.015973028 time:  39  rate:  0.001 gradient: 1445
-epoch: 694 742.403774907 time:  38  rate:  0.001 gradient: 1422
-epoch: 695 761.233490653 time:  42  rate:  0.001 gradient: 1466
-epoch: 696 753.334733052 time:  43  rate:  0.001 gradient: 1379
-epoch: 697 753.59491223 time:  43  rate:  0.001 gradient: 1417
-epoch: 698 785.555650989 time:  43  rate:  0.001 gradient: 1476
-epoch: 699 727.18774327 time:  43  rate:  0.001 gradient: 1393
-epoch: 700 715.27413972 time:  43  rate:  0.001 gradient: 1442
-epoch: 701 751.34761315 time:  43  rate:  0.001 gradient: 1453
-change rate:  0.0001
-epoch: 702 718.746159061 time:  43  rate:  0.0001 gradient: 1389
-epoch: 703 752.395186681 time:  43  rate:  0.0001 gradient: 1426
-epoch: 704 712.956315736 time:  43  rate:  0.0001 gradient: 1415
-epoch: 705 730.25223917 time:  43  rate:  0.0001 gradient: 1393
-epoch: 706 784.840248791 time:  43  rate:  0.0001 gradient: 1467
-epoch: 707 684.353016413 time:  43  rate:  0.0001 gradient: 1378
-epoch: 708 745.445741725 time:  43  rate:  0.0001 gradient: 1403
-epoch: 709 737.203025713 time:  43  rate:  0.0001 gradient: 1393
-epoch: 710 769.621739859 time:  43  rate:  0.0001 gradient: 1473
-epoch: 711 780.892553877 time:  43  rate:  0.0001 gradient: 1456
-epoch: 712 702.546444457 time:  43  rate:  0.0001 gradient: 1379
-epoch: 713 704.148087336 time:  43  rate:  0.0001 gradient: 1407
-epoch: 714 750.168136116 time:  43  rate:  0.0001 gradient: 1426
-epoch: 715 701.062195402 time:  43  rate:  0.0001 gradient: 1355
-epoch: 716 752.631165475 time:  43  rate:  0.0001 gradient: 1440
-epoch: 717 732.350629921 time:  43  rate:  0.0001 gradient: 1395
-epoch: 718 747.247309968 time:  43  rate:  0.0001 gradient: 1454
-epoch: 719 710.278759485 time:  44  rate:  0.0001 gradient: 1323
-epoch: 720 745.320916118 time:  43  rate:  0.0001 gradient: 1400
-epoch: 721 713.63654005 time:  43  rate:  0.0001 gradient: 1372
-epoch: 722 755.223062232 time:  43  rate:  0.0001 gradient: 1449
-epoch: 723 705.936835762 time:  43  rate:  0.0001 gradient: 1378
-epoch: 724 681.876859855 time:  43  rate:  0.0001 gradient: 1331
-epoch: 725 754.239904411 time:  43  rate:  0.0001 gradient: 1440
-epoch: 726 756.291181379 time:  43  rate:  0.0001 gradient: 1407
-epoch: 727 696.536175236 time:  43  rate:  0.0001 gradient: 1380
-epoch: 728 706.31078084 time:  43  rate:  0.0001 gradient: 1373
-epoch: 729 747.944284343 time:  43  rate:  0.0001 gradient: 1409
-change rate:  0.001
-epoch: 730 747.282969648 time:  43  rate:  0.001 gradient: 1453
-epoch: 731 761.68240982 time:  43  rate:  0.001 gradient: 1456
-epoch: 732 739.552554658 time:  43  rate:  0.001 gradient: 1397
-epoch: 733 711.556338793 time:  43  rate:  0.001 gradient: 1396
-epoch: 734 718.047750373 time:  43  rate:  0.001 gradient: 1429
-epoch: 735 726.497080182 time:  43  rate:  0.001 gradient: 1377
-epoch: 736 717.481427074 time:  39  rate:  0.001 gradient: 1341
-epoch: 737 750.402139833 time:  42  rate:  0.001 gradient: 1452
-epoch: 738 720.664257345 time:  43  rate:  0.001 gradient: 1405
-epoch: 739 703.905126157 time:  43  rate:  0.001 gradient: 1367
-epoch: 740 690.946384368 time:  43  rate:  0.001 gradient: 1380
-epoch: 741 722.007991592 time:  43  rate:  0.001 gradient: 1412
-change rate:  0.0001
-epoch: 742 761.919409467 time:  43  rate:  0.0001 gradient: 1423
-epoch: 743 746.285003332 time:  43  rate:  0.0001 gradient: 1370
-epoch: 744 813.371511575 time:  43  rate:  0.0001 gradient: 1501
-epoch: 745 754.797578357 time:  43  rate:  0.0001 gradient: 1488
-epoch: 746 710.492400098 time:  43  rate:  0.0001 gradient: 1356
-epoch: 747 739.291885516 time:  43  rate:  0.0001 gradient: 1402
-epoch: 748 687.047879358 time:  43  rate:  0.0001 gradient: 1342
-epoch: 749 725.118869848 time:  40  rate:  0.0001 gradient: 1430
-epoch: 750 738.853962484 time:  38  rate:  0.0001 gradient: 1382
-epoch: 751 734.418674843 time:  39  rate:  0.0001 gradient: 1403
-epoch: 752 731.356251636 time:  38  rate:  0.0001 gradient: 1380
-epoch: 753 748.479786427 time:  38  rate:  0.0001 gradient: 1413
-epoch: 754 709.953230926 time:  38  rate:  0.0001 gradient: 1420
-epoch: 755 730.977240766 time:  38  rate:  0.0001 gradient: 1413
-epoch: 756 730.043736019 time:  38  rate:  0.0001 gradient: 1414
-epoch: 757 710.388320556 time:  38  rate:  0.0001 gradient: 1347
-epoch: 758 680.447023371 time:  38  rate:  0.0001 gradient: 1346
-epoch: 759 709.472992633 time:  38  rate:  0.0001 gradient: 1349
-change rate:  0.001
-epoch: 760 728.351480193 time:  38  rate:  0.001 gradient: 1368
-epoch: 761 738.868711242 time:  38  rate:  0.001 gradient: 1375
-epoch: 762 701.148125925 time:  39  rate:  0.001 gradient: 1368
-epoch: 763 753.448378101 time:  38  rate:  0.001 gradient: 1414
-epoch: 764 738.643616692 time:  38  rate:  0.001 gradient: 1454
-epoch: 765 727.593165186 time:  38  rate:  0.001 gradient: 1376
-epoch: 766 752.638706549 time:  38  rate:  0.001 gradient: 1428
-epoch: 767 695.260842034 time:  38  rate:  0.001 gradient: 1315
-epoch: 768 729.608062946 time:  38  rate:  0.001 gradient: 1393
-epoch: 769 734.102116179 time:  38  rate:  0.001 gradient: 1382
-epoch: 770 733.536809813 time:  38  rate:  0.001 gradient: 1417
-epoch: 771 759.984804581 time:  38  rate:  0.001 gradient: 1525
-epoch: 772 734.638623884 time:  38  rate:  0.001 gradient: 1403
-epoch: 773 737.417752599 time:  38  rate:  0.001 gradient: 1434
-change rate:  0.0001
-epoch: 774 722.530248913 time:  38  rate:  0.0001 gradient: 1447
-epoch: 775 663.306313661 time:  44  rate:  0.0001 gradient: 1314
-epoch: 776 714.690057286 time:  43  rate:  0.0001 gradient: 1424
-epoch: 777 692.557452239 time:  43  rate:  0.0001 gradient: 1369
-epoch: 778 724.309694394 time:  43  rate:  0.0001 gradient: 1371
-epoch: 779 718.646416941 time:  43  rate:  0.0001 gradient: 1425
-epoch: 780 723.694496121 time:  43  rate:  0.0001 gradient: 1385
-epoch: 781 721.899739237 time:  43  rate:  0.0001 gradient: 1388
-epoch: 782 755.547944808 time:  38  rate:  0.0001 gradient: 1344
-epoch: 783 671.640096159 time:  38  rate:  0.0001 gradient: 1325
-epoch: 784 754.942087403 time:  38  rate:  0.0001 gradient: 1454
-epoch: 785 745.598602938 time:  38  rate:  0.0001 gradient: 1394
-epoch: 786 707.729478453 time:  38  rate:  0.0001 gradient: 1384
-epoch: 787 718.291301328 time:  38  rate:  0.0001 gradient: 1388
-epoch: 788 695.815692994 time:  38  rate:  0.0001 gradient: 1389
-epoch: 789 738.542223385 time:  38  rate:  0.0001 gradient: 1398
-epoch: 790 683.414474511 time:  38  rate:  0.0001 gradient: 1372
-epoch: 791 723.571864523 time:  38  rate:  0.0001 gradient: 1417
-epoch: 792 722.671842345 time:  38  rate:  0.0001 gradient: 1376
-epoch: 793 706.663649673 time:  38  rate:  0.0001 gradient: 1352
-epoch: 794 725.872291057 time:  38  rate:  0.0001 gradient: 1299
-epoch: 795 670.662051651 time:  38  rate:  0.0001 gradient: 1305
-epoch: 796 700.776609934 time:  38  rate:  0.0001 gradient: 1322
-epoch: 797 731.905430674 time:  38  rate:  0.0001 gradient: 1395
-change rate:  0.001
-epoch: 798 687.119266255 time:  38  rate:  0.001 gradient: 1343
-epoch: 799 687.452373666 time:  38  rate:  0.001 gradient: 1326
-epoch: 800 704.256324194 time:  38  rate:  0.001 gradient: 1425
-epoch: 801 734.227348956 time:  38  rate:  0.001 gradient: 1397
-epoch: 802 657.46253756 time:  38  rate:  0.001 gradient: 1342
-epoch: 803 734.839169248 time:  38  rate:  0.001 gradient: 1382
-epoch: 804 746.746557944 time:  38  rate:  0.001 gradient: 1389
-epoch: 805 727.736392532 time:  38  rate:  0.001 gradient: 1378
-epoch: 806 704.854696154 time:  38  rate:  0.001 gradient: 1349
-epoch: 807 668.011665876 time:  38  rate:  0.001 gradient: 1306
-epoch: 808 777.907625658 time:  38  rate:  0.001 gradient: 1437
-epoch: 809 734.843161618 time:  38  rate:  0.001 gradient: 1386
-epoch: 810 672.340969671 time:  38  rate:  0.001 gradient: 1380
-epoch: 811 705.793770181 time:  38  rate:  0.001 gradient: 1378
-epoch: 812 704.7207167 time:  38  rate:  0.001 gradient: 1371
-epoch: 813 701.859741169 time:  38  rate:  0.001 gradient: 1338
-change rate:  0.0001
-epoch: 814 701.415259955 time:  38  rate:  0.0001 gradient: 1425
-epoch: 815 761.520878273 time:  39  rate:  0.0001 gradient: 1443
-epoch: 816 716.997693121 time:  39  rate:  0.0001 gradient: 1402
-epoch: 817 696.653804391 time:  38  rate:  0.0001 gradient: 1348
-epoch: 818 711.400775467 time:  43  rate:  0.0001 gradient: 1345
-epoch: 819 702.603431519 time:  43  rate:  0.0001 gradient: 1369
-epoch: 820 670.14174472 time:  43  rate:  0.0001 gradient: 1326
-epoch: 821 746.049168059 time:  38  rate:  0.0001 gradient: 1416
-epoch: 822 725.898053204 time:  38  rate:  0.0001 gradient: 1374
-epoch: 823 695.350924632 time:  38  rate:  0.0001 gradient: 1359
-epoch: 824 665.644435554 time:  38  rate:  0.0001 gradient: 1306
-epoch: 825 752.586354284 time:  38  rate:  0.0001 gradient: 1422
-epoch: 826 745.08444007 time:  38  rate:  0.0001 gradient: 1377
-epoch: 827 725.543437953 time:  38  rate:  0.0001 gradient: 1422
-epoch: 828 650.032428505 time:  38  rate:  0.0001 gradient: 1309
-epoch: 829 703.289854216 time:  38  rate:  0.0001 gradient: 1337
-epoch: 830 705.840648083 time:  38  rate:  0.0001 gradient: 1362
-epoch: 831 723.046298211 time:  38  rate:  0.0001 gradient: 1367
-change rate:  0.001
-epoch: 832 647.659436379 time:  38  rate:  0.001 gradient: 1323
-epoch: 833 645.600180214 time:  38  rate:  0.001 gradient: 1344
-epoch: 834 714.015507685 time:  38  rate:  0.001 gradient: 1379
-epoch: 835 671.22531154 time:  38  rate:  0.001 gradient: 1347
-epoch: 836 679.774324191 time:  38  rate:  0.001 gradient: 1292
-epoch: 837 712.952130524 time:  39  rate:  0.001 gradient: 1343
-epoch: 838 681.641210721 time:  39  rate:  0.001 gradient: 1308
-epoch: 839 677.047433669 time:  39  rate:  0.001 gradient: 1349
-change rate:  0.0001
-epoch: 840 696.255474067 time:  38  rate:  0.0001 gradient: 1354
-epoch: 841 666.810850987 time:  38  rate:  0.0001 gradient: 1333
-epoch: 842 688.592691082 time:  38  rate:  0.0001 gradient: 1383
-epoch: 843 703.556939563 time:  38  rate:  0.0001 gradient: 1387
-epoch: 844 727.403684732 time:  39  rate:  0.0001 gradient: 1345
-epoch: 845 666.71280714 time:  38  rate:  0.0001 gradient: 1303
-epoch: 846 731.809312034 time:  38  rate:  0.0001 gradient: 1422
-epoch: 847 689.903597417 time:  38  rate:  0.0001 gradient: 1281
-epoch: 848 687.536301234 time:  38  rate:  0.0001 gradient: 1328
-epoch: 849 688.246187934 time:  38  rate:  0.0001 gradient: 1314
-epoch: 850 662.625944179 time:  39  rate:  0.0001 gradient: 1277
-epoch: 851 677.043748423 time:  38  rate:  0.0001 gradient: 1291
-epoch: 852 669.46058226 time:  38  rate:  0.0001 gradient: 1329
-epoch: 853 663.94325066 time:  38  rate:  0.0001 gradient: 1287
-epoch: 854 709.763274594 time:  38  rate:  0.0001 gradient: 1378
-epoch: 855 682.43740821 time:  38  rate:  0.0001 gradient: 1338
-epoch: 856 649.708246934 time:  38  rate:  0.0001 gradient: 1258
-epoch: 857 667.796598117 time:  38  rate:  0.0001 gradient: 1365
-epoch: 858 691.728887379 time:  38  rate:  0.0001 gradient: 1307
-epoch: 859 680.497346604 time:  38  rate:  0.0001 gradient: 1339
-change rate:  0.001
-epoch: 860 696.361248743 time:  38  rate:  0.001 gradient: 1340
-epoch: 861 704.399085817 time:  38  rate:  0.001 gradient: 1395
-epoch: 862 725.003897429 time:  38  rate:  0.001 gradient: 1354
-epoch: 863 716.846029259 time:  38  rate:  0.001 gradient: 1358
-epoch: 864 718.292252195 time:  38  rate:  0.001 gradient: 1396
-epoch: 865 686.541445824 time:  38  rate:  0.001 gradient: 1316
-epoch: 866 715.901485295 time:  38  rate:  0.001 gradient: 1366
-epoch: 867 672.531636039 time:  38  rate:  0.001 gradient: 1342
-epoch: 868 703.584855867 time:  38  rate:  0.001 gradient: 1313
-epoch: 869 747.938372388 time:  38  rate:  0.001 gradient: 1414
-epoch: 870 762.105627708 time:  38  rate:  0.001 gradient: 1367
-epoch: 871 655.331175519 time:  38  rate:  0.001 gradient: 1300
-epoch: 872 663.669535987 time:  38  rate:  0.001 gradient: 1378
-epoch: 873 659.261173317 time:  38  rate:  0.001 gradient: 1339
-change rate:  0.0001
-epoch: 874 721.7784943 time:  38  rate:  0.0001 gradient: 1391
-epoch: 875 722.310096004 time:  38  rate:  0.0001 gradient: 1342
-epoch: 876 714.733298335 time:  38  rate:  0.0001 gradient: 1372
-epoch: 877 706.557843666 time:  38  rate:  0.0001 gradient: 1322
-epoch: 878 695.820202631 time:  39  rate:  0.0001 gradient: 1398
-epoch: 879 713.079566245 time:  43  rate:  0.0001 gradient: 1323
-epoch: 880 666.737821519 time:  43  rate:  0.0001 gradient: 1305
-epoch: 881 660.457713216 time:  43  rate:  0.0001 gradient: 1305
-epoch: 882 686.866030449 time:  43  rate:  0.0001 gradient: 1344
-epoch: 883 723.651615194 time:  43  rate:  0.0001 gradient: 1373
-epoch: 884 663.406041848 time:  43  rate:  0.0001 gradient: 1321
-epoch: 885 704.219086912 time:  43  rate:  0.0001 gradient: 1360
-epoch: 886 689.956912247 time:  43  rate:  0.0001 gradient: 1310
-epoch: 887 653.860845059 time:  43  rate:  0.0001 gradient: 1273
-epoch: 888 671.203622423 time:  43  rate:  0.0001 gradient: 1343
-epoch: 889 681.053652419 time:  43  rate:  0.0001 gradient: 1337
-epoch: 890 710.659946495 time:  43  rate:  0.0001 gradient: 1320
-epoch: 891 703.886495948 time:  43  rate:  0.0001 gradient: 1286
-change rate:  0.001
-epoch: 892 621.509495733 time:  43  rate:  0.001 gradient: 1249
-epoch: 893 654.671567991 time:  43  rate:  0.001 gradient: 1295
-epoch: 894 661.525869107 time:  43  rate:  0.001 gradient: 1281
-epoch: 895 699.620128941 time:  43  rate:  0.001 gradient: 1371
-epoch: 896 702.04065823 time:  43  rate:  0.001 gradient: 1321
-epoch: 897 708.35381973 time:  43  rate:  0.001 gradient: 1387
-epoch: 898 692.866074487 time:  43  rate:  0.001 gradient: 1291
-epoch: 899 680.684084335 time:  43  rate:  0.001 gradient: 1334
-change rate:  0.0001
-epoch: 900 695.110243077 time:  43  rate:  0.0001 gradient: 1285
-epoch: 901 660.888708826 time:  43  rate:  0.0001 gradient: 1278
-epoch: 902 680.182463459 time:  43  rate:  0.0001 gradient: 1345
-epoch: 903 647.763604213 time:  43  rate:  0.0001 gradient: 1281
-epoch: 904 705.754747751 time:  43  rate:  0.0001 gradient: 1346
-epoch: 905 653.880581657 time:  43  rate:  0.0001 gradient: 1276
-epoch: 906 735.699777543 time:  43  rate:  0.0001 gradient: 1387
-epoch: 907 676.886599339 time:  43  rate:  0.0001 gradient: 1330
-epoch: 908 639.042885837 time:  43  rate:  0.0001 gradient: 1249
-epoch: 909 669.955301795 time:  43  rate:  0.0001 gradient: 1327
-epoch: 910 664.731066426 time:  44  rate:  0.0001 gradient: 1297
-epoch: 911 638.634142631 time:  43  rate:  0.0001 gradient: 1282
-epoch: 912 668.956916986 time:  43  rate:  0.0001 gradient: 1320
-epoch: 913 711.794584117 time:  43  rate:  0.0001 gradient: 1323
-epoch: 914 691.614384871 time:  43  rate:  0.0001 gradient: 1362
-epoch: 915 717.630069634 time:  43  rate:  0.0001 gradient: 1390
-epoch: 916 657.535397473 time:  39  rate:  0.0001 gradient: 1323
-epoch: 917 645.214473246 time:  38  rate:  0.0001 gradient: 1311
-epoch: 918 721.426034359 time:  38  rate:  0.0001 gradient: 1291
-epoch: 919 658.462044703 time:  38  rate:  0.0001 gradient: 1248
-epoch: 920 669.266227929 time:  38  rate:  0.0001 gradient: 1331
-epoch: 921 648.055983899 time:  38  rate:  0.0001 gradient: 1311
-epoch: 922 654.40856824 time:  38  rate:  0.0001 gradient: 1284
-epoch: 923 632.861778355 time:  38  rate:  0.0001 gradient: 1230
-epoch: 924 637.596297724 time:  38  rate:  0.0001 gradient: 1278
-epoch: 925 677.13983342 time:  38  rate:  0.0001 gradient: 1315
-change rate:  0.001
-epoch: 926 655.324287658 time:  38  rate:  0.001 gradient: 1271
-epoch: 927 648.795148843 time:  38  rate:  0.001 gradient: 1318
-epoch: 928 644.611145876 time:  38  rate:  0.001 gradient: 1282
-epoch: 929 634.209415658 time:  38  rate:  0.001 gradient: 1295
-epoch: 930 615.048344577 time:  39  rate:  0.001 gradient: 1277
-epoch: 931 648.545751865 time:  38  rate:  0.001 gradient: 1296
-epoch: 932 693.604313238 time:  39  rate:  0.001 gradient: 1366
-epoch: 933 690.538748358 time:  39  rate:  0.001 gradient: 1258
-epoch: 934 665.451795593 time:  38  rate:  0.001 gradient: 1292
-epoch: 935 691.150825125 time:  38  rate:  0.001 gradient: 1302
-epoch: 936 684.029555721 time:  38  rate:  0.001 gradient: 1377
-epoch: 937 733.55451858 time:  38  rate:  0.001 gradient: 1376
-epoch: 938 729.680064211 time:  38  rate:  0.001 gradient: 1384
-epoch: 939 661.971798728 time:  38  rate:  0.001 gradient: 1319
-epoch: 940 681.912545427 time:  40  rate:  0.001 gradient: 1324
-epoch: 941 724.229574362 time:  43  rate:  0.001 gradient: 1390
-epoch: 942 707.750687168 time:  43  rate:  0.001 gradient: 1287
-epoch: 943 695.893949681 time:  43  rate:  0.001 gradient: 1328
-epoch: 944 739.441709128 time:  43  rate:  0.001 gradient: 1372
-epoch: 945 716.987747521 time:  43  rate:  0.001 gradient: 1377
-epoch: 946 700.514986747 time:  43  rate:  0.001 gradient: 1349
-epoch: 947 685.223596538 time:  43  rate:  0.001 gradient: 1359
-epoch: 948 697.347268494 time:  39  rate:  0.001 gradient: 1355
-epoch: 949 676.717826109 time:  38  rate:  0.001 gradient: 1312
-epoch: 950 691.97119866 time:  38  rate:  0.001 gradient: 1370
-epoch: 951 695.754567216 time:  38  rate:  0.001 gradient: 1330
-change rate:  0.0001
-epoch: 952 643.82603359 time:  38  rate:  0.0001 gradient: 1264
-epoch: 953 621.414540003 time:  38  rate:  0.0001 gradient: 1254
-epoch: 954 659.766174319 time:  38  rate:  0.0001 gradient: 1265
-epoch: 955 675.584366739 time:  38  rate:  0.0001 gradient: 1330
-epoch: 956 672.003536044 time:  38  rate:  0.0001 gradient: 1294
-epoch: 957 620.900833564 time:  38  rate:  0.0001 gradient: 1254
-epoch: 958 661.718876793 time:  38  rate:  0.0001 gradient: 1254
-epoch: 959 693.51372136 time:  38  rate:  0.0001 gradient: 1365
-epoch: 960 675.427028585 time:  38  rate:  0.0001 gradient: 1283
-epoch: 961 693.225255634 time:  38  rate:  0.0001 gradient: 1333
-epoch: 962 630.04907568 time:  38  rate:  0.0001 gradient: 1265
-epoch: 963 675.710912711 time:  38  rate:  0.0001 gradient: 1254
-epoch: 964 705.611957003 time:  39  rate:  0.0001 gradient: 1301
-epoch: 965 669.825438102 time:  40  rate:  0.0001 gradient: 1300
-epoch: 966 673.132298967 time:  38  rate:  0.0001 gradient: 1312
-epoch: 967 674.361266736 time:  38  rate:  0.0001 gradient: 1356
-change rate:  0.001
-epoch: 968 668.256022999 time:  38  rate:  0.001 gradient: 1304
-epoch: 969 672.563638287 time:  38  rate:  0.001 gradient: 1299
-epoch: 970 669.616607124 time:  38  rate:  0.001 gradient: 1284
-epoch: 971 662.206811344 time:  39  rate:  0.001 gradient: 1295
-epoch: 972 659.352074247 time:  38  rate:  0.001 gradient: 1363
-epoch: 973 694.240576989 time:  38  rate:  0.001 gradient: 1357
-epoch: 974 615.989048523 time:  38  rate:  0.001 gradient: 1287
-epoch: 975 643.4674896 time:  38  rate:  0.001 gradient: 1295
-epoch: 976 669.27113042 time:  38  rate:  0.001 gradient: 1258
-epoch: 977 686.310396515 time:  38  rate:  0.001 gradient: 1310
-epoch: 978 676.272929419 time:  38  rate:  0.001 gradient: 1289
-epoch: 979 692.247580356 time:  38  rate:  0.001 gradient: 1322
-change rate:  0.0001
-epoch: 980 691.059297152 time:  38  rate:  0.0001 gradient: 1327
-epoch: 981 643.526482734 time:  38  rate:  0.0001 gradient: 1274
-epoch: 982 691.532174503 time:  38  rate:  0.0001 gradient: 1317
-epoch: 983 697.816083997 time:  38  rate:  0.0001 gradient: 1317
-epoch: 984 630.697121343 time:  38  rate:  0.0001 gradient: 1250
-epoch: 985 699.932861357 time:  38  rate:  0.0001 gradient: 1304
-epoch: 986 698.966598224 time:  38  rate:  0.0001 gradient: 1285
-epoch: 987 695.46072145 time:  38  rate:  0.0001 gradient: 1324
-epoch: 988 665.423201582 time:  38  rate:  0.0001 gradient: 1327
-epoch: 989 731.036724898 time:  38  rate:  0.0001 gradient: 1387
-epoch: 990 638.347945365 time:  38  rate:  0.0001 gradient: 1239
-epoch: 991 692.220699195 time:  38  rate:  0.0001 gradient: 1317
-epoch: 992 676.666989954 time:  38  rate:  0.0001 gradient: 1303
-epoch: 993 647.735609871 time:  38  rate:  0.0001 gradient: 1286
-epoch: 994 666.460608795 time:  38  rate:  0.0001 gradient: 1275
-epoch: 995 614.814410922 time:  38  rate:  0.0001 gradient: 1208
-epoch: 996 591.108417908 time:  38  rate:  0.0001 gradient: 1214
-epoch: 997 642.235671558 time:  38  rate:  0.0001 gradient: 1260
-epoch: 998 649.979148631 time:  38  rate:  0.0001 gradient: 1254
-epoch: 999 641.249424536 time:  38  rate:  0.0001 gradient: 1282
-change rate:  0.001
+Schleswig-Holstein
+Gary Rydstrom
+Jeremy Irons
+Chicago Cubs
+actor
+Anthony Horowitz
+Chapman University
+Freddy Rodriguez
+SpongeBob SquarePants
+Dream Theater
+Focus Features
+Henry V
+Himesh Reshammiya
+Maggie Gyllenhaal
+iron
+Brompton Cemetery
+University of California, Irvine
+Hunter S. Thompson
+hanged, drawn and quartered
+The Pirate Movie
+Fantastic Four: Rise of the Silver Surfer
+Port Elizabeth
+University of the Pacific
+University of Idaho
+Columbia Business School
+Fame
+rector
+Nashville Predators
+John Noble
+Return specialist
+Jean Cocteau
+Liverpool
+Washtenaw County
+Montserrat national football team
+Grammy Award for Best Bluegrass Album
+Scott Baio
+Cape Town
+The Crucible
+Iowa Writers' Workshop
+Eric Clapton
+Canal+
+Bloomfield Hills
+Marc Cherry
+Rio Ave F.C.
+Lawrence Bender
+Josh Freese
+Wakefield
+table tennis
+Fukuoka SoftBank Hawks
+Macclesfield Town F.C.
+Kasper Schmeichel
+Tim Conway
+Fast Food Nation
+48th Academy Awards
+afrobeat
+Washington and Lee University
+Seventh-day Adventist Church
+Love Actually
+University of Pisa
+Lars Ulrich
+Jim Thorpe
+Metz
+National Society of Film Critics Award for Best Actress
+Stevenage Football Club
+stop-motion
+Cajun
+Robert Zigler Leonard
+David Sylvian
+Emily Blunt
+Tamworth F.C.
+Genie Award for Best Achievement in Overall Sound
+A Single Man
+Bobby Cannavale
+Joseph Heller
+House of Habsburg
+Norm Prescott
+Jenna Ushkowitz
+81st Academy Awards
+Los Angeles Galaxy
+ACF Fiorentina
+Fort Lauderdale
+Duisburg
+economics
+Belleville
+Ron Silver
+Ben Johnson
+Jumper
+Volusia County
+Fred MacMurray
+Bradley Whitford
+Brunswick
+Mark Irwin
+Kiev
+Pomeranian Voivodeship
+Bellingham
+Robert F. Kennedy
+left fielder
+School of American Ballet
+oud
+Carol Kane
+Toy Story
+single-player video game
+Hamlet
+Gone Baby Gone
+The Clearing
+Tijuana
+Atari Games
+Independent Spirit Award for Best Supporting Female
+Hewlett-Packard
+big band
+Kathie Lee Gifford
+Sunnyvale
+Rodney Jerkins
+SV Werder Bremen
+Doctor Eggman
+Patrick McGoohan
+1995 Major League Baseball draft
+Kiki's Delivery Service
+Michelangelo
+Joel David Moore
+Catherine Keener
+Over-the-air programming
+Ticino
+MTV Movie Award for Best Jaw Dropping Moment
+systemic lupus erythematosus
+University of Maine
+Hamlet
+Submarine
+Golden Raspberry Award for Worst Prequel, Remake, Rip-off or Sequel
+Primetime Emmy Award for Outstanding Animated Program
+Hollyoaks
+Grease
+Star Trek IV: The Voyage Home
+Tripoli
+Daegu
+Brixton
+The O.C.
+Primetime Emmy Award for Outstanding Supporting Actress in a Miniseries or a Movie
+1983 NCAA Men's Division I Basketball Tournament
+Croatia national football team
+1908 Summer Olympics
+satire
+Carol Reed
+Columbia
+Nickelodeon
+Universal Records
+Telemundo
+Mecca
+duke
+Dean Devlin
+Jason Bateman
+John Larroquette
+Illinois
+Aichi Prefecture
+Richard Jenkins
+Dorothy Malone
+The Rolling Stones
+Midnight Express
+Samuel Z. Arkoff
+Stockton-on-Tees
+Transylvania
+The Spy Who Loved Me
+Shohei Imamura
+Peter Lawford
+Terms of Endearment
+Holland Taylor
+39th Daytime Emmy Awards
+running back
+Charles Band
+councillor
+Superman
+Chester County
+Ronnie Wood
+Padua
+The Jetsons Meet the Flintstones
+Papua New Guinea
+Family Plot
+Harry Potter and the Chamber of Secrets
+Pacific Ocean
+Fritz Lang
+Michael Giacchino
+Richard Crenna
+Shemp Howard
+Entertainment One Music
+Patch Adams
+Hollywood Forever Cemetery
+yellow
+West Bank
+Denton County
+Neftchi Baku PFC
+Togo national football team
+University of Hamburg
+Toronto
+Inverness
+Kansas City
+German Empire
+Brigitte Nielsen
+Sweeney Todd: The Demon Barber of Fleet Street
+Valletta
+Eileen Atkins
+FC Red Bull Salzburg
+Lyndon B. Johnson
+speaker of the United States House of Representatives
+U.D. Leiria
+Vaucluse
+Chaplin
+college rock
+Domino
+Bury
+Harry Potter and the Prisoner of Azkaban
+N. Santhanam
+Tia Carrere
+Evan Almighty
+visual effects
+Steven Wright
+Mad About You
+Kumasi
+Pitbull
+Shirley Temple
+My Name Is Khan
+Jonny Lee Miller
+Everyone Says I Love You
+bobsleigh
+American English
+biographical film
+Epitaph Records
+Eileen Brennan
+Orson Scott Card
+Ryan Adams
+Get Shorty
+Costa-Gavras
+Peter Coyote
+Stetson University
+Lionel Messi
+1998 Major League Baseball season
+Jeanne Moreau
+Resident Evil
+swingman
+delicatessen
+James Brolin
+Pina
+Molly Shannon
+Mobile Suit Gundam SEED Destiny
+Mia Farrow
+drum and bass
+Loyola Marymount University
+2008 Grammy Awards
+Pamela Fryman
+Herkimer County
+Cichlidae
+Neil Patrick Harris
+Sherri Shepherd
+John Krasinski
+Atlantic Ocean
+Kolkata
+Kate Bush
+The Last Samurai
+Peter Sellers
+David Shore
+Tony Thomas
+bay
+Smith College
+Arthur Schopenhauer
+subterranean rapid transit
+cerebrospinal fluid
+Lauren Conrad
+Martin Heidegger
+Calabria
+Uzbekistan
+National Book Award for Fiction
+Royal Military Academy
+Sean Penn
+Knocked Up
+Middlesbrough
+Natchez
+Yunjin Kim
+Francis Bacon
+U.S. Grosseto F.C.
+Wuthering Heights
+The Jackson 5
+Bosnian War
+Aspen
+Biloxi
+Equatorial Guinea
+writer
+Rabindranath Tagore
+Roy Webb
+Quadrophenia
+Elizabeth Banks
+Chelsea
+Flint
+Billy Bob Thornton
+Mauricio Pinilla
+Rodrigo Santoro
+Stuttgart
+Rutgers University
+De La Salle University
+Merced County
+University of Vermont
+Cruel Intentions
+Second Punic War
+Colombia national football team
+cabaret
+drawing
+Fargo
+Julie & Julia
+Gulfport
+Kylie Minogue
+structured programming
+Anne Arundel County
+Ajith Kumar
+Club Deportivo Guadalajara
+Star Trek V: The Final Frontier
+protopunk
+French Republic
+58th Academy Awards
+Robyn Hitchcock
+Regensburg
+Cookie's Fortune
+Peter Weir
+1968 Summer Olympics
+Wagga Wagga
+Charles Stross
+AC Horsens
+Raymond Chow
+Pashto
+Jeremy Northam
+Italian cuisine
+Carole Lombard
+Power Rangers
+Anger Management
+Ludacris
+Cornwall
+dean
+Carrie-Anne Moss
+Flathead County
+Middle Tennessee State University
+Mel Gibson
+Eat Bulaga!
+Passaic County, New Jersey
+Fargo
+organist
+Nico
+A Few Good Men
+Steve Jordan
+Barry White
+Henry James
+Ocean County
+St. Lawrence University
+William Travilla
+Appleton
+Herbert Lom
+Andrew Stanton
+Zodiac
+Moe Howard
+string
+Bonnie Hunt
+Stanford
+David McCallum
+Arthur Wong
+The Challenge
+Kansai region
+Louisville Cardinals men's basketball
+Minnesota Wild
+Vadivelu
+Gregg Allman
+Donald Sutherland
+Acadia University
+A Streetcar Named Desire
+Jefferson County
+natural history
+3000 Miles to Graceland
+Lorimar Television
+Appalachian Mountains
+George W. Bush
+Vancouver
+SpVgg Unterhaching
+old-growth forest
+Hong Kong Film Award for Best Director
+Bootsy Collins
+Menahem Golan
+The Specialist
+Never Let Me Go
+House of Lords
+Street Fighter II: The Animated Movie
+Charlottesville
+Willem Dafoe
+A Star Is Born
+Britney Spears
+freestyle music
+chemical engineering
+electric blues
+Nicosia
+Fukuoka
+Baku
+Nutty Professor II: The Klumps
+nonprofit organization
+Kung Fu Panda 2
+Simran
+Boston Bruins
+December
+L.A. Reid
+University of Melbourne
+professor
+1999 NCAA Men's Division I Basketball Tournament
+Bradford Park Avenue A.F.C.
+June Allyson
+Edgar Meyer
+University of the Philippines Diliman
+Genesis
+The Last Emperor
+Dana Delany
+Thiago Silva
+Interview with the Vampire
+Brazil
+Emory University
+Werner Stengel
+June
+Beasts of the Southern Wild
+Robert Towne
+Yom Kippur War
+Monterrey
+July
+Judy Davis
+A View to a Kill
+Meena
+North Hollywood
+The Notebook
+Ann Curry
+Michael Jordan
+aesthetics
+Lansing
+Pensacola
+San Mateo County
+Watford Football Club
+Marci Klein
+Greenwich Mean Time
+The Transformers
+Neil Young
+Parlophone
+Pennsylvania
+Shrek the Third
+Jakarta
+1912 Summer Olympics
+The Merry Widow
+Aberystwyth University
+Kansas City Royals
+Communist Party of Germany
+situation comedy
+Henry King
+Toni Braxton
+Greenville
+My Neighbor Totoro
+Square
+Warner Bros.
+Van Halen
+marriage
+Magdalene College
+Ghostbusters
+adventure
+2007 Major League Baseball draft
+Jane Horrocks
+Goya Award for Best Director
+The Mummy: Tomb of the Dragon Emperor
+The Adventures of Priscilla, Queen of the Desert
+University of Sydney
+Unknown
+Jefferson Parish
+Victor Young
+The Mars Volta
+Bellevue
+Lakewood
+biochemist
+Colo-Colo
+Ralph Bellamy
+Takehito Koyasu
+Zack and Miri Make a Porno
+Tuscola County
+Atonement
+Cannes Film Festival Award for Best Actress
+Asheville
+Rosalind Russell
+Bridgend
+Sony Pictures Classics
+13 Assassins
+George R. R. Martin
+Albert Camus
+Gladiator
+Guadalajara
+Lincoln
+Dalian
+Grammy Award for Best New Age Album
+Shawn Wayans
+Alps
+Mexico national football team
+Arthur Kennedy
+Concord Records
+Joe Biden
+cardiac dysrhythmia
+Anne V. Coates
+Damon Lindelof
+Andrea Martin
+Ving Rhames
+Rob Paulsen
+William Shakespeare
+Denton
+University of Minnesota
+104th United States Congress
+FC Augsburg
+Namco
+West Berkshire
+Tony Award for Best Direction of a Play
+Stratford-upon-Avon
+The House of Mirth
+safety
+Jefferson County
+Florida Keys
+Ron W. Miller
+epic film
+German Air Force
+Freddie Young
+Heidelberg
+folic acid
+Ilford
+Politecnico di Milano
+Brunei
+Woodrow Wilson
+Star Trek: The Animated Series
+Cinderella
+Yvelines
+103rd United States Congress
+Tomorrow Never Dies
+Australia national cricket team
+romance film
+Broadcast Film Critics Association Award for Best Actress
+English Renaissance
+Duff McKagan
+Umbria
+Ernest Borgnine
+Poland national football team
+Rowan Atkinson
+Walt Whitman
+My Fair Lady
+Happy-Go-Lucky
+Welling United F.C.
+Django Unchained
+Graham Holdings Company
+Margot Kidder
+thiamine ion
+Michael L. Printz Award
+bagpipes
+K. Balachander
+Punt returner
+Bappi Lahiri
+Queen's University
+Filipino American
+Church of Scotland
+University of the West Indies
+Paula Abdul
+Henry Hathaway
+Ben Burtt
+Ray Charles
+Penelope Ann Miller
+House of Commons
+Sam Mendes
+Scranton
+Fox News
+Lexington
+My Left Foot
+Ellen Pompeo
+mercenary
+Susan Blu
+Jean-Jacques Rousseau
+Quentin Tarantino
+Cowboys & Aliens
+A Christmas Carol
+80th Academy Awards
+Bahrain
+Rockland County
+Happy Gilmore
+Arizona State University
+Rhineland-Palatinate
+A Passage to India
+Ann Roth
+Gelderland
+Tin Man
+cholesterol
+Alvin and the Chipmunks: The Squeakquel
+First French Empire
+My-HiME
+quarterback
+Overijssel
+Nagesh
+Virginia Madsen
+The World Is Not Enough
+space rock
+House of Romanov
+Don Scardino
+Yngwie Malmsteen
+James Woods
+Upstairs, Downstairs
+Kenneth Branagh
+Robert Guza, Jr.
+Nick Broomfield
+Mississippi State University
+Vincent Pastore
+Jim Steinman
+Yerevan
+Hayao Miyazaki
+1980 NCAA Men's Division I Basketball Tournament
+St Catherine's College
+The Color Purple
+Crispin Glover
+bell
+Korean Broadcasting System
+North Carolina Tar Heels men's basketball
+Athletic Club
+Voice over Internet Protocol
+Master P
+Laval
+Andy Warhol
+And Starring Pancho Villa as Himself
+Melvin Frank
+Shelley Winters
+detective
+Winnie the Pooh
+Los Angeles Angels of Anaheim
+John Carradine
+Kick-Ass
+Gentleman's Agreement
+symphony
+Motherwell F.C.
+Penobscot County
+ancient Greece
+Jay Roach
+Machete
+Arthur Q. Bryan
+Alex Kingston
+Lewis Cass
+War of the Sixth Coalition
+Mona Lisa
+Boys Don't Cry
+Victorian architecture
+John F. Kennedy School of Government
+2009 World Championships in Athletics
+St Edmund Hall
+FX
+Indiana State University
+Primetime Emmy Award for Outstanding Guest Actor in a Drama Series
+Bohemia
+LeAnn Rimes
+fiddle
+prostate cancer
+Avid Technology
+Waylon Jennings
+FC BATE Borisov
+Jerry Bruckheimer
+The Lion King
+Casper
+Newcastle University
+Intel
+Stearns County
+The Decemberists
+Melbourne Victory
+Kiel
+Brooke Shields
+Boman Irani
+Tough Guys Don't Dance
+Andhra Pradesh
+L-Phenylalanine
+Bad Teacher
+Jim O'Rourke
+strait
+George III of Great Britain
+Hayden Panettiere
+Clyde F.C.
+2004 Major League Baseball draft
+Bury F.C.
+Southampton
+Let the Right One In
+47th Academy Awards
+Declaration of Independence of the United States
+double bass
+Canadian Alliance
+Vitamin A
+Aaron Sorkin
+aerospace
+The Catholic University of America
+Portugal
+National and Kapodistrian University of Athens
+Grammy Award for Best Rap/Sung Collaboration
+J. Michael Riva
+fellow
+Anonymous
+Clark Gable
+Seamus Heaney
+Apache Wars
+We Were Soldiers
+Sidney Sussex College
+Kurt Cobain
+Rochester
+Nazi Party
+Lonesome Dove
+Cedar Rapids
+English
+Highland Park
+musical keyboard
+This Must Be the Place
+North Norfolk
+Craig Rocastle
+Aruba
+McLean County
+Amanda Peet
+Luton Town F.C.
+New York Shipbuilding Corporation
+Joseph M. Schenck
+Pete Seeger
+New Age
+lyricist
+Boulogne-Billancourt
+American International Group
+Priority Records
+third baseman
+Michelle Forbes
+Immanuel Kant
+African Development Bank
+Al Franken
+Liliaceae
+Grover Cleveland
+Iowa City
+Larry Gelbart
+Norway
+Socialist Unity Party of Germany
+Egypt national football team
+The Stand
+Joan Plowright
+Cuba Gooding Jr.
+Eric Tsang
+Parma
+Thin Lizzy
+Ian McEwan
+Tom Johnson
+fast food
+Houston
+hanging
+Tori Spelling
+Manchester
+Himachal Pradesh
+Golden Reel Award
+John Cleese
+Holy Roman Emperor
+Patrick O'Neal
+The Opposite of Sex
+Bret Michaels
+Clarence Brown
+Sikkim
+figure skating
+Last Action Hero
+Central Alberta
+Medford
+Peru
+The Ten Commandments
+Danny Glover
+CWA Ian Fleming Steel Dagger
+Tennessee Titans
+criminology
+The X-Files
+Liberation Tigers of Tamil Eelam
+Goya Award for Best Spanish Language Foreign Film
+French Third Republic
+People's Democratic Party
+Alice Doesn't Live Here Anymore
+Yugoslavia
+Primetime Emmy Award for Outstanding Writing for a Comedy Series
+Vondie Curtis-Hall
+Irem
+Cumberland
+United States presidential election
+Bullets Over Broadway
+Ben Foster
+Dakota County
+Peter Finch
+Ricky Martin
+Dennis Rodman
+Christianity
+head coach
+Phillips Exeter Academy
+Hertford College
+Martin Freeman
+hypertension
+Kathy Griffin
+Universal Motown Republic Group
+Michael Moore
+Newcastle
+Kareem Abdul-Jabbar
+Huntington
+SOAS, University of London
+Jennifer Coolidge
+Rough Trade Records
+Ireland
+Inkheart
+Man on the Moon
+Vittorio Storaro
+Timothy Spall
+Tampa Bay Buccaneers
+sugar
+Dr. Dre
+John W. Campbell Award for Best New Writer
+post-rock
+whitewater slalom
+Uzbekistan national football team
+Saboteur
+California State University, Sacramento
+UPN
+Groton School
+I'm Not There
+blues
+University of Santo Tomas
+Malacca
+Universal Music Group Nashville
+German Army
+Bob Ludwig
+Ironclad
+Delft University of Technology
+music of Ireland
+Martin Sheen
+Jon Lord
+Steve Allen
+1976 Winter Olympics
+Ming-Na Wen
+2011 Sundance Film Festival
+Hattiesburg
+David Lee Roth
+Sacramento County
+Islamic studies
+Ron Jeremy
+Bill Berry
+Jamie-Lynn Sigler
+The Green Hornet
+Everybody Loves Raymond
+Michael Biehn
+Jim Reardon
+alto saxophone
+Lake District
+YTV
+Hannibal
+'N Sync
+North Dakota State University
+Imelda Staunton
+World War II
+Ateneo de Manila University
+Washington County
+The Soloist
+Wendy Melvoin
+Estudiantes Tecos
+Scrubs
+Irish migration to Great Britain
+Thrissur
+Cedric the Entertainer
+Jackie Gleason
+Star Trek: Deep Space Nine
+The Iron Lady
+Prince George's County
+Hilary and Jackie
+Master
+Star Trek: The Original Series
+Chulalongkorn
+Sienna Guillory
+David X. Cohen
+conglomerate
+The Office
+Vanessa Redgrave
+Odense
+Secretary of State
+House of Commons
+Gothic Revival architecture
+'ascii' codec can't encode character u'\xfa' in position 20: ordinal not in range(128)
+Chuck Berry
+Little Miss Sunshine
+Stephen J. Cannell
+Solitary Man
+25th Academy Awards
+Tampere
+Nobel Prize in Literature
+Gary Cooper
+The Chronicles of Narnia: Prince Caspian
+Sharmila Tagore
+Leon Schlesinger
+Indian Ocean
+Ayn Rand
+contemporary R&B
+University of Karachi
+Matador Records
+Jorge Luis Borges
+Steven Seagal
+Bea Arthur
+emo
+Jane Austen
+Peter Lorre
+Jason Lee
+Richard Dawkins
+2002 NCAA Men's Division I Basketball Tournament
+2004 NFL Draft
+metalcore
+special effects supervisor
+War in North-West Pakistan
+Atlanta Braves
+Margaret Thatcher
+Brasenose College
+Harlan Ellison
+Danny Smith
+South Bend
+Forward-center
+asteroid belt
+Charlie's Angels: Full Throttle
+Pittsfield
+dance film
+Jackson County
+Kalamazoo
+Helsingborg
+zither
+AC Arles
+RedOne
+Damon Albarn
+California State University, Long Beach
+University of Maryland, College Park
+Boston
+Morgan Creek Productions
+Dany Heatley
+Wimbledon
+Juliette Binoche
+Macomb County
+Melissa Leo
+DMX
+Brian Eno
+Rugby School
+RCD Espanyol B
+Mike Patton
+clothing
+West Hartford
+telepathy
+Oswego
+Red Dragon
+Joan Chen
+Jerry Orbach
+1924 Summer Olympics
+FC Unirea Urziceni
+South Australian House of Assembly
+aerospace engineering
+Jennifer Lopez
+Kingdom of Italy
+Grammy Award for Song of the Year
+Bewitched
+Madison County
+Rockhampton
+Lisa Edelstein
+University of Waterloo
+news presenter
+New Hampshire's 2nd congressional district
+County Clare
+Queen of the Damned
+A Star Is Born
+Waterloo
+Sheldon Leonard
+Malayalam
+Varanasi
+Idaho
+Iain Glen
+Los Angeles Kings
+Shelby County
+Epic Games
+Astralwerks
+Manchester
+Lee Marvin
+Bengali people
+Henry Winkler
+Green Party of the United States
+Stockholm University
+Ian McShane
+Kyoto University
+Brandeis University
+James Wilby
+Donovan
+Sault Ste. Marie
+Princeton Theological Seminary
+Final Fantasy VII: Advent Children
+Leon Trotsky
+Gustave Flaubert
+Larimer County
+Wiltshire
+Hello, Dolly!
+'ascii' codec can't encode character u'\xb7' in position 4: ordinal not in range(128)
+Bucknell University
+public university
+Friz Freleng
+Windsor
+Osgoode Hall Law School
+Dennis Hopper
+United Airlines
+Leeds United A.F.C.
+Darlington F.C.
+The Twilight Saga: New Moon
+FC Istres
+Ken Keeler
+Georgetown University Law Center
+University of Lancaster
+Norfolk Admirals
+playback singer
+Eurasia
+National Institute of Dramatic Art
+Paquito D'Rivera
+Harlem Renaissance
+Dark Shadows
+Patrick Swayze
+Dave Fleischer
+Michael Lantieri
+general counsel
+Quebec City
+Saul Bellow
+Rob Corddry
+Indonesian cuisine
+31st Academy Awards
+judo
+Morristown
+The Transformers: The Movie
+Slaughterhouse-Five
+Brooklyn Law School
+Andrew Lloyd Webber
+James Newton Howard
+Art Deco
+Bette Davis
+TobyMac
+Recess: School's Out
+Oldham Athletic A.F.C.
+Conservative Party of Canada
+respiratory system disease
+Geraldine Somerville
+INXS
+Patrick Doyle
+K-pop
+Regina
+Lloyd Kaufman
+Daytona Beach
+Georgia national football team
+Anchorage
+James Joyce
+Shawn Pyfrom
+Jane Fonda
+Florida A&M University
+Peterborough United F.C.
+Jason Priestley
+Sony Pictures Home Entertainment
+Cascade Range
+Saturn Award for Best Actress
+Chaka Khan
+Texas blues
+The Fugitive
+Deuce Bigalow: European Gigolo
+Emma Roberts
+docudrama
+On the Road
+Asha Parekh
+John W. Campbell Memorial Award for Best Science Fiction Novel
+Scary Movie 3
+Chichester
+Crete
+Gena Rowlands
+Livingston County
+Joe Strummer
+Trier
+'ascii' codec can't encode character u'\xe9' in position 1: ordinal not in range(128)
+The Doors
+The Informant!
+University of Rochester
+Oldham
+Apocalypto
+manufacturing
+Ottawa Senators
+Livingston
+57th Golden Globe Awards
+University of California, San Francisco
+37th Academy Awards
+Jenna Fischer
+King Arthur
+Kingdom of Hungary
+tubular bells
+Governor General's Award for English-language non-fiction
+Final Destination
+William Holden
+Madison County
+Magical Girl Lyrical Nanoha
+Kingdom of Heaven
+Tim Rice
+1900 Summer Olympics
+Marquette County
+66th Golden Globe Awards
+Neil Diamond
+Katharine Hepburn
+Al-Gharafa Sports Club
+The Greatest Story Ever Told
+Mark Burnett
+The Lord of the Rings
+Jack Huston
+Jeremy Sisto
+gay
+University of Strasbourg
+BAFTA Award for Best Editing
+psychotic disorder
+Diane Warren
+CBS Schoolbreak Special
+FC Arsenal Kyiv
+Lincoln College
+John 5
+Chris O'Donnell
+Saw IV
+Bruce Hornsby
+sitar
+Duluth
+New Age music
+MIT Sloan School of Management
+Suriname
+United States Secretary of the Treasury
+Sergei Prokofiev
+Shashi Kapoor
+John Updike
+NPR
+Ginger Rogers
+Logan International Airport
+Stephen Goosson
+Kokomo
+Baltimore metropolitan area
+Jay Baruchel
+Amjad Khan
+University of San Diego
+4th United States Congress
+John Hartford
+Vladimir Horowitz
+School of Visual Arts
+International Cricket Council
+Raith Rovers F.C.
+Crimean War
+Roosevelt family
+Kyoto
+Murder by Decree
+Kevin Clash
+AIK Fotboll
+free jazz
+Laura
+financier
+Buffalo Sabres
+new wave music
+Indo-European languages
+Sire Records
+Lafayette
+Ashanti
+Don Black
+Joseph Conrad
+Marcello Mastroianni
+Walt Disney Animation Studios
+Ragtime
+Cleveland Institute of Music
+Coventry
+Vince Grella
+F.K. Partizan
+Leipzig
+punk rock
+1. FC Magdeburg
+Condoleezza Rice
+Hold Back the Dawn
+Patti Smith
+The Last Picture Show
+Peng Dehuai
+Southend-on-Sea
+Mira Nair
+Nixon
+New York University Tandon School of Engineering
+Warren Ellis
+Judah Friedlander
+Dee Bradley Baker
+Interplay Entertainment
+The Prize
+Matt Servitto
+Brighton Rock
+nationalism
+Alice in Wonderland
+Little Feat
+Boxer Rebellion
+Boxer Rebellion
+social science
+Prince of Persia: The Sands of Time
+Kevin McHale
+City College of New York
+psychedelic pop
+Catania
+non-steroidal anti-inflammatory drug
+University of Georgia
+Goya Award for Best Original Screenplay
+tyrosine
+Matt Frewer
+Tony Walton
+Titanic
+art
+Columbia County
+Walter Lantz
+Veronica Mars
+20th Century Fox
+Swansea City A.F.C.
+The Losers
+medicine
+The Golden Girls
+Garland
+Queen's College
+Fred Ebb
+2001: A Space Odyssey
+Steven Tyler
+Deion Sanders
+Malta national football team
+Cruzeiro E.C.
+Kelly Osbourne
+Notes on a Scandal
+Coldplay
+Dr. Strangelove
+Skull and Bones
+Len Wein
+Steven Zaillian
+Brothers & Sisters
+University of Turin
+Hampshire
+Dharmendra
+disc jockey
+Ian James Corlett
+United States Army
+Monaco
+Roy Carroll
+Karl Malden
+University of Manitoba
+USA Network
+technical director
+Venice
+Kaneto Shiozawa
+Mary Pickford
+Madagascar
+Jay Kogen
+Grammy Award for Best Recording Package
+Simply Red
+philosophy of science
+Puss in Boots
+Grammy Award for Album of the Year
+Nottingham
+The Straight Story
+project management
+Catalonia
+Letters from Iwo Jima
+Heroes
+Cecil County
+Art Carney
+Marc Shaiman
+David Duchovny
+Joseph R. Gannascoli
+Jake Shimabukuro
+Vic Mignogna
+Martha Plimpton
+Rice University
+violin
+Tom Selleck
+National Autonomous University of Mexico
+Scott Pilgrim vs. the Wo
+thrashcore
+Dir en grey
+Kanawha County
+Bobcat Goldthwait
+Caracas
+Chicago Film Critics Association Award for Best Actor
+TNT
+Chess Records
+fighting game
+Pennsylvania State University
+astronaut
+Florida International University
+Norman Lear
+Grant Morrison
+Paz de la Huerta
+Adolphe Menjou
+Angela's Ashes
+Lawless
+Taylor Lautner
+Bill Clinton
+Walk Hard: The Dewey Cox Story
+The Life and Death of Peter Sellers
+Thora Birch
+George Michael
+Cannes Film Festival Award for Best Actor
+chief information officer
+Plymouth Argyle F.C.
+human rights
+Jiangsu
+Islamabad
+Anaconda
+progressive house music
+2nd United States Congress
+FC Anzhi Makhachkala
+Tony Levin
+David E. Kelley
+George Washington University
+Naseeruddin Shah
+Susannah York
+Eastern Orthodox Church
+Michael Brecker
+Jamiroquai
+Grammy Award for Best Male Country Vocal Performance
+Salisbury
+Parks and Recreation
+The Cure
+Tim Roth
+St. Louis Cardinals
+Hudson County
+3D Realms
+St. Joseph
+SK Brann
+Ludhiana
+pediatrics
+Time 100
+Hunterdon County
+Yunus Parvez
+Palm Beach County
+Berkshire Hathaway
+Leicester
+Haskell
+Shine
+St. Louis
+Loving
+Toshiyuki Morikawa
+Nondenominational Christianity
+Bonnie Raitt
+'ascii' codec can't encode character u'\u03b2' in position 0: ordinal not in range(128)
+En Avant de Guingamp
+Ryan's Hope
+Cisco Systems
+Melora Hardin
+Arthur Freed
+Allen Iverson
+E.T. the Extra-Terrestrial
+Georg Wilhelm Friedrich Hegel
+Johnny Yong Bosch
+Carl Davis
+Shigeru Miyamoto
+Brad Paisley
+Charlotte Gainsbourg
+Northampton
+Eddie Vedder
+egg
+point guard
+Blizzard Entertainment
+Jack Lemmon
+Norbit
+Marvel vs. Capcom 2: New Age of Heroes
+Newcastle upon Tyne
+Ashok Kumar
+University of Birmingham
+National Society of Film Critics Award for Best Actor
+Elie Samaha
+Charterhouse School
+Satellite Award for Best Animated or Mixed Media Feature
+1965 Major League Baseball season
+Dumfries and Galloway
+Kobe Bryant
+Denis Leary
+Justin Theroux
+The Santa Clause 3: The Escape Clause
+Mark Johnson
+Avril Lavigne
+dysentery
+Jason Roberts
+Hanover
+Airplane!
+Jonathan Murray
+Metropolis Records
+Humboldt University of Berlin
+George H. W. Bush
+The Polar Express
+Topeka
+myocardial infarction
+Rosie O'Donnell
+Chow Yun-fat
+Wyoming
+County Kildare
+Robert Morley
+Chuck Connors
+Koblenz
+Transamerica
+MTV Video Music Award for Best Hip-Hop Video
+Orthodox Judaism
+Argo
+bass guitar
+DC Comics
+Accra
+Hamburg
+anthology
+Geoff Johns
+Sacramento Kings
+Oprah Winfrey
+historical period drama
+Malawi
+Republic of the Congo
+Octavia Spencer
+alternative dance
+England
+Alexander Golitzen
+Howard the Duck
+International IMPAC Dublin Literary Award
+Terence Blanchard
+The Girl with the Dragon Tattoo
+A.E.K. Athens F.C.
+Emeric Pressburger
+Pier Paolo Pasolini
+Council Bluffs
+Passaic
+Philip Johnson
+Helena Bonham Carter
+Joshua Logan
+York City F.C.
+Scott Glenn
+cryptoxanthin
+Chelmsford
+The Squid and the Whale
+Alastair Reynolds
+Water
+Sean Bean
+European Union
+The Amazing Spider-Man
+Dimeback
+Ira Steven Behr
+Jane Alexander
+star
+65th Tony Awards
+Portland Trail Blazers
+Entourage
+Tony Award for Best Featured Actor in a Play
+Cubism
+mythology
+51st Academy Awards
+Liv Tyler
+Dexter
+High Anxiety
+luge
+tactical role-playing game
+Cher
+Sucker Punch
+Chevrolet
+Xanthi F.C.
+steel guitar
+Paterson, New Jersey
+Aargau
+Montana
+Museo del Prado
+Sridevi
+Donny Osmond
+pirate
+Kiss
+The Harvard Lampoon
+Keanu Reeves
+Bandung
+The Fabulous Baker Boys
+Spanish Civil War
+Carnegie Medal
+1993 Grammy Awards
+Joseph Sargent
+Frankfurt
+Fritz Leiber Junior
+Brian Jones
+Cincinnati Reds
+Matt Selman
+Alan Bates
+Nine Years' War
+Second Intifada
+Lil Jon
+Empire State Building
+Conan O'Brien
+MTV Video Music Award for Best Cinematography
+Milwaukee Brewers
+George Gershwin
+Franklin & Marshall College
+The Penguins of Madagascar
+NBA Finals
+Brett Ratner
+Leslie Dilley
+Nepal
+Aladdin
+mathematician
+BeBe Winans
+Mark Robson
+Seville
+Zionism
+La Crosse County
+Grammy Award for Best Classical Album
+Jeff Garlin
+Body of Lies
+time travel
+Carleton University
+Sunderland
+Loretta Young
+Scream 3
+Carey Mulligan
+Adele
+stomach cancer
+ABC
+Canadian Armed Forces
+Le Mans U.C. 72
+Freddie Hubbard
+Matt Chamberlain
+County Tyrone
+The Ladykillers
+Asrani
+Jimmy Carter
+boarding school
+Queensland University of Technology
+Middle East
+Huddersfield Town F.C.
+Frank Gehry
+Robert Iler
+Columbia College Chicago
+Christian metal
+Ben Gazzara
+Harvey Fierstein
+Downfall
+Brescia
+Saitama Seibu Lions
+Frankenweenie
+Ridgefield
+political thriller
+Berkshire County
+Tommy Lee Jones
+Georgian architecture
+Renaissance
+The Sea Inside
+Ghent University
+California State University, Fullerton
+Joss Whedon
+Brent and Shane Kinsman
+Disney's House of Mouse
+Team America: World Police
+Grammy Award for Best Urban/Alternative Performance
+Interactive Advertising Bureau
+Newport News
+SST Records
+Gadsden
+Bill Fagerbakke
+Lars and the Real Girl
+Dave Brubeck
+AEL Limassol FC
+Phil Ramone
+Jack Palance
+Congo
+cooking show
+Leonard Dick
+Iraq
+Lorenzo Music
+FC Metalurh Donetsk
+object-oriented programming
+FC Ingolstadt 04
+Andy Griffith
+House of Hohenzollern
+grunge
+Governor General's Award for English-language poetry
+BAFTA Award for Best Actor in a Supporting Role
+Janet Leigh
+Enrico Fermi
+internship
+Colombo
+Uwe Boll
+Golden Globe Award for Best Original Song
+broccoli
+York University
+Garret Dillahunt
+Detective Dee and the Mystery of the Phantom Flame
+cameo appearance
+Simple Minds
+Moscow
+Julie Benz
+timpani
+Mandy Moore
+Crusades
+Lewes F.C.
+Phil Vischer
+Rotherham
+1984 NCAA Men's Division I Basketball Tournament
+Catholicism
+contemporary philosophy
+Shakira
+Ravi Shankar
+Cape Verde
+William Demarest
+Seattle Mariners
+Laura Dern
+Activision Publishing, Inc.
+St. Mirren F.C.
+Iron Man 2
+Meryl Streep
+William James
+1982 Cannes Film Festival
+Marche
+Lou Grant
+Marion County
+To Kill a Mockingbird
+Foo Fighters
+Columbia Records
+Chesterfield
+Dwayne Johnson
+Southern University
+Jerry Nelson
+Lake Superior
+Chris Pronger
+Alfred Molina
+Kung Fu Panda
+Danzig
+UCLA Bruins men's basketball
+South Dakota
+2001 Major League Baseball season
+Ford
+University of Missouri
+Antichrist
+Jaco Pastorius
+Serbian
+Poughkeepsie
+Kansas City Chiefs
+curator
+Satellite Award for Best Original Song
+Daddy Yankee
+44th Academy Awards
+North Carolina Agricultural and Technical State University
+Smallville
+Mary Lynn Rajskub
+cancer
+King of the Hill
+25th United States Congress
+Indian Idol
+Dabney Coleman
+Switzerland
+L.A. Confidential
+Kristine Sutherland
+Walsall
+Jennifer Connelly
+graphic designer
+Rot-Weiss Essen
+Dolph Lundgren
+Prescription drug
+Terrence Malick
+Tokyo
+philosophy of mind
+Menlo Park
+Seattle
+William Cameron Menzies
+Brookline
+XL Recordings
+26th United States Congress
+Steve Oedekerk
+GNU General Public License
+Nickelback
+Binghamton
+Michael Pitt
+Hamilton
+27th United States Congress
+Richard Sylbert
+Ghost Rider
+Essex
+Dallas Cowboys
+Steve Gerber
+University of Vienna
+travel
+Sofia
+Guildhall School of Music and Drama
+Genie Award for Best Achievement in Sound Editing
+1992 Summer Olympics
+Confederate States of America
+Ludwig van Beethoven
+Alan Bergman
+Richard Riehle
+Christmas music
+Parkinson's disease
+chicken
+University of the Witwatersrand
+Lahore
+Peter Cullen
+Mansfield
+mangaka
+2000 Major League Baseball season
+Azerbaijan
+13 Going on 30
+Brandon
+Blood Diamond
+Denver Broncos
+1988 Summer Olympics
+Jodhaa Akbar
+Box Elder County
+linguistics
+Trisha Yearwood
+2 Fast 2 Furious
+Patrick Loubert
+Gangs of New York
+Larry Miller
+Kristen Bell
+CBS News
+California State Polytechnic University, Pomona
+Geelong Football Club
+FC Twente
+Jason Isaacs
+2011 Libyan Civil War
+Mangalore
+Walter Hill
+Superman
+Jamaica
+Jennifer Ehle
+George Stevens
+Jean Smart
+alternative hip hop
+Sky Captain and the World of Tomorrow
+Maria Bello
+Powers Boothe
+Ice Age: Continental Drift
+Arizona Cardinals
+Digital Equipment Corporation
+Riverside
+2010: The Year We Make Contact
+John Brown & Company
+The Count of Monte Cristo
+San Mateo
+Adolph Green
+Edmonton Eskimos
+Stockard Channing
+Sonic X
+Massachusetts
+Viacom
+Aachen
+quiet storm
+Olivia Wilde
+macOS
+Wesley Snipes
+Bruce Campbell
+Atlanta Falcons
+Pablo Picasso
+D. W. Moffett
+Nye County
+Harrogate Town F.C.
+Pulitzer Prize for History
+bakery
+Bobby
+suspense
+Rancho Mirage
+Guelph
+Texarkana
+Albert Brooks
+Folkestone
+prison
+Fort Myers
+Joseph Kish
+Harry Gregson-Williams
+shortstop
+Ghana national football team
+Yukon
+Bad Boy Records
+Chris Elliott
+Kagoshima
+Milwaukee Admirals
+Kal Ho Naa Ho
+G.I. Joe: The Rise of Cobra
+KwaZulu-Natal
+Trinity College
+official
+Sting
+Lisp
+Monmouth County
+Wellington College
+Grammy Award for Best Female Rock Vocal Performance
+synchronized swimming
+Fisk University
+Serbo-Croatian
+Superman Returns
+Chittagong
+Philip K. Dick Award
+procedural programming
+Jean Passanante
+Madoff investment scandal
+Beverly Hills, 90210
+That '70s Show
+The Walking Dead
+Minneapolis
+Judas Priest
+Connecticut College
+Al Ain FC
+Butler University
+EA Sports
+ambient music
+coming of age
+Tower of London
+Toshio Furukawa
+Hank Williams Jr.
+Dilip Kumar
+Welsh people
+Benito Mussolini
+Fuji Television
+Babylon 5: The Gathering
+swimming
+The Edge
+Swindon
+Middlesex County
+Redlands
+Leigh Harline
+Travis County
+Matthew Lillard
+William Sanderson
+T-Pain
+Columbia
+Top Chef
+Jennifer Hudson
+Merck & Co.
+Liga Deportiva Universitaria (Quito)
+Randy Thom
+thrash metal
+NYPD Blue
+Casey Affleck
+Secretary of state
+Culver City
+Aidan Quinn
+When We Were Kings
+alternate history
+Tombstone
+Herman Melville
+The King's Speech
+Alexander Korda
+Stephen McHattie
+Ed Wood
+The Sound of Music
+mathematics
+Gorillaz
+MTV Video Music Award for Best New Artist
+Kari Wahlgren
+acid jazz
+Robert Byrd
+Irrfan Khan
+Japanese people
+Pirates of the Caribbean: Dead Man's Chest
+Muncie
+Basilicata
+Digimon Adventure
+Dnipro
+Dire Straits
+water polo
+Greek American
+Kulbhushan Kharbanda
+Expressionism
+Howard Hughes
+The Cable Guy
+State College
+Fred Frith
+Marley & Me
+Ram Gopal Varma
+board game
+Robert Zemeckis
+Fast Five
+Clive Owen
+industrial rock
+Beaux-Arts architecture
+S.C. Olhanense
+University of Paris
+John Wood
+Adrien Beard
+Stephen Dillane
+production sound mixer
+A Bridge Too Far
+Steubenville
+Nicole Scherzinger
+diabetes mellitus
+number theory
+City University of New York
+F.C. Dallas
+Eddie Albert
+Bernadette Peters
+Shaun of the Dead
+Oliver Twist
+Grammy Award for Best Female Pop Vocal Performance
+Dean Martin
+Chrono Crusade
+lung cancer
+Pro Football Hall of Fame
+King Vidor
+blaxploitation
+Waitakere United
+Emile Hirsch
+How Green Was My Valley
+erotica
+Spellbound
+Japanese yen
+Yonkers
+musical saw
+Daytime Emmy Award for Outstanding Children's Animated Program
+Relativity Media
+Scott Lobdell
+Marg Helgenberger
+Trinity College
+Steven Blum
+Jacksonville Jaguars
+Western Cape
+animated series
+East Sussex
+Jermaine Dupri
+Governor of New Jersey
+Ridley Scott
+Terence Winter
+Los Angeles Lakers
+Peru national football team
+Mamelodi Sundowns F.C.
+Monster's Ball
+Warren Zevon
+Council of Europe
+Split
+Jharkhand
+City of Orange Township
+Ariel Winter
+15th Screen Actors Guild Awards
+20th Century Fox Television
+John Barry
+University of Northern Iowa
+Keenen Ivory Wayans
+Superman/Batman: Public Enemies
+common-law marriage
+Sideways
+European theatre of World War I
+Ontario New Democratic Party
+42nd Academy Awards
+Nuclear Blast
+Walter H. Tyler
+Extremely Loud and Incredibly Close
+Gil Bellows
+University of Minnesota Law School
+Club Atlas
+77th Academy Awards
+Microsoft Studios
+Windows 7
+portrait
+21 Jump Street
+Ivan Reitman
+Zaragoza
+Dagenham & Redbridge F.C.
+Charles Boyer
+Hofstra University
+2000 Cannes Film Festival
+opera
+The Name of the Rose
+1. FC Union Berlin
+Incheon United FC
+Central Saint Martins
+Soviet Air Forces
+Leonard Bernstein
+(+/-)-pantothenic acid
+California State University, Fresno
+Jenny Agutter
+Kennebec County
+Charles Rosher
+Steely Dan
+Billy Zane
+University of Texas at Arlington
+Wikimedia Foundation
+McMaster University
+Bernard Law Montgomery, 1st Viscount Montgomery of Alamein
+Alien
+Central Java Province
+Macy Gray
+The Prestige
+Rio de Janeiro
+DreamWorks
+Thomas Ian Nicholas
+Timothy Busfield
+Anna Paquin
+St Trinian's
+Vittorio De Sica
+Beginners
+Sonic Team
+The Adventures of Tintin
+University of Michigan Law School
+Xbox 360
+Four Rooms
+Lower Normandy
+Edmund A. Walsh School of Foreign Service
+'ascii' codec can't encode character u'\u014d' in position 7: ordinal not in range(128)
+John Huston
+phytosterol
+Armenian Apostolic Church
+Canton
+Heaven's Gate
+Taito Corporation
+Moldavia
+Going My Way
+finance minister
+acid rock
+West Virginia University
+Selangor FA
+Anthony Wong
+War on Terror
+Jade North
+Bodyguards and Assassins
+Cynthia Nixon
+Scarlett
+forward
+Lynwood
+Conrad Hall
+Paul Dini
+Tim Matheson
+Santiago
+Herbert Hoover
+Atlantic Records
+Lewis Milestone
+Mystic River
+cross-country skiing
+Nebula Award for Best Novella
+David S. Goyer
+Steven Berkoff
+Heartbeats
+Aya Hisakawa
+major general
+Nurse Jackie
+post-metal
+Cambridge United F.C.
+silent film
+L. Frank Baum
+Rochester
+Queen Victoria
+Chiang Kai-shek
+People's Republic of China
+Facebook Inc.
+Burn Gorman
+Atromitos F.C.
+Cosmopolis
+United States Air Force Academy
+Jason Segel
+My Sister's Keeper
+Brody Jenner
+Super
+Quantum of Solace
+Peter Frampton
+Oklahoma City
+samba
+Department of Defense
+Club Atletico San Lorenzo de Almagro
+The Holiday
+James Schamus
+Bob Hoskins
+The Isley Brothers
+2002 Major League Baseball draft
+Johnny Lever
+Broadcast Film Critics Association Award for Best Film
+Dante Spinotti
+Marcus Miller
+Albert Jarrett
+Michael Hordern
+superhero
+Scott Wilson
+Steve McQueen
+Alex Borstein
+Peter Cushing
+Danish
+Greater Houston
+promoter
+Henderson
+Bindu
+Thomas Pynchon
+Arjun Rampal
+Ghostbusters II
+Chile national football team
+United States Secretary of State
+Augsburg
+Hannah Montana: The Movie
+1990 NCAA Men's Division I Basketball Tournament
+The Men Who Stare at Goats
+Bobby Deol
+United States Conference of Catholic Bishops
+Orry-Kelly
+Big
+Flight
+Primal Fear
+Hawaii
+post-hardcore
+myristic acid
+George Clooney
+Night at the Museum
+software engineer
+Transformers: Dark of the Moon
+association football manager
+creative director
+Supreme Court of Canada
+Tom Waits
+From Dusk till Dawn
+Dublin
+Marilyn Monroe
+Slough
+Om Shanti Om
+Sarah Polley
+Lake Erie
+Radcliffe College
+Northern Territory
+Amanda Bynes
+Quebec Liberal Party
+Alberta
+North America
+farce
+pizza
+contemporary classical music
+Father of the Bride Part II
+Looney Tunes
+Benjamin Bratt
+U.C. AlbinoLeffe
+The Rum Diary
+Kosi Zone
+Yu-Gi-Oh! GX
+Reims
+David Petraeus
+Amazing Grace
+Montgomery
+Brad Dourif
+Olivia Williams
+Piedmont
+Sherman Oaks
+Justina Machado
+Ipswich
+Horrorcore
+Alexandre Dumas
+Colin Farrell
+Love of Life
+Warner Home Video
+Fat Possum Records
+The SpongeBob SquarePants Movie
+Hillsborough County
+FC Lugano
+music video game
+Brad Pitt
+The Thin Red Line
+Noah Wyle
+Cambridge
+University of Kentucky
+The Exorcist
+Constantinople
+Museum of Modern Art
+Roy Kinnear
+George Burns
+Maury Chaykin
+Tobey Maguire
+Buffalo Bills
+Silkwood
+synthpop
+Tyne and Wear
+1960 Winter Olympics
+The B-52's
+Tokugawa clan
+Macedonian kingdom
+Malay
+American Masters
+The Orphanage
+old-time music
+Senna
+Agra
+William Somerset Maugham
+national university
+MTV
+non-fiction
+The Incredible String Band
+contiguous United States
+Missy Elliott
+Wonder Woman
+University of Memphis
+Bruno Mars
+Catholic school
+Wuhan
+Richard Rodgers
+Greenwich Village
+Shin-ichiro Miki
+Barnsley Football Club
+The Boat That Rocked
+economic history
+Forfar Athletic F.C.
+Greco-Roman wrestling
+The Believer
+Parliament of Canada
+Japan Academy Prize for Picture of the Year
+William Chang
+Pomona College
+Danny Aiello
+show jumping
+Library of Congress Classification
+District 9
+Neil Simon
+Avatar
+Stanley Kramer
+North Vietnam
+Mali Finn
+Franklin
+Jackson State University
+Salavat Yulaev Ufa
+PepsiCo
+Wyclef Jean
+journalism
+Dischord Records
+Dudley Moore
+Forrest Gump
+Mexico
+Tel Aviv University
+Italian American
+Jimmy Fallon
+Final Destination 5
+Final Destination 5
+Seattle Seahawks
+Greenwood
+Southport
+blood plasma
+imperative programming
+Marriott International
+Prithviraj Sukumaran
+drum
+Royal Gold Medal
+vegetarian cuisine
+property developer
+Butte County
+Queensland
+racewalking
+Marco Beltrami
+Ajith Kumar
+Beverly D'Angelo
+Texas Rangers
+Mary Shelley
+67th Golden Globe Awards
+FC Torpedo Moscow
+Como
+Los Angeles Unified School District
+medical research
+Merseyside
+Riga
+Drew Goddard
+Madrid
+Groningen
+University of Hull
+Eva Longoria
+Calaveras County
+wind farm
+American Kennel Club
+literary criticism
+viola
+Mitchell Leisen
+PFC Spartak Nalchik
+rock and roll
+Gateshead F.C.
+South Park
+Redwood City
+Edie McClurg
+Allan Holdsworth
+1996 Grammy Awards
+United States Marine Corps
+Hertha BSC
+Thelma Schoonmaker
+Tarzan
+Nebula Award for Best Short Story
+Mutiny on the Bounty
+Anthony Edwards
+Magic Knight Rayearth
+American Recordings
+The Wire, season 5
+Kyushu
+Patti LaBelle
+legal drama
+Amazon.co.jp
+Regency Enterprises
+Neustadt International Prize for Literature
+30 Days of Night
+Pontiac
+cycling
+Meat Loaf
+Richard Griffiths
+slavery
+Eastern Time Zone
+Justin Cochrane
+Fullback
+Minnie Driver
+University of Chicago Law School
+Ealing
+Imagine Entertainment
+chemistry
+Warren Feeney
+postmodernism
+Guillermo del Toro
+Nome Census Area
+John Waters
+Kraft Foods
+James Stewart
+hospitality
+Russi Taylor
+head teacher
+Mashhad
+Erlangen
+Ben-Hur
+photography
+ska
+Mario Van Peebles
+Battle of Britain
+murder
+Charmed
+Burnaby
+PlayStation 2
+Kharkiv
+Shamrock Rovers F.C.
+psychedelic soul
+The Da Vinci Code
+Orange County
+Wong Jing
+Silent Hill
+Microsoft
+FC Sion
+Dallas Theological Seminary
+Apache Software Foundation
+Takahiro Sakurai
+Tom Kenny
+Jay Leno
+Waffen-SS
+Nas
+Harvard Graduate School of Design
+Club Universidad Nacional
+Charles Mingus Jr.
+Louisiana Tech University
+Satellite Award for Best Cinematography
+The Deer Hunter
+Theodore Roosevelt
+Baruch Spinoza
+Bruce Beresford
+Gordon Brown
+Jay Bennett
+Bob Jones University
+Shaquille O'Neal
+2004 Major League Baseball season
+children's television series
+Tony Blair
+Elgin
+Florida
+South Island
+British Empire
+music
+Second Polish Republic
+Will Arnett
+Kazan
+Concordia University
+Gwinnett County
+Boogie Nights
+Jackson Browne
+Robert Anton Wilson
+California Institute of the Arts
+Portland Pirates
+Guangdong
+1988 Major League Baseball season
+Changsha
+MTV Video Music Award for Best Visual Effects
+Pat Hingle
+Americana
+We Need to Talk About Kevin
+Brett Favre
+first-person shooter
+Harold Gould
+American Gangster
+John Debney
+Westminster
+nonviolence
+Eric Roth
+Lisa Gerrard
+Stan Winston
+electro house
+Futurama
+provost
+Ekta Kapoor
+MTV Video Music Award for Best Art Direction
+Donna Summer
+Benjamin Franklin Medal
+Bradley University
+Randy Edelman
+Josh Hartnett
+Filmfare Award for Best Film
+West Orange
+Sacramento
+The Cotton Club
+Oklahoma!
+Monty Python and the Holy Grail
+Iron Man
+Pace University
+Draco Rosa
+Miyuki Sawashiro
+Nikon
+Avalon Hill
+I Now Pronounce You Chuck and Larry
+New Year's Eve
+Seattle Storm
+Mobile County
+The Incredible Hulk
+Andrea Bocelli
+Scary Movie 2
+Queen Mary, University of London
+Preston North End F.C.
+Tony Longo
+Downey
+Jacques Lacan
+University of Padua
+costume drama
+Latin Grammy Award for Song of the Year
+Agnes Nixon
+Teletoon
+Jack Nicholson
+Skidmore, Owings and Merrill
+Chicago Hope
+Donald McAlpine
+Jim Dale
+Royal Tunbridge Wells
+John Houseman
+Oxford County
+Franklin County
+Brian McKnight
+John Rawls
+2012 Sundance Film Festival
+Charlie Adler
+Eidos Interactive
+Boston United F.C.
+Secrets & Lies
+angina pectoris
+fantasy
+Christchurch
+79th Academy Awards
+Pete Postlethwaite
+'ascii' codec can't encode character u'\u0131' in position 2: ordinal not in range(128)
+Texas A&M University
+Data East
+Mel Blanc
+Kuch Kuch Hota Hai
+Vietnam War
+Ruth Gordon
+DreamWorks Animation
+Nikola Tesla
+Cheech Marin
+Bakersfield
+Nevada County
+Tacoma
+noise pop
+Satellite Awards 2006
+Toronto District School Board
+A.C. ChievoVerona
+Chesapeake
+Anthony Burgess
+Little Children
+Jimi Hendrix
+Kenya
+Joseon
+Cars
+retail
+Richard Linklater
+DL-glutamic acid
+Gene Reynolds
+Robur Siena
+John Boorman
+Vocoder
+Jonah Hex
+Paramore
+Christopher Cross
+Dennis Quaid
+'ascii' codec can't encode character u'\xe9' in position 7: ordinal not in range(128)
+Cliff Robertson
+Jane Espenson
+United National Party
+Gwar
+KC and the Sunshine Band
+Thailand national football team
+fencing
+Boca Raton
+Jackie Shroff
+David Spade
+Ocean Software
+Davidson County
+50/50
+Rockville
+East West Records
+Geraldine Chaplin
+AC Bellinzona
+Athens
+Neath
+Endemol
+Bethesda
+Eddie Marsan
+Thomas and Friends
+Rhode Island School of Design
+Ternana Unicusano Calcio
+Ohio Senate
+Christina Hendricks
+college
+Manoj Kumar
+University of Exeter
+Cate Blanchett
+Elisabeth Moss
+Alan Silvestri
+The Help
+Guangzhou Evergrande Taobao Football Club
+Saint Petersburg
+Wild at Heart
+Hong Kong Film Award for Best Film
+The Right Stuff
+blood
+Jon Bon Jovi
+Lund
+Wesleyan University
+Sufjan Stevens
+FC Vaslui
+bass
+Annie
+Hilversum
+Reform Party of Canada
+Ice-T
+Theodor W. Adorno
+TVT Records
+Coburg
+Qing dynasty
+Tim Burton
+South Korea
+It's a Wonderful Life
+James Taylor
+The Band
+PAS Giannina F.C.
+Milwaukee
+trombone
+Punk blues
+Harrow School
+Wichita Falls
+Simon Cowell
+Reba McEntire
+Tohoku Rakuten Golden Eagles
+United States Department of State
+Celebrity
+Zach Braff
+Nobel Prize in Physiology or Medicine
+Gustavo Cerati
+San Bernardino County
+Relapse Records
+Spike Milligan
+Alyson Hannigan
+Nevada
+Coronation Street
+Saving Private Ryan
+New Zealand
+Guiding Light
+University of California, Davis
+hard bop
+Calle 13
+Chris Newman
+Guildford
+rocksteady
+Don Heck
+renewable energy
+House of Wittelsbach
+baritone guitar
+Indianapolis
+Tillamook County
+University of California, Santa Cruz
+Changchun Yatai F.C.
+Golden Raspberry Award for Worst Actor
+The University of Hong Kong
+Freddie Prinze
+Jess Harnell
+Heriot-Watt University
+Edmond O'Brien
+FC Vorskla Poltava
+Mad Men
+Tom Sizemore
+chief of police
+Sam Bush
+general manager
+Casablanca
+Atlanta Silverbacks
+No Country for Old Men
+fine art
+Gloucestershire
+Mike Epps
+Veer-Zaara
+1987 NCAA Men's Division I Basketball Tournament
+Trevor Howard
+Rockford
+Max Casella
+Philippines national football team
+The Rainmaker
+South Australia
+Sven Nykvist
+Michael Sembello
+Gulshan Grover
+Groundhog Day
+Ibaraki Prefecture
+Hungary
+Walter Scott
+Mario & Sonic at the Olympic Games
+Kavala F.C.
+Amy Smart
+Octopussy
+Jim Jonsin
+Anna Camp
+Chandigarh
+The Last King of Scotland
+Eve Myles
+HTTPSConnectionPool(host='www.wikidata.org', port=443): Max retries exceeded with url: /wiki/Q155879 (Caused by <class 'socket.error'>: [Errno 104] Connection reset by peer)
+Laura Linney
+Lauren Bacall
+The Brothers Bloom
+slice of life
+Novara Calcio
+Christopher Boyes
+38th Daytime Emmy Awards
+John Gielgud
+Chuck Jones
+Fat Joe
+South Shields
+Fender Precision Bass
+Jane's Addiction
+A.J. Auxerre
+Murphy Brown
+screamo
+Little Rock
+Varese Calcio
+Order of the Three Stars
+Dave Matthews Band
+Legion of Merit
+Santa Ana
+Some Kind of Monster
+Trentino
+Perugia
+Yale University
+Larry Charles
+Tallahassee
+Edward Lachman
+University of Nottingham
+Irene Sharaff
+Barbra Streisand
+Jamie Kennedy
+Dorset
+Arthur C. Clarke Award
+Nebraska
+University of Mumbai
+al-Qaeda
+Hugo Award for Best Novel
+Ozzy Osbourne
+Detective Conan: Captured in Her Eyes
+Tony Geiss
+The Rescuers
+AZ Alkmaar
+East Riding of Yorkshire
+Transformers: Revenge of the Fallen
+Phil Hartman
+Monster House
+Kevin Costner
+St. Elsewhere
+Woking
+Helena
+Michael Moriarty
+Dutch American
+alto flute
+Le Monde's 100 Books of the Century
+Charlotte
+Trenton
+Walt Disney Pictures
+Arizona Diamondbacks
+This TV
+anarchism
+Los Angeles Film Critics Association Award for Best Director
+Licence to Kill
+John Milius
+Time Warner
+Metro-Goldwyn-Mayer
+Jimmy Page
+Rhino Entertainment
+32nd United States Congress
+September
+Roy Thomas
+Heart
+law degree
+far-right
+William Gibson
+NBC
+Hackensack, New Jersey
+Los Lobos
+Kiss Kiss Bang Bang
+Springfield
+Dallas
+New York Yankees
+card game
+Goethe University Frankfurt
+30th United States Congress
+Academy Award for Best Documentary Feature
+Freddie Mercury
+A.F.C. Bournemouth
+Mare Winningham
+Guinea
+autistic disorder
+Tarzan
+APOEL F.C.
+Thomas Schlamme
+cardinal
+Kim Stanley Robinson
+New Westminster
+Virginia Beach
+Mindscape
+Angelina Jolie
+TLC
+Saxony
+DeKalb County
+University of Leeds
+Koei
+Tokyo Yakult Swallows
+2046
+Taxi
+Black Sabbath
+Elmore Leonard
+Uma Thurman
+My Man Godfrey
+Hebrew
+Amy Adams
+Roundhead
+University of South Dakota
+Jack Reacher
+SK Slavia Prague
+Alexandria
+Dianne Wiest
+clarinet
+Primary Colors
+Al-Hilal FC
+Inner Hebrides
+bronze medal
+Eric Roberts
+University of New Brunswick
+Colleen Clinkenbeard
+Turku
+Whatcom County
+Indian rupee
+Jyothika
+rapcore
+ECW on TNN
+Connie Willis
+Toei Company
+Shohreh Aghdashloo
+University of Oxford
+PFC Lokomotiv Sofia
+Senegal national football team
+Downing College
+Roy Haynes
+Ryan Reynolds
+Steve Vai
+John Ford
+Dover Athletic F.C.
+Chicago
+Rajasthan
+Phish
+Dirty Pretty Things
+2005 NCAA Men's Division I Basketball Tournament
+The Diving Bell and the Butterfly
+Amherst
+2004 Grammy Awards
+Chris Wood
+Britpop
+Alexandria
+Old gold
+Liberal Democrats
+Nebula Award for Best Novelette
+soap opera
+Greystoke: The Legend of Tarzan, Lord of the Apes
+West Norwood Cemetery
+University of Cambridge
+First Lady
+Jive Records
+The Twilight Zone
+Paul Dano
+James Denton
+independent school
+Comcast
+Martin Lawrence
+Jack McBrayer
+Nino Rota
+Cecil B. DeMille
+Club Universitario de Deportes
+Australian Capital Territory
+Todd Rundgren
+Midland
+'ascii' codec can't encode character u'\u2019' in position 6: ordinal not in range(128)
+CBS Radio
+Yorkshire Terrier
+San Luis Obispo County
+Bad Education
+Haim Saban
+Keenan Wynn
+Jon Brion
+Jesse Louis Lasky
+University of Tartu
+San Diego State University
+Duke University
+Brazil national football team
+Christian rock
+Province of Cuneo
+Lamar Odom
+Mary and Max
+Super Bowl Most Valuable Player Award
+Harry Andrews
+Levante UD
+The Wizard of Oz
+news program
+North Rhine-Westphalia
+Broadcast Film Critics Association Award for Best Song
+Karl Marx
+Hyderabad
+Mobile Suit Gundam 00
+Tottenham Hotspur F.C.
+The Wicker Man
+Vancouver Canucks
+Varna
+Courteney Cox
+66th Academy Awards
+George Raft
+classics
+speed skating
+Andy Williams
+Bard College
+Kris Kristofferson
+Gettysburg
+Lance Henriksen
+Taylor Hackford
+Rosario Dawson
+Denholm Elliott
+symphonic rock
+David Tennant
+Cheers
+Polydor Records
+Jeffrey Wright
+Glenn Ford
+Laurence Olivier
+cavalier
+Daniel Craig
+jazz fusion
+Friedrich Nietzsche
+The 40-Year-Old Virgin
+Parma Calcio 1913
+LGBT social movements
+Amy Poehler
+shoegazing
+Lynn
+Hinduism
+Maldives national football team
+Hidalgo County
+Uriah Heep
+French American
+Javanese people
+Wilmington
+Lawrence
+Springfield
+Jules Dassin
+Frank Zappa
+Yale College
+Water for Elephants
+Case Western Reserve University
+National Heads-Up Poker Championship
+Berlin International Film Festival
+proline
+World Heritage Site
+Luis Miguel
+National League
+Danilo Donati
+Bridget Jones's Diary
+Gary David Goldberg
+Lucien Ballard
+Dick Powell
+105th United States Congress
+Michael McConnohie
+Lost in Translation
+Reed College
+Bill Maher
+Haverhill
+Felix Bastians
+Lee Garmes
+Alan Hale
+FC Luzern
+The Moody Blues
+Simon Fuller
+Owen Wilson
+David Hasselhoff
+The Lives of a Bengal Lancer
+Chelsea F.C.
+Rafael Nadal
+Jeremy Clarkson
+heart failure
+Lucky Numbers
+Washington County
+Sarah Michelle Gellar
+California
+The Jackal
+The Hours
+Anna Karenina
+Conrad Buff IV
+Diane Keaton
+Village Roadshow Pictures
+novel
+Jason Robards
+Harlem
+Janel Moloney
+M. Emmet Walsh
+Beau Bridges
+art critic
+Morgan State University
+Ghana
+Richmond
+Glen Ballard
+United Artists
+For Your Consideration
+Saif Ali Khan
+Mary McDonnell
+hurdy-gurdy
+Maximilian Schell
+The African Queen
+Telly Savalas
+Versailles
+Fulham F.C.
+University of Liverpool
+dinosaur
+Tompkins County
+Eastern Catholic Church
+Zsa Zsa Gabor
+Nobel Prize in Chemistry
+University of Tulsa
+Zac Efron
+Girl Scouts of the USA
+wind instrument
+oboe
+atheism
+Ritchie Blackmore
+Ajay Devgan
+UD Las Palmas
+teen drama
+Great Falls
+AACTA Award for Best Actress in a Leading Role
+Henry David Thoreau
+Paul Winchell
+Kiefer Sutherland
+Southern Illinois University Carbondale
+Jeff Lynne
+Greg Daniels
+Thomas Hardy
+Pohang Steelers
+What Dreams May Come
+Chisago County
+Dianna Agron
+right fielder
+Tuvalu national football team
+Sioux Falls
+The History Boys
+Cyrillic script
+Reading
+Midnight Cowboy
+63rd Golden Globe Awards
+Steel Azin F.C.
+Yunnan
+Alan Mathison Turing
+Hikaru Utada
+The New World
+San Rafael
+Mobile Suit Gundam: Char's Counterattack
+Marlene Dietrich
+Fat Wreck Chords
+Trevor Horn
+I Shot Andy Warhol
+Rhodes piano
+Audrey Hepburn
+Rounder Records
+Henry Fonda
+Outagamie County
+The Santa Clause 2
+mine
+Ringo Starr
+2000 Grammy Awards
+Royal Naval Air Service
+Eyes Wide Shut
+Sylvester Stallone
+Summer of Sam
+Miami University
+Baghdad
+John Rhys-Davies
+Jew's harp
+Robert Klein
+glam metal
+Damian Lewis
+Michael Stipe
+Hebei
+Northridge
+Hiroshima Prefecture
+modern pentathlon
+Collin County
+Rainer Werner Fassbinder
+Enosis Neon Paralimni FC
+Cranford
+Nintendo Entertainment Analysis & Development
+Isaac Stern
+Nastassja Kinski
+Sedgwick County
+Kevin Dunn
+Unfaithful
+Girish Karnad
+B. B. King
+The Man with the Golden Gun
+Hudson Soft
+William H. Daniels
+Mission Revival architecture
+Ricky Jay
+Batman & Robin
+Philip Pullman
+Meshell Ndegeocello
+liver cirrhosis
+Goya Award for Best Actor
+60th Golden Globe Awards
+Robert Vaughn
+Raquel Welch
+heavy metal music
+Academy Award for Best Picture
+Bulgaria national football team
+Austin Powers: The Spy Who Shagged Me
+Mute Records
+Portland metropolitan area
+Edward Burns
+Pyongyang
+University of Nevada, Las Vegas
+Tony Leung
+F.C. Hansa Rostock
+Furman University
+id Software
+Philippine cuisine
+Kingdom of Sardinia
+Orix Buffaloes
+Maccabi Netanya F.C.
+Spanish Empire
+Blood, Sweat & Tears
+Feyenoord
+University of Southern California
+Three Kings
+Vietnamese
+Bergen
+Arrested Development
+Nick Park
+Fred Astaire
+Bhopal
+indie rock
+Whiting Award
+Bolt
+World Fantasy Award for Best Novel
+Election
+Anna Faris
+David Wenham
+Geneva
+Jonathan Pryce
+Turin
+Josh Holloway
+Tennessee
+The Country Girl
+49th Academy Awards
+New Zealand national football team
+Udo Kier
+Ariel Sharon
+Sugar Hill Records
+Christmas
+Lady in the Water
+The Young and the Restless
+Cleopatra Records
+rhythmic gymnastics
+Anderson
+Tazewell County
+John C. Reilly
+Requiem for a Dream
+Royal College, Colombo
+Sex and the City
+Taking Woodstock
+Marcel Duchamp
+Roger Bart
+John Denver
+Penang
+Stewie Griffin: The Untold Story
+Kankakee
+Tricky Stewart
+Tupelo
+Indian River County
+Puerto Rican people
+Wallace Shawn
+Bradford City A.F.C.
+McCoy Tyner
+Seabiscuit
+Sabrina
+In & Out
+Crawley Town F.C.
+Franklin County
+Bandai Co., Ltd.
+Dominion of New Zealand
+Delaware
+Kenny Rogers
+BBC Three
+blues rock
+Las Vegas
+boy band
+Ilaiyaraaja
+Robert Clohessy
+NBCUniversal
+Gary Barber
+Up
+Robert McKimson
+Academy of Television Arts & Sciences
+1992 NCAA Men's Division I Basketball Tournament
+Brighton & Hove Albion F.C.
+Sharat Saxena
+apple
+Rank Organisation
+Richmond
+Charlottetown
+Fox Searchlight Pictures
+JVC Kenwood Victor Entertainment
+Purple Heart
+Ray Romano
+Graeme Revell
+High Noon
+Cumulus Media Networks
+Jon Anderson
+Chris Claremont
+Fairbanks
+Leonard Cohen
+David Shire
+Melbourne
+Jared Harris
+Picket Fences
+The Birds
+maroon
+The Venture Bros.
+Ben Stein
+Arkansas
+Rick Wakeman
+Sedona
+English Baroque
+Silver Screen Partners
+United States dollar
+Red Skelton
+Elaine May
+Ioan Gruffudd
+Lost Highway
+USA for Africa
+Julian Glover
+The Fighter
+Juanes
+Labrador Retriever
+Coral Gables
+John Cassavetes
+Naruto the Movie: Legend of the Stone of Gelel
+New Mexico
+New Jersey
+2004 Summer Olympics
+The Larry Sanders Show
+Gosford Park
+John Swartzwelder
+Tony Award for Best Featured Actor in a Musical
+Leslie Cheung
+Carthage
+Vince Gilligan
+Frankfort
+Bloomington
+Martin Short
+George Seaton
+Karisma Kapoor
+Ittihad FC
+Pony Canyon
+How to Train Your Dragon
+cello
+Delaware County
+The Who
+Imperial College London
+Ashley Palacios
+Baton Rouge
+Christopher Doyle
+Belfast
+Hayward
+The Spy Who Came in from the Cold
+Tron: Legacy
+Buck Henry
+serum
+Billy Bragg
+Elizabeth McGovern
+Blackpool
+J. Edgar
+29th Academy Awards
+Jake Gyllenhaal
+Fortune Global 500
+University of Helsinki
+Province of Palermo
+Kurt Russell
+entrepreneur
+Michael Bell
+Lily Allen
+Entertainment Tonight
+Chad Smith
+Michael Piller
+National Film Registry
+HBO
+Thomas Dekker
+Duke Ellington
+Dangerous Liaisons
+Tilda Swinton
+Aalesunds FK
+John Stuart Mill
+Winston-Salem
+MTV Movie Award for Best New Filmmaker
+Mark Williams
+leukemia
+Symantec
+Pierce Brosnan
+Scrooged
+Dina Pathak
+Grimsby Town F.C.
+Primetime Emmy Award for Outstanding Lead Actor in a Drama Series
+Caravaggio
+Moneyball
+Alabama
+John Lennon
+The Secret in Their Eyes
+Michael McDonald
+24
+The Sweet Hereafter
+chancellor
+Hope Springs
+Perth Amboy
+Senegal
+television film
+Jeff Daniels
+London Borough of Tower Hamlets
+Alias
+Darwin
+Jay Mohr
+Mike O'Malley
+Portugal national football team
+Melvins
+William Joyce
+Very Bad Things
+Norwalk
+Baden-Baden
+Oaxaca
+Star Wars: The Clone Wars
+Korean
+Munich
+Joe Haldeman
+Harold Faltermeyer
+James Madison University
+Man Booker Prize
+All Quiet on the Western Front
+Latin Grammy Award for Record of the Year
+kung fu film
+Turkey
+Radiohead
+55th Primetime Emmy Awards
+funk rock
+Rod Stewart
+Marcia Cross
+Williams F1
+Rubin Kazan
+Andy Lau
+television director
+Tirana
+Stevie Nicks
+A Clockwork Orange
+Canada
+Fairfield County
+Darlington
+adult contemporary music
+University of Hartford
+The Edge of Night
+New prog
+The Last Song
+Christopher Columbus: The Discovery
+Ellen Page
+Broadcast Film Critics Association Award for Best Composer
+John Powell
+Calvinism
+Jennifer Lawrence
+Anne McCaffrey
+Stanford Law School
+New York metropolitan area
+Sega Games
+MASH
+gong
+Pinto Colvig
+Faroe Islands
+research associate
+Eastern Cape
+Richard Feynman
+Dan Schneider
+Al Green
+Williams College
+Carole King
+Friedrich Hayek
+Billie Holiday
+Nassar
+Martin Scorsese
+Mississippi Burning
+Colombia
+House of Flying Daggers
+Rory Gallagher
+Jerusalem
+The Wrestler
+Bob Marley
+The Blues Brothers
+Syracuse
+Governor of Massachusetts
+Blade: Trinity
+Contra Costa County
+SuperSport United F.C.
+Mountain Time Zone
+Plainfield
+Styx
+In the Heat of the Night
+2004 NBA Draft
+Face/Off
+prophet
+Fairfield University
+political cinema
+James Cayne
+Mark Ruffalo
+Rich Little
+Miles "Tails" Prower
+Ida Lupino
+Silver Star
+Pennsylvania Academy of the Fine Arts
+Gregory Hoblit
+Bernardo Bertolucci
+jangle pop
+Lombardy
+Sichuan
+She Hate Me
+Jonathan Rhys Meyers
+EDtv
+Michael Rosenbaum
+humour
+Don Cheadle
+Master of Science
+The Diary of Anne Frank
+Southern Gospel
+Joseph Ruttenberg
+Spartacus
+k.d. lang
+EA Canada
+Niagara Falls
+University of Leicester
+Wiesbaden
+Ryan Phillippe
+Manchester City F.C.
+Ringo Sheena
+Vodafone
+Manhattan School of Music
+Jon Stewart
+Bible
+Paul Williams
+Black Hawk Down
+Image Comics
+Beirut
+Clark Atlanta University
+Max Steiner
+The Expendables 2
+Jackson
+Academy Award for Best Actress
+Steve Earle
+progressive metal
+Pune
+The Weinstein Company
+Tonino Guerra
+cricket
+Just Go with It
+Magdalen College
+Persea americana
+United Malays National Organisation
+Willy Wonka & the Chocolate Factory
+Walter Becker
+Makati
+Jude Ciccolella
+Second Boer War
+Real Murcia
+Nine Network
+Remember the Titans
+William Henry Harrison
+Beaumont
+The League of Extraordinary Gentlemen
+High Wycombe
+Soundgarden
+Barnet Football Club
+Lea Michele
+ash
+Joe Jackson
+Bloomington
+Abhishek Bachchan
+Popeye
+Star Plus
+Gateshead
+Montmartre Cemetery
+Forgetting Sarah Marshall
+David J
+Chinatown
+Radio
+Manorama
+Keith David
+healing factor
+Filipino people
+neofolk
+Mongol Empire
+Cook County
+Mstislav Rostropovich
+Djibouti
+John Fritz Medal
+Mansfield Town F.C.
+Italia Conti Academy of Theatre Arts
+Piper Laurie
+Democratic Unionist Party
+Montana State University - Bozeman
+Charlie Daniels
+Staten Island
+BAFTA Award for Best Adapted Screenplay
+Goldman Sachs
+Paris Saint-Germain
+Beloit College
+John Barrowman
+James Horner
+John Cusack
+Ohio
+Greg Kinnear
+Howie Mandel
+Betty Grable
+Searching for Debra Winger
+MTV Movie Award for Best Comedic Performance
+goblet drum
+musical
+Katowice
+Allen Covert
+MTV Video Music Award for Video of the Year
+Saba Qom F.C.
+private equity
+Rochdale A.F.C.
+Peter Gabriel
+Lauren Ambrose
+Claremont
+US Boulogne
+Bill Wyman
+American Dad!
+Oxford United F.C.
+Annie Lennox
+Vincent D'Onofrio
+Saskatoon
+director's cut
+Confessions of a Dangerous Mind
+Wilmer Valderrama
+Richmond
+Jack Warner
+Brian Drummond
+Lou Scheimer
+Northern line
+Saxony-Anhalt
+Boris Leven
+Lima
+Bob Hamman
+Mariposa County
+Communist Party of the Soviet Union
+George Segal
+Frederik Pohl
+Debra Messing
+Delft
+Jules Bass
+Anthony B. Richmond
+Sam Wood
+Cary Grant
+Jacob Vargas
+National Board of Review Award for Best Director
+Malta
+Tuskegee University
+Washington Nationals
+2009 NFL season
+Law & Order
+Space Cowboys
+October
+Bright Star
+New Orleans metropolitan area
+mellotron
+V2 Records
+Blackburn Rovers F.C.
+Michelangelo Antonioni
+Rensselaer Polytechnic Institute
+Pakistan national cricket team
+New England Conservatory of Music
+Heracles Almelo
+Botswana
+Irwin Winkler
+Frances Conroy
+Tom Ruegger
+Primetime Emmy Award for Outstanding Guest Actor in a Comedy Series
+Tuesday Weld
+Lions Gate Entertainment
+sepsis
+commissioner
+Minden
+University of Alberta
+Charles Dance
+Bruce Timm
+Picardy
+Social Distortion
+The Bodyguard
+St. Charles County
+Croatia
+Janeane Garofalo
+Peter Horton
+Province of Naples
+CBBC
+Trabzonspor
+physicist
+Ray Heindorf
+Henri Matisse
+Yui Horie
+Die Hard
+Asian American
+Catch-22
+Morris County
+Hindu
+Ninth grade
+Latin American music
+Peter Lamont
+Robert Wagner
+Broadcast Film Critics Association Award for Best Supporting Actor
+The Messenger: The Story of Joan of Arc
+Harland and Wolff
+James Rebhorn
+Dead Poets Society
+Michael Keaton
+Tour de France
+Loudoun County
+Omarion
+Megumi Hayashibara
+1980 Summer Olympics
+Province of Salerno
+Arminia Bielefeld
+leucine
+San Francisco Bay Area
+Eastbourne
+FC Groningen
+Bucky Larson: Born to Be a Star
+Fist of the North Star
+WCW Monday Nitro
+Peter Jackson
+Dean Koontz
+William Wyler
+Kingdom of Romania
+Shining Through
+Take-Two Interactive
+Jennifer Jason Leigh
+Elizabeth: The Golden Age
+The Temptations
+Clackamas County
+Joe Roth
+Code Geass
+Paul Simon
+Richard Schiff
+Drew Barrymore
+America Ferrera
+The Queen
+Charlie Kaufman
+electroclash
+James LeGros
+Shizuoka Prefecture
+No label defined
+Queen Latifah
+Virginia Military Institute
+Allegany County
+2010 Sundance Film Festival
+China PR national football team
+bongo drum
+philosophy
+K-19: The Widowmaker
+Elizabeth
+Nicole Kidman
+Louis Armstrong
+Ali
+Sandefjord Fotball
+James Pickens
+Chris Patton
+comedian
+Gioachino Rossini
+Todd McFarlane
+Naples
+St. Petersburg
+Nick Mason
+Oregon State University
+Samuel Beckett
+San Luis Obispo
+Doctor of Medicine
+Peshawar
+sport
+AACTA Award for Best Adapted Screenplay
+James Blunt
+Rango
+2003 Major League Baseball season
+Robert Duvall
+Moscow
+John Byrne
+John Woo
+Lasker-DeBakey Clinical Medical Research Award
+Priyadarshan
+Primetime Emmy Award for Outstanding Writing for a Drama Series
+Deep Purple
+copper
+Dorchester
+Seoul
+Adolph Deutsch
+instrumental music
+Brandenburg
+War Horse
+Peter Ustinov
+American Indian Wars
+The Heiress
+Huntington Beach
+Kevin Kline
+Philip Yordan
+Harry S. Truman
+Jason Flemyng
+The Music Man
+Philippe Rousselot
+Mughal Empire
+Tartu
+John Sturges
+West Germany
+WarGames
+London Symphony Orchestra
+Love Is a Many-Splendored Thing
+New South Wales
+Summit Entertainment
+Troy
+Bremen
+Jules White
+Milla Jovovich
+Tom Green
+Croydon
+Michael Chabon
+Mississauga
+Utrecht
+All About Steve
+Anne Heche
+cerebrovascular disease
+Quincy
+Shabana Azmi
+University of Toledo
+Das Boot
+Sexy Beast
+Maid in Manhattan
+Hrithik Roshan
+Kristen Wiig
+Secret of the Wings
+Evan Rachel Wood
+The Chemical Brothers
+Cairns
+Sean Connery
+The Host
+Elizabeth Daily
+Massachusetts Institute of Technology
+Los Angeles Dodgers
+Gwyneth Paltrow
+diving
+Govinda
+Harry Dean Stanton
+Tours FC
+Murali
+Kazakhstan national football team
+Vera Drake
+Magnolia
+Java
+Shimla
+Lebanon War
+John Adams
+Sherlock Holmes: A Game of Shadows
+1995 Major League Baseball season
+GoldenEye
+Amherst College
+Madison
+MyNetworkTV
+Anthony Minghella
+Jeff Goldblum
+CR Vasco da Gama
+creative writing
+Ossie Davis
+Charleston
+Brian Baumgartner
+Tarrant County
+John Dingell, Jr.
+osteoporosis
+Ray Walston
+Pechos frios
+Michael K. Williams
+Jennifer Love Hewitt
+liberal arts college
+Cory Doctorow
+Bulgaria
+Harry Warren
+Til Schweiger
+You Only Live Twice
+Dan Green
+William Lava
+Nicole Sullivan
+Alison Brie
+Staffordshire
+Days of our Lives
+Ricky Skaggs
+Kim Carnes
+MCA Records
+Kayserispor
+New England
+Gambia
+center
+Hugo Friedhofer
+alpine skiing
+Wonder Boys
+EuropaCorp
+John Spencer
+academic lecturer
+Gil Kane
+harpsichordist
+River Thames
+Being Julia
+Moonstruck
+Susan Sarandon
+Las Cruces
+Algeria national football team
+Real World
+Kay Cannon
+Feroz Khan
+Pushing Daisies
+Colorado Avalanche
+Lazio
+Buenos Aires
+experimental music
+Roberto Orci
+Uppsala
+Primetime Emmy Award for Outstanding Directing for a Drama Series
+Columbus Crew SC
+Ed O'Neill
+Tulane University
+Chris Colfer
+Alex Kurtzman
+Livingston F.C.
+Kotono Mitsuishi
+catcher
+Robert Stack
+Yamhill County
+2005 Grammy Awards
+Marathi
+Westchester County
+Brazil
+Swansea
+To Rome with Love
+Frankfurt (Oder)
+Australian Broadcasting Corporation
+Bryan Ferry
+taoism
+Akira Toriyama
+Pride & Prejudice
+Heather O'Reilly
+Shochiku
+Doctor Who
+Freddy Got Fingered
+United States Virgin Islands
+74th Academy Awards
+Sonoma State University
+Heath Ledger
+No label defined
+Brannon Braga
+Oklahoma City Barons
+33rd Academy Awards
+Republic of Ireland national football team
+Addams Family Values
+Towson University
+Academy Award for Best Writing, Original Screenplay
+Angel
+Tex Avery
+Another World
+horror punk
+Jesus College
+Nationalist Party of Australia
+Earache Records
+Urbana
+Peter Stormare
+labor rights
+Golden Lion
+ZZ Top
+Warner Bros. Animation
+Giant Records
+Kuwait City
+EMI Records
+Michael Gladis
+Royal Society
+Axl Rose
+Kenosha
+Rosemary's Baby
+69th Golden Globe Awards
+1964 Summer Olympics
+Billy Ray Cyrus
+Melanie Griffith
+Snow White and the Huntsman
+Helsinki
+Dario Argento
+Mary Poppins
+R.S.C. Anderlecht
+Moncton
+Michigan State University
+horse racing
+Norristown
+psychedelic trance
+Kill Rock Stars
+16th Screen Actors Guild Awards
+Robert Plant
+Craig Ferguson
+Lancashire
+Coolio
+Dalian Shide F.C.
+2006 Major League Baseball draft
+Get Carter
+Tim Armstrong
+William Faulkner
+Taras Shevchenko National University of Kyiv
+Columbus Blue Jackets
+Trent Reznor
+Paul Reiser
+Sri Lanka
+National Aeronautics and Space Administration
+Bel Ami
+ballet dancer
+Delmer Daves
+Mike Henry
+vegetarianism
+PSV Eindhoven
+Elias Koteas
+Jude Law
+Johnson & Johnson
+differential topology
+Richard Masur
+Purdue University
+Breaker Morant
+Burt Young
+Jackson County
+Intolerable Cruelty
+Santa Cruz County
+61st Berlin International Film Festival
+Peter Facinelli
+Harold Pinter
+Big Miracle
+De Graafschap
+Eastern European Time
+Robert E. Howard
+Leslie Bricusse
+St. Bonaventure University
+Berkeley
+'ascii' codec can't encode character u'\u016b' in position 4: ordinal not in range(128)
+bossa nova
+On Her Majesty's Secret Service
+Real Salt Lake
+Namibia
+Andre Jacquemetton
+Ottoman wars in Europe
+Whoopi Goldberg
+Danbury
+Sir
+Neil Gaiman
+Norman Jewison
+Jared  Leto
+Eugene Levy
+Sydney F.C.
+Pasadena City College
+1984 Winter Olympics
+Akira Ishida
+Sonoma County
+Hotel Transylvania
+Jule Styne
+Haifa
+Seven Network
+Super 8
+Leo Strauss
+Venice Film Festival
+John Irving
+talk show
+Rosenborg BK
+Cleveland State University
+Adirondack Mountains
+Oak Park
+Snoop Dogg
+Free University of Berlin
+picture book
+University of Bologna
+Allen Ginsberg
+Kundun
+In the Name of the King
+Alton
+Organization for Economic Co-operation and Development
+Henry Gibson
+Saint Petersburg Conservatory
+George Mason University
+Chengdu
+Laguna Beach
+The Apartment
+County Sligo
+8 Mile
+Peter Cook
+Mark Gordon
+country blues
+Hebrew University of Jerusalem
+post-bop
+Colchester United F.C.
+Balliol College
+Arista Records
+tactical shooter
+Crouching Tiger, Hidden Dragon
+The Pink Panther 2
+Sheffield
+Steven Levitan
+Dominica
+Bruce Greenwood
+Disney Interactive Studios
+Lou Reed
+Dick Clark
+Michael Mann
+James Hetfield
+Little Fockers
+Hampshire County
+ESPN
+Pauly Shore
+The Black Eyed Peas
+Shine a Light
+French invasion of Russia
+Iron Man
+Caleb Deschanel
+Angelo Badalamenti
+avant-garde jazz
+The Motorcycle Diaries
+David Robb
+2005 NFL Draft
+DuPage County
+Doncaster Rovers
+Gulliver's Travels
+Delroy Facey
+Spartanburg County
+Minami Takayama
+True Grit
+Zagreb
+Mike Oldfield
+The Tourist
+Kidderminster Harriers F.C.
+Evangelicalism
+Panic! at the Disco
+Hancock County
+Portage County
+Exeter
+Genie Award for Best Achievement in Costume Design
+Lost, season 3
+Farida Jalal
+Cardiff
+William Blake
+television producer
+Tom Hardy
+Wellington Phoenix FC
+University of Tokyo
+Harrogate
+Springfield Falcons
+The Sand Pebbles
+University of Wales
+art of painting
+Why We Fight
+Avi Arad
+Aidan Gillen
+Montgomery County
+Hawaiian Islands
+Airports Authority of India
+12th Screen Actors Guild Awards
+Somerset County
+World Bank
+New York Film Critics Circle Award for Best Actor
+Lucas County
+The Cleveland Show
+Lake County
+Soul Surfer
+Ronald Bass
+Tom Jones
+World Trade Center
+Suhasini Maniratnam
+Kid Cudi
+Harvard College
+Paramount Pictures
+Guess Who's Coming to Dinner
+Richard Burton
+The Super Dimension Fortress Macross
+CTV Television Network
+German American
+Mosul
+Wayne Dyer
+hypothyroidism
+Glendale
+Portsmouth F.C.
+Spartak Moscow
+Victoria
+Crystal Palace F.C.
+FC Seoul
+Tomokazu Seki
+Ray Manzarek
+Mahoning County
+Sayonara
+Christian Slater
+James Tiptree, Jr. Award
+Warrington
+Marianne Faithfull
+Toronto Raptors
+Sons of Anarchy
+Lake County
+Die Another Day
+Paul S. Fox
+Juventus F.C.
+Dallas Mavericks
+The Others
+Tommy Chong
+Claude Rains
+Hayden Christensen
+Ponce
+Jun Fukuyama
+Coming Home
+spoken word
+humor magazine
+RCD Espanyol
+Oxnard
+Pittsburgh Pirates
+The Nutty Professor
+Crash
+Thirteen
+Glam punk
+Charles, Prince of Wales
+Stevens Institute of Technology
+Port Arthur
+Hampshire College
+Mansfield
+Claudette Colbert
+Notting Hill
+Dionne Warwick
+Edie Falco
+Burt Reynolds
+Sylvia Plath
+New York University School of Law
+Nauru
+Guangzhou
+Brad Bird
+Burnley F.C.
+Allen Leech
+Peter Morgan
+Harris County
+Lublin Voivodeship
+Robots
+Dane Cook
+Michelle Williams
+Grammy Award for Best Dance/Electronic Album
+Everett
+George Strait
+Maggie Smith
+West Chester
+Great Expectations
+A Simple Life
+Spezia Calcio
+Central Time Zone
+Somerset
+Lil' Kim
+Damascus
+The Clash
+The Silence of the Lambs
+Billy Idol
+Stuyvesant High School
+Giovanni Ribisi
+Topher Grace
+TV Tokyo
+Podlaskie Voivodeship
+Steven Moffat
+Giorgio Moroder
+Jordin Sparks
+Bury My Heart at Wounded Knee
+War of the Austrian Succession
+Secretariat
+Japan Academy Prize for Director of the Year
+Arthur Rankin, Jr.
+Liberty Professionals F.C.
+Eric Stoltz
+food
+Chris Brown
+Cremona
+John Buscema
+1996 NCAA Men's Division I Basketball Tournament
+Freetown
+The Shawshank Redemption
+Jena
+Dearborn
+Sheena Easton
+Far from Heaven
+simulation video game
+Graham Greene
+Ontario County
+Irvine
+Pan Am
+Nagpur
+Take Shelter
+Orange County
+Universal Motown Records
+Charles LeMaire
+Madonna
+Carter Burwell
+teacher
+capric acid
+Edgar Rice Burroughs
+Vincente Minnelli
+American Book Awards
+Jonathan Frakes
+Aboriginal Australians
+Can't Stop the Music
+Wallachia
+Byzantine Empire
+Oswego County
+New York City
+James A. Garfield
+Aida Turturro
+The Fall
+Rules of Engagement
+Rufus Wainwright
+Williamsport
+Julie Walters
+Golden Globe Cecil B. DeMille Award
+West Palm Beach
+Grand Teton National Park
+59th Academy Awards
+Grammy Award for Best Score Soundtrack for Visual Media
+DL-fructose
+Ayr United F.C.
+Ugly Betty
+Mark Tinker
+Worcester
+The Byrds
+Grammy Award for Best Song Written for a Motion Picture, Television or Other Visual Media
+island
+killed in action
+Alicia Silverstone
+Jean-Luc Godard
+Roman Holiday
+Bowdoin College
+Jean-Claude Van Damme
+Eau Claire
+63rd Primetime Emmy Awards
+Runaway Jury
+art gallery
+Donnie Darko
+Don McKellar
+Bangor
+Howards End
+nebula
+Om Prakash
+Montclair State University
+Coronado
+Con Air
+Guardian Children's Fiction Prize
+David Silverman
+National School of Drama
+Mary J. Blige
+Jim Beaver
+burgundy
+Michael Clayton
+European Film Award for Best Composer
+Talladega Nights: The Ballad of Ricky Bobby
+Zombieland
+The Wire, season 1
+Islamism
+F.C. Metz
+Lockheed
+screenwriter
+William Petersen
+Zhejiang
+Filmfare Award for Best Supporting Actor
+Swedish
+Shirley Ann Russell
+chamber music
+special effects
+Traverse City
+Ventura
+Empire of the Sun
+Bronxville
+Newnham College
+BBC
+Gong
+performing arts
+goat
+David Greenwalt
+Vinod Khanna
+Stoke City F.C.
+Havana
+Frank Miller
+Nathaniel Hawthorne
+Fueled By Ramen
+2007 NBA Draft
+Staunton
+Pleasantville
+January
+La Plata
+Joseph Stalin
+Jason Biggs
+Maldives
+Jay Chou
+Elizabeth Hurley
+The Tudors
+Fitzwilliam College
+Clive Davis
+Vin Diesel
+Ontario Liberal Party
+Bryan Cranston
+Happy Together
+CinemaScope
+William B. Davis
+Pink Floyd
+Pfizer
+England cricket team
+Penzance
+Corpus Christi College
+Richmond
+Tim Duncan
+A Simple Plan
+Jayma Mays
+An Alan Smithee Film: Burn Hollywood Burn
+Worcester
+Devin Townsend
+Orlando Bloom
+Srinagar
+Emilio Estevez
+Savannah
+Cape Fear
+Colin Powell
+Alan Cumming
+One Flew Over the Cuckoo's Nest
+Taraji P. Henson
+National University of Singapore
+Lars Hirschfeld
+Bharatiya Janata Party
+minimal techno
+lute
+Jack Elam
+Kevin Jonas
+Sialkot
+John Patrick Shanley
+Pima County
+Milton R. Krasner
+Dr. Luke
+16th United States Congress
+Batman Returns
+Silkeborg IF
+Rob
