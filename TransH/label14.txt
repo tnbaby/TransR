@@ -1,0 +1,120 @@
+oud	pear-shaped stringed instrument
+string	musical instrument part
+bagpipes	musical instrument
+bell	sound-making device
+fiddle	musical instrument
+double bass	acoustic stringed instrument of the violin family
+alto saxophone	type of saxophone
+zither	class of musical stringed instruments
+tubular bells	musical instruments in the percussion family
+sitar	stringed instrument
+violin	bowed string instrument, usually with four strings tuned in perfect fifths
+bass guitar	electric bass instrument
+steel guitar	No description defined
+timpani	musical instruments in the percussion family
+musical saw	No description defined
+drum	type of musical instrument of the percussion family
+viola	bowed string instrument
+Vocoder	No description defined
+bass	type of classical male singing voice
+trombone	type of brass instrument
+baritone guitar	variation on the standard guitar, with a longer scale length
+alto flute	No description defined
+clarinet	type of woodwind instrument
+hurdy-gurdy	musical instrument
+wind instrument	musical instrument that contains a resonator in which a column of air is set into vibration by the player blowing into it
+oboe	musical instrument of the woodwind family
+Rhodes piano	No description defined
+Jew's harp	lamellophone instrument
+cello	musical instrument
+gong	East and South East Asian musical percussion instrument
+goblet drum	generic goblet drum
+bongo drum	type of drum
+lute	musical instrument
+pedal steel guitar	musical instrument
+woodwind instrument	family of musical wind instruments
+xylophone	musical instrument of the family of mallets
+soprano saxophone	the third smallest member of the saxophone family
+banjo	musical instrument
+snare drum	type of drum
+kazoo	American musical instrument
+Washboard	No description defined
+cornet	musical instrument
+guitar	type of string instrument
+accordion	musical instrument
+melodica	free-reed instrument
+acoustic bass guitar	No description defined
+slide	guitar technique for steelguitars
+celesta	struck idiophone operated by a keyboard
+keytar	No description defined
+Dobro	American guitar brand
+choir	ensemble of singers
+backing vocalist	singer who provides vocal harmony with the lead vocalist or other backing vocalists
+Hammond organ	electric organ
+toy piano	music instrument
+vibraphone	musical instrument
+conga	Cuban drum
+glockenspiel	percussion instrument composed of a set of tuned keys arranged in the fashion of the keyboard of a piano
+percussion	No description defined
+clavinet	musical instrument
+clapping	percussive sound made by striking together two flat surfaces
+electronic drum	modern electronic musical instrument
+synthesizer	electronic instrument capable of producing a wide range of sounds
+electric violin	No description defined
+lead vocalist	member of a band who sings the main solo vocal portions of a song
+tenor	classical male singing voice
+saxophone	type of musical instrument of the woodwind family
+bassoon	musical instrument
+Omnichord	No description defined
+drum kit	collection of drums and other percussion instruments
+French horn	type of brass instrument
+hammered dulcimer	string instrument played with hammers
+electric piano	musical instrument
+Appalachian dulcimer	fretted string instrument of the zither family
+Bouzouki	Greek string instrumnet
+harpsichord	musical instrument played by means of a keyboard
+electronic musical instrument	musical instrument that produces its sounds using electronics
+piano	musical instrument
+flugelhorn	brass instrument
+Jazz piano	No description defined
+bass	any of a number of instruments which produce low pitched tones
+didgeridoo	wind instrument
+solo	musical piece or part of musical piece performed by a single musician
+tenor saxophone	type of saxophone
+bass clarinet	musical instrument
+string instrument	a musical instrument that generates tones by one or more strings stretched between two points
+bass drum	percussion instrument
+harmonica	free reed wind instrument
+Wurlitzer electric piano	No description defined
+ukulele	member of the guitar family
+djembe	rope-tuned skin-covered goblet drum played with bare hands, originally from West Africa
+plucked string instrument	belong to the group of string instruments
+lead guitar	role in a band with more than one guitarist
+maraca	percussion instrument
+baritone saxophone	lowest-pitched saxophone
+electric guitar	electrified guitar; fretted stringed instrument with a neck and body that uses a pickup to convert the vibration of its strings into electrical signals
+concertina	free-reed musical instrument
+twelve-string guitar	No description defined
+drum machine	electronic musical instrument designed to imitate the sound of drums or other percussion instruments
+trumpet	musical instrument with the highest register in the brass family
+harp	stringed musical instrument
+percussion instrument	type of musical instrument that produces a sound by directly hitting it
+Lap steel guitar	No description defined
+autoharp	musical string instrument
+classical guitar	acoustic wooden guitar with wide neck, strings made of nylon
+marimba	percussion instrument consisting of a set of wooden bars struck with mallets
+tin whistle	No description defined
+mandolin	musical instrument in the lute family (plucked, or strummed)
+acoustic guitar	type of guitar
+triangle	instrument
+sampler	musical instrument
+cowbell	musical instrument
+theremin	electronic music instrument
+brass instrument	type of musical instrument
+tabla	musical instrument
+soprano	type of classical female singing voice, highest vocal range of all voice types
+programming	in music
+tambourine	musical instrument in the percussion family
+baritone	type of classical male singing voice in middle range
+mezzo-soprano	type of classical female singing voice whose vocal range lies between the soprano and the contralto voice types
+Timbales	chapa me la pija

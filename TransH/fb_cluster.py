@@ -44,36 +44,44 @@ for i in data:
 	wiki2fb[wiki.rstrip()] = fb
 
 clusters = {}
-t_s = time.time()
-#search on wikidata for the meaning of the index
-for i in xrange(len(label)):
-	start = time.time()
-	try:
-		index = fb2wiki[entitylist[i]]
-		res = requests.get("https://www.wikidata.org/wiki/"+index)
-		res.encoding = 'utf-8'
-		soup = BeautifulSoup(res.text,"html.parser")
-		for tag in soup.find_all("span", class_="wikibase-title-label"):
-			name = tag.string
-		for tag in soup.find_all("span", class_="wikibase-descriptionview-text"):	
-			description = tag.string
-		end = time.time()
-		print "epoch:", i, "time:", str(end - start)+ "s", name	
-		if clusters.has_key(label[i]):
-			clusters[label[i]] += [str(name + "-->" + description)]
-		else:
-			clusters[label[i]] = [str(name + "-->" + description)]
-	except KeyError:
-		continue
-	except Exception, e:
-		print e
-		time.sleep(2)
+s_s = time.time()
+f = open('description.txt', 'r')
+data = f.readlines()
+f.close()
+for i in data:
+	index = int(i[0 : i.find('\t')])
+	s = i[i.find('\t') + 1 : -1]
+	if clusters.has_key(label[index]):
+		clusters[label[index]] += [s]
+	else:
+		clusters[label[index]] = [s]
 s_e = time.time()
-print "total time:", str(s_e - s_t)+"s"
-f = open("TransH_clusters.txt", "w")
+print "total time:", str(s_e - s_s)+"s"
+#f = open("clusters.txt", "w")
+#pickle.dump(clusters, f)
+#f.close()
 for key, values in clusters.items():
+	f = open(str("label"+str(key)+".txt"), "w")
 	print key, values[0]
-	f.write("%s: \n"%key)
 	for i in values:
-		f.write("%s\t"%i)
-	f.write("\n")	 
+		f.write(i+"\n")
+	f.close()
+#		try:
+#			index = fb2wiki[i]
+#			print index
+#			res = requests.get("https://www.wikidata.org/wiki/" + index)
+#			res.encoding = "utf-8"
+#			soup = BeautifulSoup(res.text, "html.parser")
+#			for tag in soup.find_all("span", class_="wikibase-title-label"):
+#				name = tag.string
+#			for tag in soup.find_all("span", class_="wikibase-descriptionview-text"):
+#				description = tag.string
+#			f.write("%s\t%s\n"%(name, description))
+#		except KeyError, e:
+#			print "exception: ", e
+#		except Exception, e:
+#			time.sleep(1)
+#			print "url exception: ", e
+#		finally:
+#			print "key: ", key
+#	f.close()
