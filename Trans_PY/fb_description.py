@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import pickle
 import numpy
 import time
+import os
 
 def calc_sum(list1, list2):
 	s = 0
@@ -36,32 +37,45 @@ for i in data:
 	wiki2fb[wiki.rstrip()] = fb
 
 #input search string
-entity_description_list = {}
+#entity_description_list = {}
 t1 = time.time()
-for i in xrange(len(entitylist)):
+start = 0
+if os.path.exists("./continue.txt"):
+	start = int((open("continue.txt",'r')).readline())
+
+while start < len(entitylist):
     try:
-        index = fb2wiki[entitylist[i]]
-        res = requests.get("https://www.wikidata.org/wiki/"+index)
-        res.encoding = "utf-8"
+	f = open('description.txt', 'a+')
+        index = fb2wiki[entitylist[start]]
+	print start, index
+        res = requests.get("https://www.wikidata.org/wiki/"+index, timeout = 10)
+    #    res.encoding = "utf-8"
         soup = BeautifulSoup(res.text,"html.parser")
         for tag in soup.find_all("span", class_="wikibase-title-label"):
-            name = tag.string
+            	name = tag.string
         for tag in soup.find_all("span", class_="wikibase-descriptionview-text"):
-            desc = tag.string
-        print name
-        entity_description_list[name] = desc
-    except KeyError, e:
-        print e
-        continue
-    except Exception, e:
-        print e
-        time.sleep(2)
-t2 = time.time()
-print "total time:", (t2 - t1)
-f = open("description.txt", "w")
-for i in xrange(len(entitylist)):
-    if entity_description_list.has_key(id2entity[i]):
-        f.write(id2entity[i]+"\t"+entity_description_list[id2entity[i]]+"\n")
-    else:
-        f.write(id2entity[i]+"\t"+"no found in wikidata\n")
-f.close()
+            	desc = tag.string
+	f.write("%d\t%s\t%s\n"%(start, name, desc))
+    except requests.exceptions.ConnectTimeout:
+	f1 = open("continue.txt", 'w')
+	f1.write(str(start))
+	f1.close()
+	print 'time out', 'cost time of this epoch ', (time.time() - t1)
+	exit(0)
+    except requests.exceptions.ConnectionError, e:
+	print e
+	time.sleep(1)
+    except BaseException, e:
+	print e
+        time.sleep(1)
+    finally:
+	f.close()
+    start += 1
+print " total time", (time.time() - t1)
+#f = open("description.txt", "w")
+#for i in xrange(len(entitylist)):
+#    if entity_description_list.has_key(id2entity[i]):
+#        f.write(id2entity[i]+"\t"+entity_description_list[id2entity[i]]+"\n")
+#    else:
+#        f.write(id2entity[i]+"\t"+"no found in wikidata\n")
+#f.close()
