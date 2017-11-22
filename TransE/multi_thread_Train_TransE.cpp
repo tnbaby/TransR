@@ -237,19 +237,28 @@ void* rand_sel(void*);
     double calc_sum(int e1,int e2,int rel, int tid)
     {
         double sum=0;
-        if (L1_flag)
-        	for (int ii=0; ii<n; ii++)
-            	sum+=fabs(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]);
-        else
-        	for (int ii=0; ii<n; ii++)
-            	sum+=sqr(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]);
+	double e1_proj = 0;
+	double e2_proj = 0;
+	for (int i = 0; i<n; i++)
+	{
+		e1_proj += entity_vec[e1][i]*relation_vec[rel][i];
+		e2_proj += entity_vec[e2][i]*relation_vec[rel][i];
+		sum += relation_vec[rel][i];
+	}
+	sum *= (e2_proj - e1_proj);
+    // 	if (L1_flag)
+    //    	for (int ii=0; ii<n; ii++)
+    //        	sum+=fabs(entity_vec[e2][ii]-entity_vec[e1][ii]);
+    //    else
+    //    	for (int ii=0; ii<n; ii++)
+    //        	sum+=sqr(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]);
         return sum;
     }
     void gradient(int e1_a, double e1_w, int e2_a, double e2_w, int rel_a, double rel_a_w, int e1_b, double e1_b_w, int e2_b, double e2_b_w, int rel_b, double rel_b_w, int tid)
     {
         for (int ii=0; ii<n; ii++)
         {
-            double x = 2*(entity_vec[e2_a][ii]-entity_vec[e1_a][ii]-relation_vec[rel_a][ii]);
+            double x = 2*(entity_vec[e2_a][ii]*relation_vec[rel_a][ii]-entity_vec[e1_a][ii]*relation_vec[rel_a][ii]);
             if (L1_flag)
             	if (x>0)
             		x=1;
@@ -258,7 +267,7 @@ void* rand_sel(void*);
             relation_tmp[rel_a][ii]-=-1*rate*x*rel_a_w;
             entity_tmp[e1_a][ii]-=-1*rate*x*e1_w;
             entity_tmp[e2_a][ii]+=-1*rate*x*e2_w;
-			x = 2*(entity_vec[e2_b][ii]-entity_vec[e1_b][ii]-relation_vec[rel_b][ii]);
+		x = 2*(entity_vec[e2_b][ii]*relation_vec[rel_b][ii]-entity_vec[e1_b][ii]*relation_vec[rel_b][ii]);
             if (L1_flag)
             	if (x>0)
             		x=1;

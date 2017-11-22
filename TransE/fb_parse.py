@@ -25,6 +25,14 @@ for i in data:
 	entityvec += [parseline(i)]
 print len(entityvec), len(entityvec[0])
 
+f = open("relation2vec.bern", 'r')
+data = f.readlines()
+f.close()
+relationvec = []
+for i in data:
+	relationvec += [parseline(i)]
+print len(relationvec), len(relationvec[0])
+
 f = open("../FB15k/entity2id.txt","r")
 data = f.readlines()
 f.close()
@@ -36,6 +44,19 @@ for i in data:
 	entitylist += [str1]
 	entity2id[str1] = count
 	count = count + 1
+
+f = open('../FB15k/relation2id.txt', 'r')
+data = f.readlines()
+f.close()
+relationlist = []
+relation2id = {}
+count = 0
+for i in data:
+	str1, num = i.split('\t')
+	relationlist += [str1]
+	relation2id[str1] = count
+	count = count + 1
+
 f = open("../FB15k/f2w.nt","r")
 data = f.readlines()
 f.close()
@@ -63,11 +84,13 @@ for tag in soup.find_all("span",  class_="wb-itemlink-label"):
 k = entity2id[wiki2fb[inp_str[1:len(inp_str)-1]]]
 candidate_list = {}
 f = open("notfound","w")
+ii = 37
+print relationlist[ii]
 for i in xrange(len(entitylist)):
 #	for ii in xrange(len(relationvec)):
 	try:
-	#		candidate_list[fb2wiki[entitylist[i]]] = calc_sum(numpy.add(entityvec[k], relationvec[ii]), entityvec[i])
-		candidate_list[fb2wiki[entitylist[i]]] = calc_sum(entityvec[k], entityvec[i])
+		candidate_list[fb2wiki[entitylist[i]]] = calc_sum(numpy.add(entityvec[k], relationvec[ii]), entityvec[i])
+	#	candidate_list[fb2wiki[entitylist[i]]] = calc_sum(entityvec[k], entityvec[i])
 	except KeyError:
 		f.write(entitylist[i]+"\n")
 f.close()
