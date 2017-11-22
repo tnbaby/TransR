@@ -63,12 +63,15 @@ class Train{
 
 public:
 	map<pair<int,int>, map<int,int> > ok;
+	map<int, map<int, float> > entity_neighbor_frequency;
     void add(int x,int y,int z)
     {
         fb_h.push_back(x);
         fb_r.push_back(z);
         fb_l.push_back(y);
         ok[make_pair(x,z)][y]=1;
+		entity_neighbor_frequency[x][y] += 1;
+		entity_neighbor_frequency[y][x] += 1;
     }
     void run(int n_in,double rate_in,double margin_in,int method_in)
     {
@@ -99,7 +102,17 @@ public:
                 entity_vec[i][ii] = randn(0,1.0/n,-6/sqrt(n),6/sqrt(n));
             norm(entity_vec[i]);
         }
-	
+//	for (map<int, map<int, float> >::iterator it = entity_neighbor_frequency.begin(); it != entity_neighbor_frequency.end(); ++it)
+//	{
+//		float total_frequency = 0;
+//		for (map<int, float>::iterator t = entity_neighbor_frequency[it->first].begin(); t != entity_neighbor_frequency[it->first].end(); ++t)
+//			total_frequency += exp(- t->second );
+//		for (map<int, float>::iterator t = entity_neighbor_frequency[it->first].begin(); t != entity_neighbor_frequency[it->first].end(); ++t)
+//		{
+//			entity_neighbor_frequency[it->first][t->first] = exp(- t->second)/total_frequency;	
+//			cout << exp(- t->second)/total_frequency << endl;	
+//		}		
+//	}	
         bfgs();
     }
 
@@ -137,14 +150,17 @@ private:
         int batchsize = fb_h.size()/nbatches;
             for (int epoch=0; epoch<nepoch; epoch++)
             {
-
+//				cout << "entering epoch: " << epoch << endl;
             	res=0;
              	for (int batch = 0; batch<nbatches; batch++)
              	{
+					int tmp_res = res;
+//					cout << "entering batch: " << batch << endl;
              		relation_tmp=relation_vec;
             		entity_tmp = entity_vec;
              		for (int k=0; k<batchsize; k++)
              		{
+						//cout << "entering minbatch: " << k << endl;
 						int i=rand_max(fb_h.size());
 						int j=rand_max(entity_num);
 						double pr = 1000*right_num[fb_r[i]]/(right_num[fb_r[i]]+left_num[fb_r[i]]);
@@ -167,6 +183,7 @@ private:
                 		norm(entity_tmp[fb_l[i]]);
                 		norm(entity_tmp[j]);
              		}
+//					cout << "batch " << batch << " res: " << res - tmp_res << endl;
 		            relation_vec = relation_tmp;
 		            entity_vec = entity_tmp;
              	}
@@ -203,41 +220,152 @@ private:
             	sum+=sqr(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]);
         return sum;
     }
-    void gradient(int e1_a,int e2_a,int rel_a,int e1_b,int e2_b,int rel_b)
+    void gradient(int e1_a, double e1_w, int e2_a, double e2_w, int rel_a, double rel_a_w, int e1_b, double e1_b_w, int e2_b, double e2_b_w, int rel_b, double rel_b_w)
     {
+		//cout << "entering gradient" << endl;
+	//	int e1_a_fcnt = 0;
+	//	int e2_a_fcnt = 0;
+//	   	int e1_b_fcnt = 0;
+//		int e2_b_fcnt = 0;	
+	//	for (map<int, int>::iterator it = entity_neighbor_frequency[e1_a].begin(); it != entity_neighbor_frequency[e1_a].end(); ++it)
+	//		e1_a_fcnt += it->second;
+	//	for (map<int, int>::iterator it = entity_neighbor_frequency[e2_a].begin(); it != entity_neighbor_frequency[e2_a].end(); ++it)
+	//		e2_a_fcnt += it->second;
+//		for (map<int, int>::iterator it = entity_neighbor_frequency[e1_b].begin(); it != entity_neighbor_frequency[e1_b].end(); ++it)
+//			e1_b_fcnt += it->second;
+//		for (map<int, int>::iterator it = entity_neighbor_frequency[e2_b].begin(); it != entity_neighbor_frequency[e2_b].end(); ++it)
+//			e2_b_fcnt += it->second;
+		vector<float> grad (n, 0);
         for (int ii=0; ii<n; ii++)
         {
-
             double x = 2*(entity_vec[e2_a][ii]-entity_vec[e1_a][ii]-relation_vec[rel_a][ii]);
             if (L1_flag)
             	if (x>0)
             		x=1;
             	else
             		x=-1;
-            relation_tmp[rel_a][ii]-=-1*rate*x;
-            entity_tmp[e1_a][ii]-=-1*rate*x;
-            entity_tmp[e2_a][ii]+=-1*rate*x;
-            x = 2*(entity_vec[e2_b][ii]-entity_vec[e1_b][ii]-relation_vec[rel_b][ii]);
+            relation_tmp[rel_a][ii]-=-1*rate*x*rel_a_w;
+            entity_tmp[e1_a][ii]-=-1*rate*x*e1_w;
+            entity_tmp[e2_a][ii]+=-1*rate*x*e2_w;
+			grad[ii] = rate*x;
+	//		for (map<int, float>::iterator it = entity_neighbor_frequency[e1_a].begin(); it != entity_neighbor_frequency[e1_a].end(); ++it)
+	//			if (it->first != e2_a)
+	//				entity_tmp[it->first][ii] -= -1.0*rate*x*it->second;
+	//		for (map<int, float>::iterator it = entity_neighbor_frequency[e2_a].begin(); it != entity_neighbor_frequency[e2_a].end(); ++it)
+	//			if (it->first != e1_a)
+	//				entity_tmp[it->first][ii] = -1*rate*x*it->second;
+        //    
+			x = 2*(entity_vec[e2_b][ii]-entity_vec[e1_b][ii]-relation_vec[rel_b][ii]);
             if (L1_flag)
             	if (x>0)
             		x=1;
             	else
             		x=-1;
-            relation_tmp[rel_b][ii]-=rate*x;
-            entity_tmp[e1_b][ii]-=rate*x;
-            entity_tmp[e2_b][ii]+=rate*x;
+            relation_tmp[rel_b][ii]-=rate*x*rel_b_w;
+            entity_tmp[e1_b][ii]-=rate*x*e1_b_w;
+            entity_tmp[e2_b][ii]+=rate*x*e2_b_w;
+			
+//			for (map<int, int>::iterator it = entity_neighbor_frequency[e1_b].begin(); it != entity_neighbor_frequency[e1_b].end(); ++it)
+//				entity_tmp[it->first][ii] -= rate*x*it->second/e1_b_fcnt;
+//			for (map<int, int>::iterator it = entity_neighbor_frequency[e2_b].begin(); it != entity_neighbor_frequency[e2_b].end(); ++it)
+//				entity_tmp[it->first][ii] += rate*x*it->second/e2_b_fcnt;
         }
+	//	for (map<int, float>::iterator it = entity_neighbor_frequency[e1_a].begin(); it != entity_neighbor_frequency[e1_a].end(); ++it)
+	//	{
+	//		if (it->first == e2_a)
+	//			continue;
+	//		for (int ii = 0; ii<n; ii++)
+	//			entity_tmp[it->first][ii] -= -1.0*grad[ii]*it->second;
+	//		norm(entity_tmp[it->first]);
+	//	}
+	//	for (map<int, float>::iterator it = entity_neighbor_frequency[e2_a].begin(); it != entity_neighbor_frequency[e2_a].end(); ++it)
+	//	{
+	//		if (it->first == e1_a)
+	//			continue;
+	//		for (int ii = 0; ii<n; ii++)
+	//			entity_tmp[it->first][ii] += -1.0*grad[ii]*it->second;
+	//		norm(entity_tmp[it->first]);
+	//	}		
+//		norm(entity_tmp[e1_a]);
+//		norm(entity_tmp[e2_a]);
+//		norm(entity_tmp[e1_b]);
+//		norm(entity_tmp[e2_b]);
+//		for (map<int, int>::iterator it = entity_neighbor_frequency[e1_a].begin(); it != entity_neighbor_frequency[e1_a].end(); ++it)
+//			norm(entity_tmp[it->first]);
+//		for (map<int, int>::iterator it = entity_neighbor_frequency[e2_a].begin(); it != entity_neighbor_frequency[e2_a].end(); ++it)
+//			norm(entity_tmp[it->first]);
+//		for (map<int, int>::iterator it = entity_neighbor_frequency[e1_b].begin(); it != entity_neighbor_frequency[e1_b].end(); ++it)
+//			norm(entity_tmp[it->first]);
+//		for (map<int, int>::iterator it = entity_neighbor_frequency[e2_b].begin(); it != entity_neighbor_frequency[e2_b].end(); ++it)
+//			norm(entity_tmp[it->first]);
+
+		//cout << "leaving gradient" << endl;
     }
     void train_kb(int e1_a,int e2_a,int rel_a,int e1_b,int e2_b,int rel_b)
     {
         double sum1 = calc_sum(e1_a,e2_a,rel_a);
         double sum2 = calc_sum(e1_b,e2_b,rel_b);
+//	cout << "entering train_kb...." << endl;
         if (sum1+margin>sum2)
         {
         	res+=margin+sum1-sum2;
-        	gradient( e1_a, e2_a, rel_a, e1_b, e2_b, rel_b);
-        }
+        	gradient( e1_a, cal_entity_attention(e1_a, rel_a), e2_a, cal_entity_attention(e2_a, rel_a), rel_a, cal_relation_attention(rel_a, e1_a, e2_a), e1_b, cal_entity_attention(e1_b, rel_b), e2_b, cal_entity_attention(e2_b, rel_b), rel_b, cal_relation_attention(rel_b, e1_b, e2_b));
+  //      	cout << endl;
+	}
     }
+	
+	double cal_entity_attention(int target_entity, int target_relation)
+	{
+		double sum = 0.0;
+		double target_sum = 0.0;
+		map<int, int>::iterator it;
+		for (int i=0; i<relation_num; i++)
+		{
+			if ((it = right_entity[i].find(target_entity)) != right_entity[i].end() || (it = left_entity[i].find(target_entity)) != left_entity[i].end())
+			{
+				double tmp = 0.0;
+				for (int j = 0; j < n; j++)
+				{
+					if (target_relation == i)
+						target_sum += entity_vec[target_entity][j]*relation_vec[i][j];
+					tmp += entity_vec[target_entity][j]*relation_vec[i][j];
+				}
+				sum += fabs(tmp);
+			}
+		}
+//		cout << "entity" << fabs(target_sum) / sum << endl;
+		return fabs(target_sum) / sum;
+	}
+	double cal_relation_attention(int target_relation, int target_entity1, int target_entity2)
+	{
+		double sum = 0.0;
+		double target_sum1 = 0.0;
+		double target_sum2 = 0.0;
+		for (map<int, int>::iterator it = left_entity[target_relation].begin(); it!=left_entity[target_relation].end(); it++)
+		{
+			double tmp = 0.0;
+			for(int j = 0; j < n; j++)
+			{
+				if (it->first == target_entity1)
+					target_sum1 += entity_vec[target_entity1][j]*relation_vec[target_relation][j];
+				tmp += entity_vec[target_entity1][j]*relation_vec[target_relation][j];
+			}
+			sum += fabs(tmp);
+		}
+		for (map<int, int>::iterator it = right_entity[target_relation].begin(); it!=right_entity[target_relation].end(); it++)
+		{
+			double tmp = 0.0;
+			for(int j = 0; j < n; j++)
+			{
+				if (it->first == target_entity2)
+					target_sum2 += entity_vec[target_entity2][j]*relation_vec[target_relation][j];
+				tmp += entity_vec[target_entity2][j]*relation_vec[target_relation][j];
+			}
+			sum += fabs(tmp);
+		}
+//		cout << "relation" << (fabs(target_sum1)+ fabs(target_sum2)) / sum << endl;
+		return (fabs(target_sum1) + fabs(target_sum2)) / sum;
+	}
 };
 
 Train train;

@@ -132,7 +132,6 @@ left_entity = {}
 right_entity = {}
 left_num = [0 for i in xrange(relation_num)]
 right_num = [0 for i in xrange(relation_num)]
-
 f = open(datapath+"train.txt", "r")
 data = f.readlines()
 f.close()
