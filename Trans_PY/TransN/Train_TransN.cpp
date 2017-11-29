@@ -270,6 +270,7 @@ void train_kb(int, int, int, int, int, int, int);
 		neighbors_entity_vec[e][ii] = 0.0;
 		for (int i=0; i<entity_neighbors[make_pair(e, rel)].size(); i++)
 			neighbors_entity_vec[e][ii] += weight[i]/sum*entity_vec[entity_neighbors[make_pair(e, rel)][i]][ii];
+		norm(neighbors_entity_vec[e]);
 	}
     }
 	
@@ -314,14 +315,15 @@ void train_kb(int, int, int, int, int, int, int);
     }
     void train_kb(int e1_a,int e2_a,int rel_a,int e1_b,int e2_b,int rel_b, int tid)
     {
+	get_neighbors_attention_vec(e1_a, rel_a, tid);
+	get_neighbors_attention_vec(e2_a, rel_a, tid);
+	get_neighbors_attention_vec(e1_b, rel_b, tid);
+	get_neighbors_attention_vec(e2_b, rel_b, tid);
+
         double sum1 = calc_sum(e1_a,e2_a,rel_a, tid);
         double sum2 = calc_sum(e1_b,e2_b,rel_b, tid);
         if (sum1+margin>sum2)
         {
-		get_neighbors_attention_vec(e1_a, rel_a, tid);
-		get_neighbors_attention_vec(e2_a, rel_a, tid);
-		get_neighbors_attention_vec(e1_b, rel_b, tid);
-		get_neighbors_attention_vec(e2_b, rel_b, tid);
         	res_thread[tid]+=margin+sum1-sum2;
         	gradient( e1_a, e2_a, rel_a, e1_b, e2_b, rel_b, tid);
         }
@@ -421,7 +423,7 @@ int main(int argc,char**argv)
     int method = 1;
     int n = 100;
     double rate = 0.001;
-    double margin = 2;
+    double margin = 3;
     double con_alpha = 0.01;
     int i;
     if ((i = ArgPos((char *)"-size", argc, argv)) > 0) n = atoi(argv[i + 1]);
