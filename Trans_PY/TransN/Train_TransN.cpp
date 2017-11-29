@@ -71,7 +71,7 @@ int nepoch;
 vector<int> fb_h,fb_l,fb_r;
 vector<vector<int> > feature;
 vector<vector<double> > relation_vec,entity_vec, neighbors_entity_vec;
-vector<vector<double> > relation_tmp,entity_tmp, neighbors_entity_tmp;
+vector<vector<double> > relation_tmp,entity_tmp;// neighbors_entity_tmp;
 
 double norm(vector<double> &a);
 void bfgs();
@@ -115,11 +115,9 @@ void train_kb(int, int, int, int, int, int, int);
 		for (int i=0; i<relation_tmp.size(); i++)
 			relation_tmp[i].resize(n);
         entity_tmp.resize(entity_num);
-	neighbors_entity_tmp.resize(entity_num);
 	for (int i=0; i<entity_tmp.size(); i++)
 	{
 		entity_tmp[i].resize(n);
-		neighbors_entity_tmp[i].resize(n);
 	}
 	for (int i=0; i<relation_num; i++)
         {
@@ -131,7 +129,7 @@ void train_kb(int, int, int, int, int, int, int);
             for (int ii=0; ii<n; ii++)
 	    {
                 entity_vec[i][ii] = randn(0,1.0/n,-6/sqrt(n),6/sqrt(n));
-		neighbors_entity_vec[i][ii] = entity_vec[i][ii];
+		//neighbors_entity_vec[i][ii] = entity_vec[i][ii];
             }
 	    norm(entity_vec[i]);
 	    norm(neighbors_entity_vec[i]);
@@ -183,9 +181,6 @@ void train_kb(int, int, int, int, int, int, int);
                 norm(entity_tmp[fb_h[i]]);
                 norm(entity_tmp[fb_l[i]]);
                 norm(entity_tmp[j]);
-		norm(neighbors_entity_tmp[fb_h[i]]);
-		norm(neighbors_entity_tmp[fb_l[i]]);
-		norm(neighbors_entity_tmp[j]);
 	}
     }
     
@@ -194,7 +189,6 @@ void train_kb(int, int, int, int, int, int, int);
         nbatches=100;
         nepoch = 1000;
         batchsize = fb_h.size()/nbatches/THREADS_NUM;
-	cout << "bfgs" << endl;
        for (int epoch=0; epoch<nepoch; epoch++)
        {
        	    res=0;
@@ -206,7 +200,7 @@ void train_kb(int, int, int, int, int, int, int);
             	int tmp_res = res;
          	relation_tmp=relation_vec;
         	entity_tmp = entity_vec;
-		neighbors_entity_tmp = neighbors_entity_vec;
+		//neighbors_entity_tmp = neighbors_entity_vec;
             	pthread_t threads[THREADS_NUM];
             	for(int k=0; k<THREADS_NUM; k++)
             		res_thread[k] = 0;
@@ -220,14 +214,14 @@ void train_kb(int, int, int, int, int, int, int);
             	cout << "batch: " << batch << " res: " << res - tmp_res << " time" << (double)(stop-start) << endl;
                 relation_vec = relation_tmp;
                 entity_vec = entity_tmp;
-		neighbors_entity_vec = neighbors_entity_tmp;
+		//neighbors_entity_vec = neighbors_entity_tmp;
             }
             epoch_e = time(NULL);
-            cout<<"epoch:"<<epoch<<' '<<res<<(double)(epoch_e-epoch_s)<<endl;
+            cout<<"epoch:"<<epoch<<' '<<res<<"\ttime"<<(double)(epoch_e-epoch_s)<<endl;
             FILE* f2 = fopen(("relation2vec."+version).c_str(),"w");
             FILE* f3 = fopen(("entity2vec."+version).c_str(),"w");
-	    FILE* f4 = fopen(("neighbors2vec."+version).c_str(),"w");
-            if(f2 ==  NULL || f3 == NULL || f4 == NULL)
+	    //FILE* f4 = fopen(("neighbors2vec."+version).c_str(),"w");
+            if(f2 ==  NULL || f3 == NULL)
                cout << "file open failed" << endl;
             for (int i=0; i<relation_num; i++)
             {
@@ -239,14 +233,14 @@ void train_kb(int, int, int, int, int, int, int);
             {
                 for (int ii=0; ii<n; ii++){
                     fprintf(f3,"%.6lf\t",entity_vec[i][ii]);
-		    fprintf(f4, "%.6lf\t",neighbors_entity_vec[i][ii]);
+		 //   fprintf(f4, "%.6lf\t",neighbors_entity_vec[i][ii]);
 		}
                 fprintf(f3,"\n");
-		fprintf(f4, "\n");
+		//fprintf(f4, "\n");
             }
             fclose(f2);
             fclose(f3);
-	    fclose(f4);
+	   // fclose(f4);
         }
     }
    
@@ -255,10 +249,10 @@ void train_kb(int, int, int, int, int, int, int);
 	double sum=0;
 	if (L1_flag)
 		for (int ii=0; ii<n; ii++)
-			sum+=fabs(neighbors_entity_vec[e2][ii]-neighbors_entity_vec[e1][ii]-relation_vec[rel][ii]);
+			sum+=fabs(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]);
 	else
 		for (int ii=0; ii<n; ii++)
-			sum+=sqr(neighbors_entity_vec[e2][ii]-neighbors_entity_vec[e1][ii]-relation_vec[rel][ii]);
+			sum+=sqr(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]);
 	return sum;
     }
 
@@ -268,14 +262,14 @@ void train_kb(int, int, int, int, int, int, int);
 	double sum = 0;
     	for (int i = 0; i<entity_neighbors[make_pair(e, rel)].size(); i++)
 	{
-		sum += exp(get_sum(e, entity_neighbors[make_pair(e, rel)][i], rel, tid));
-		weight.push_back(exp(get_sum(e, entity_neighbors[make_pair(e, rel)][i], rel, tid)));
+		sum += exp(-get_sum(e, entity_neighbors[make_pair(e, rel)][i], rel, tid));
+		weight.push_back(-exp(get_sum(e, entity_neighbors[make_pair(e, rel)][i], rel, tid)));
 	}
 	for (int ii=0; ii<n; ii++)
 	{
-		neighbors_entity_tmp[e][ii] = 0.0;
+		neighbors_entity_vec[e][ii] = 0.0;
 		for (int i=0; i<entity_neighbors[make_pair(e, rel)].size(); i++)
-			neighbors_entity_tmp[e][ii] += weight[i]/sum*neighbors_entity_vec[entity_neighbors[make_pair(e, rel)][i]][ii];
+			neighbors_entity_vec[e][ii] += weight[i]/sum*entity_vec[entity_neighbors[make_pair(e, rel)][i]][ii];
 	}
     }
 	
@@ -284,18 +278,17 @@ void train_kb(int, int, int, int, int, int, int);
         double sum=0;
         if (L1_flag)
         	for (int ii=0; ii<n; ii++)
-            	sum+=fabs(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]) + fabs(neighbors_entity_tmp[e2][ii]-neighbors_entity_tmp[e1][ii]-relation_vec[rel][ii] + con_alpha*(neighbors_entity_tmp[e2][ii]-entity_vec[e2][ii] + neighbors_entity_tmp[e1][ii]-entity_vec[e1][ii]));
+            	sum+=fabs(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]) + fabs(neighbors_entity_vec[e2][ii]-neighbors_entity_vec[e1][ii]-relation_vec[rel][ii]) + con_alpha*fabs(neighbors_entity_vec[e2][ii]-entity_vec[e2][ii] + neighbors_entity_vec[e1][ii]-entity_vec[e1][ii]);
         else
         	for (int ii=0; ii<n; ii++)
-            	sum+=sqr(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]) + sqr(neighbors_entity_tmp[e2][ii]-neighbors_entity_tmp[e1][ii]-relation_vec[rel][ii] + con_alpha*(neighbors_entity_tmp[e2][ii]-entity_vec[e2][ii] + neighbors_entity_tmp[e1][ii]-entity_vec[e1][ii]));
+            	sum+=sqr(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]) + sqr(neighbors_entity_vec[e2][ii]-neighbors_entity_vec[e1][ii]-relation_vec[rel][ii]) + con_alpha*sqr(neighbors_entity_vec[e2][ii]-entity_vec[e2][ii] + neighbors_entity_vec[e1][ii]-entity_vec[e1][ii]);
         return sum;
     }
     void gradient(int e1_a,int e2_a,int rel_a,int e1_b,int e2_b,int rel_b, int tid)
     {
         for (int ii=0; ii<n; ii++)
         {
-            double x = 2*(entity_vec[e2_a][ii]-entity_vec[e1_a][ii]-relation_vec[rel_a][ii]);
-	    double x_n = 2*(neighbors_entity_tmp[e2_a][ii]-neighbors_entity_tmp[e1_a][ii]-relation_vec[rel_a][ii]+con_alpha*(neighbors_entity_tmp[e2_a][ii]-entity_vec[e2_a][ii]+neighbors_entity_tmp[e1_a][ii]-entity_vec[e1_a][ii]));
+            double x = 2*(entity_vec[e2_a][ii]-entity_vec[e1_a][ii]-relation_vec[rel_a][ii]) + 2*(neighbors_entity_vec[e2_a][ii]-neighbors_entity_vec[e1_a][ii]-relation_vec[rel_a][ii]+con_alpha*(neighbors_entity_vec[e2_a][ii]-entity_vec[e2_a][ii]+neighbors_entity_vec[e1_a][ii]-entity_vec[e1_a][ii]));
             if (L1_flag)
             	if (x>0)
             		x=1;
@@ -304,10 +297,9 @@ void train_kb(int, int, int, int, int, int, int);
             relation_tmp[rel_a][ii]-=-1*rate*x;
             entity_tmp[e1_a][ii]-=-1*rate*x;
             entity_tmp[e2_a][ii]+=-1*rate*x;
-	    neighbors_entity_tmp[e1_a][ii]-=-1*rate*x_n;
-	    neighbors_entity_tmp[e2_a][ii]+=-1*rate*x_n;
-            x = 2*(entity_vec[e2_b][ii]-entity_vec[e1_b][ii]-relation_vec[rel_b][ii]);
-	    x_n = 2*(neighbors_entity_tmp[e2_b][ii]-neighbors_entity_tmp[e1_b][ii]-relation_vec[rel_b][ii]+con_alpha*(neighbors_entity_tmp[e2_b][ii]-entity_vec[e2_b][ii]+neighbors_entity_tmp[e2_a][ii]-entity_vec[e2_a][ii]));
+	    //neighbors_entity_tmp[e1_a][ii]-=-1*rate*x_n;
+	    //neighbors_entity_tmp[e2_a][ii]+=-1*rate*x_n;
+            x = 2*(entity_vec[e2_b][ii]-entity_vec[e1_b][ii]-relation_vec[rel_b][ii]) + 2*(neighbors_entity_vec[e2_b][ii]-neighbors_entity_vec[e1_b][ii]-relation_vec[rel_b][ii]+con_alpha*(neighbors_entity_vec[e2_b][ii]-entity_vec[e2_b][ii]+neighbors_entity_vec[e2_a][ii]-entity_vec[e2_a][ii]));
             if (L1_flag)
             	if (x>0)
             		x=1;
@@ -316,8 +308,8 @@ void train_kb(int, int, int, int, int, int, int);
             relation_tmp[rel_b][ii]-=rate*x;
             entity_tmp[e1_b][ii]-=rate*x;
             entity_tmp[e2_b][ii]+=rate*x;
-	    neighbors_entity_tmp[e1_b][ii]-=rate*x_n;
-	    neighbors_entity_tmp[e2_b][ii]+=rate*x_n;
+	    //neighbors_entity_tmp[e1_b][ii]-=rate*x_n;
+	    //neighbors_entity_tmp[e2_b][ii]+=rate*x_n;
         }
     }
     void train_kb(int e1_a,int e2_a,int rel_a,int e1_b,int e2_b,int rel_b, int tid)
@@ -429,7 +421,7 @@ int main(int argc,char**argv)
     int method = 1;
     int n = 100;
     double rate = 0.001;
-    double margin = 1;
+    double margin = 2;
     double con_alpha = 0.01;
     int i;
     if ((i = ArgPos((char *)"-size", argc, argv)) > 0) n = atoi(argv[i + 1]);
