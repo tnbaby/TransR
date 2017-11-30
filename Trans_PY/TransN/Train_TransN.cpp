@@ -279,17 +279,17 @@ void train_kb(int, int, int, int, int, int, int);
         double sum=0;
         if (L1_flag)
         	for (int ii=0; ii<n; ii++)
-            	sum+=fabs(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]) + fabs(neighbors_entity_vec[e2][ii]-neighbors_entity_vec[e1][ii]-relation_vec[rel][ii]) + con_alpha*fabs(neighbors_entity_vec[e2][ii]-entity_vec[e2][ii] + neighbors_entity_vec[e1][ii]-entity_vec[e1][ii]);
+            	sum+=fabs(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii] + con_alpha*fabs(neighbors_entity_vec[e2][ii]-entity_vec[e2][ii] + neighbors_entity_vec[e1][ii]-entity_vec[e1][ii]));
         else
         	for (int ii=0; ii<n; ii++)
-            	sum+=sqr(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii]) + sqr(neighbors_entity_vec[e2][ii]-neighbors_entity_vec[e1][ii]-relation_vec[rel][ii]) + con_alpha*sqr(neighbors_entity_vec[e2][ii]-entity_vec[e2][ii] + neighbors_entity_vec[e1][ii]-entity_vec[e1][ii]);
+            	sum+=sqr(entity_vec[e2][ii]-entity_vec[e1][ii]-relation_vec[rel][ii] + con_alpha*(neighbors_entity_vec[e2][ii]-entity_vec[e2][ii] + neighbors_entity_vec[e1][ii]-entity_vec[e1][ii]));
         return sum;
     }
     void gradient(int e1_a,int e2_a,int rel_a,int e1_b,int e2_b,int rel_b, int tid)
     {
         for (int ii=0; ii<n; ii++)
         {
-            double x = 2*(entity_vec[e2_a][ii]-entity_vec[e1_a][ii]-relation_vec[rel_a][ii]) + 2*(neighbors_entity_vec[e2_a][ii]-neighbors_entity_vec[e1_a][ii]-relation_vec[rel_a][ii]+con_alpha*(neighbors_entity_vec[e2_a][ii]-entity_vec[e2_a][ii]+neighbors_entity_vec[e1_a][ii]-entity_vec[e1_a][ii]));
+            double x = 2*(entity_vec[e2_a][ii]-entity_vec[e1_a][ii]-relation_vec[rel_a][ii] + con_alpha*(neighbors_entity_vec[e2_a][ii]-entity_vec[e2_a][ii]+neighbors_entity_vec[e1_a][ii]-entity_vec[e1_a][ii]));
             if (L1_flag)
             	if (x>0)
             		x=1;
@@ -300,7 +300,7 @@ void train_kb(int, int, int, int, int, int, int);
             entity_tmp[e2_a][ii]+=-1*rate*x;
 	    //neighbors_entity_tmp[e1_a][ii]-=-1*rate*x_n;
 	    //neighbors_entity_tmp[e2_a][ii]+=-1*rate*x_n;
-            x = 2*(entity_vec[e2_b][ii]-entity_vec[e1_b][ii]-relation_vec[rel_b][ii]) + 2*(neighbors_entity_vec[e2_b][ii]-neighbors_entity_vec[e1_b][ii]-relation_vec[rel_b][ii]+con_alpha*(neighbors_entity_vec[e2_b][ii]-entity_vec[e2_b][ii]+neighbors_entity_vec[e2_a][ii]-entity_vec[e2_a][ii]));
+            x = 2*(entity_vec[e2_b][ii]-entity_vec[e1_b][ii]-relation_vec[rel_b][ii] + con_alpha*(neighbors_entity_vec[e2_b][ii]-entity_vec[e2_b][ii]+neighbors_entity_vec[e2_a][ii]-entity_vec[e2_a][ii]));
             if (L1_flag)
             	if (x>0)
             		x=1;
@@ -429,7 +429,7 @@ int main(int argc,char**argv)
     if ((i = ArgPos((char *)"-size", argc, argv)) > 0) n = atoi(argv[i + 1]);
     if ((i = ArgPos((char *)"-margin", argc, argv)) > 0) margin = atoi(argv[i + 1]);
     if ((i = ArgPos((char *)"-method", argc, argv)) > 0) method = atoi(argv[i + 1]);
-    if ((i = ArgPos((char *)"-con_alpha", argc, argv)) > 0) con_alpha = atoi(argv[i + 1]);
+    if ((i = ArgPos((char *)"-con_alpha", argc, argv)) > 0) con_alpha = atof(argv[i + 1]);
     cout<<"size = "<<n<<endl;
     cout<<"learing rate = "<<rate<<endl;
     cout<<"margin = "<<margin<<endl;
