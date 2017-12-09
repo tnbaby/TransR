@@ -381,13 +381,13 @@ void prepare()
 	id2entity[x]=st;
 	entity_num++;
     }
-    while (fscanf(f2,"%s%d",buf,&x)==2)
-    {
-	string st=buf;
-	relation2id[st]=x;
-	id2relation[x]=st;
-	relation_num++;
-    }
+//    while (fscanf(f2,"%s%d",buf,&x)==2)
+//    {
+//	string st=buf;
+//	relation2id[st]=x;
+//	id2relation[x]=st;
+//	relation_num++;
+//    }
     FILE* f_kb = fopen((data_path+"train.txt").c_str(),"r");
     int cnt = 0;
 	while (fscanf(f_kb,"%s",buf)==1)
@@ -395,8 +395,8 @@ void prepare()
         string s1=buf;
         fscanf(f_kb,"%s",buf);
         string s2=buf;
-        fscanf(f_kb,"%s",buf);
-        string s3=buf;
+        //fscanf(f_kb,"%s",buf);
+        //string s3=buf;
         if (entity2id.count(s1)==0)
         {
             cout<<"miss entity:"<<s1<<endl;
@@ -405,12 +405,12 @@ void prepare()
         {
             cout<<"miss entity:"<<s2<<endl;
         }
-        if (relation2id.count(s3)==0)
-        {
-            relation2id[s3] = relation_num;
-            relation_num++;
-	    cnt++;
-        }
+        //if (relation2id.count(s3)==0)
+        //{
+        //    relation2id[s3] = relation_num;
+        //    relation_num++;
+	//    cnt++;
+        //}
         left_entity[relation2id[s3]][entity2id[s1]]++;
         right_entity[relation2id[s3]][entity2id[s2]]++;
         train.add(entity2id[s1],entity2id[s2],relation2id[s3]);

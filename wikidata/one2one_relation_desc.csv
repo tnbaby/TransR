@@ -1,0 +1,91 @@
+,0
+/location/country/form_of_government	/government/form_of_government/countries,"Dominican Republic-->country in the Caribbean
+Republic-->system of government where the state's sovereignty does not rest in an individual
+Cape Verde-->country comprising ten islands off the Western coast of Africa"
+/people/person/profession	/people/profession/people_with_this_profession,"Oprah Winfrey-->American businesswoman, talk show host, actress, producer, and philanthropist
+theatrical producer-->person who oversees the staging of theatre productions
+Will Smith-->American actor, film producer and rapper"
+/people/person/profession	/film/film_subject/films,"Buzz Aldrin-->American astronaut
+astronaut-->person who commands, pilots, or serves as a crew member of a spacecraft
+The Right Stuff-->1983 film by Philip Kaufman"
+/film/film/genre	/film/film_genre/films_in_this_genre,"The Dresser-->1983 film by Peter Yates
+historical period drama-->work of art set in, or reminiscent of, an earlier time period
+Boogie Nights-->1997 film by Paul Thomas Anderson"
+/organization/organization/sectors	/organization/organization_sector/organizations_in_this_sector,"VH1-->American cable television network
+music video-->short film integrating a song and imagery
+VH1-->American cable television network"
+/architecture/museum/type_of_museum	/architecture/type_of_museum/museums,"Metropolitan Museum of Art-->art museum in New York, New York
+art gallery-->place (commercial) where (contemporary) art is shown for exhibition and for sale
+National Gallery-->art gallery in London housing the British national collection of pre-20th century Western paintings"
+/education/educational_institution/school_type	/education/school_category/schools_of_this_kind,"Brandeis University-->private research university in Waltham, Massachusetts
+private university-->university not operated by a government
+Rice University-->university in Houston, Texas, USA"
+/metropolitan_transit/transit_line/service_type	/metropolitan_transit/transit_service_type/transit_lines,"Northern line-->London Underground line
+subterranean rapid transit-->passenger rail system in an urban area
+Northern line-->London Underground line"
+/metropolitan_transit/transit_service_type/transit_lines	/metropolitan_transit/transit_line/service_type,"subterranean rapid transit-->passenger rail system in an urban area
+Northern line-->London Underground line
+subterranean rapid transit-->passenger rail system in an urban area"
+/music/artist/label	/music/record_label/artist,"Pet Shop Boys-->English synthpop duo
+EMI-->British music recording and publishing company
+Omarion-->American singer, rapper, songwriter and member of B2K"
+/people/deceased_person/cause_of_death	/people/cause_of_death/people,"Marlene Dietrich-->German-American actress and singer
+kidney failure-->disease where the kidneys fail to adequately filter waste products from the blood
+Laurence Olivier-->British actor, director and producer"
+/location/location/time_zones	/time/time_zone/locations_in_this_time_zone,"Regina-->capital city of the Canadian province of Saskatchewan
+Central Time Zone-->time zone
+Peoria County-->county in Illinois, United States of America"
+/film/film/film_format	/film/film_format/film_format,"Pirates of the Caribbean: The Curse of the Black Pearl-->2003 American adventure fantasy film
+Super 35-->No description defined
+Collateral-->2004 American thriller"
+/location/location/contains	/location/location/containedby,"United States of America-->federal republic in North America
+St. Augustine-->county seat of St. Johns County, Florida, United States
+United States of America-->federal republic in North America"
+/location/location/contains	/location/administrative_division/second_level_division_of,"Oregon-->state of the United States of America
+Linn County-->county in Oregon, United States
+United States of America-->federal republic in North America"
+/location/location/contains	/protected_sites/listed_site/designation_as_natural_or_cultural_site./protected_sites/natural_or_cultural_site_listing/designation,"Tunisia-->country in northern Africa
+Carthage-->historical Carthage city
+World Heritage Site-->place listed by the UNESCO as of special cultural or physical significance"
+/user/tsegaran/random/taxonomy_subject/entry./user/tsegaran/random/taxonomy_entry/taxonomy	/user/tsegaran/random/subject_taxonomy/entry./user/tsegaran/random/taxonomy_entry/subject,"Arizona-->state in the United States of America
+Library of Congress Classification-->classification
+Saint Petersburg-->federal city in Russia and the former capital"
+/protected_sites/listed_site/designation_as_natural_or_cultural_site./protected_sites/natural_or_cultural_site_listing/designation	/protected_sites/natural_or_cultural_site_designation/sites./protected_sites/natural_or_cultural_site_listing/listed_site,"University of California, Berkeley-->public research university in Berkeley, California, United States
+National Register of Historic Places-->federal list of historic sites in the United States
+United States Military Academy-->federal service academy in West Point, New York, United States"
+/award/ranked_item/appears_in_ranked_lists./award/ranking/list	/award/ranked_list/ranked_list_items./award/ranking/item,"University of Sussex-->public research university in East Sussex, England
+Times Higher Education World University Rankings-->magazine
+King's College London-->public research university located in London, United Kingdom"
+/business/business_operation/industry	/business/industry/companies,"Southwest Airlines-->airline in the United States
+airline-->company that provides air transport services for traveling passengers and freight
+Qantas-->the flag carrier airline of Australia"
+/tv/tv_program/genre	/tv/tv_genre/programs,"The Boondocks-->American adult animated sitcom
+black comedy-->comic work that employs black humor or gallows humor
+Girls-->American comedy-drama television series"
+/royalty/chivalric_order_member/belongs_to_order./royalty/chivalric_order_membership/order	/royalty/order_of_chivalry/recipients./royalty/chivalric_order_membership/recipient,"Alan Mathison Turing-->British mathematician, logician, cryptanalyst, and computer scientist
+Order of the British Empire-->order of chivalry of British constitutional monarchy
+Ian McKellen-->British actor"
+/music/artist/genre	/music/genre/artists,"Swizz Beatz-->American rapper
+experimental music-->music genre
+Animal Collective-->American musical group"
+/base/fight/crime_type/people_convicted_of_this_crime./base/crime/criminal_conviction/guilty_of	/base/fight/crime_type/people_convicted_of_this_crime./base/crime/criminal_conviction/guilty_of,"kidnapping-->taking away or transportation of a person against that person's will
+murder-->unlawful killing of a human with malice aforethought
+illegal drug trade-->global black market"
+/film/film/distributors./film/film_film_distributor_relationship/film_distribution_medium	/film/film_distribution_medium/films_distributed_in_this_medium./film/film_film_distributor_relationship/film,"Star Wars: The Clone Wars-->2008 film by Dave Filoni
+Blu-ray Disc-->optical disc storage medium
+Wanted-->2008 American action thriller film"
+/film/film/subjects	/film/film_subject/films,"Body of Lies-->2008 film directed by Ridley Scott
+Iraq War-->war which started on 20 March 2003
+Green Zone-->2010 film by Paul Greengrass"
+/media_common/netflix_title/netflix_genres	/media_common/netflix_genre/titles,"The Muppet Show-->1976-1981 TV series
+television-->telecommunication medium for transmitting and receiving moving images
+Breaking Bad-->American television series (2008-2013)"
+/organization/organization/leadership./organization/leadership/role	/organization/role/leaders./organization/leadership/organization,"University of Mississippi-->university
+chancellor-->leader of a university or a college
+North Carolina Central University-->university"
+/organization/organization_member/member_of./organization/organization_membership/organization	/organization/membership_organization/members./organization/organization_membership/member,"The Bahamas-->country in North America
+World Bank-->international financial institution
+Vietnam-->republic in Southeast Asia"
+/people/profession/specializations	/people/profession/specialization_of,"model-->person employed to display, advertise and promote products
+pin-up girl-->No description defined
+model-->person employed to display, advertise and promote products"

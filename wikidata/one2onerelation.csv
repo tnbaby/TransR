@@ -1,0 +1,459 @@
+,first,second,additive1,additive2
+0,"/government/form_of_government/countries
+	","/location/country/form_of_government
+	",,
+1,"/people/profession/people_with_this_profession
+	","/people/person/profession
+	","/film/film_subject/films
+	",
+2,"/film/film_genre/films_in_this_genre
+	","/film/film/genre
+	",,
+3,"/organization/organization_sector/organizations_in_this_sector
+	","/organization/organization/sectors
+	",,
+4,"/architecture/type_of_museum/museums
+	","/architecture/museum/type_of_museum
+	",,
+5,"/education/school_category/schools_of_this_kind
+	","/education/educational_institution/school_type
+	",,
+6,"/metropolitan_transit/transit_service_type/transit_lines
+	","/metropolitan_transit/transit_line/service_type
+	",,
+7,"/metropolitan_transit/transit_line/service_type
+	","/metropolitan_transit/transit_service_type/transit_lines
+	",,
+8,"/music/record_label/artist
+	","/music/artist/label
+	",,
+9,"/people/cause_of_death/people
+	","/people/deceased_person/cause_of_death
+	",,
+10,"/time/time_zone/locations_in_this_time_zone
+	","/location/location/time_zones
+	",,
+11,"/film/film_format/film_format
+	","/film/film/film_format
+	",,
+12,"/location/location/containedby
+	","/location/location/contains
+	","/location/administrative_division/second_level_division_of
+	","/protected_sites/listed_site/designation_as_natural_or_cultural_site./protected_sites/natural_or_cultural_site_listing/designation
+	"
+13,"/user/tsegaran/random/subject_taxonomy/entry./user/tsegaran/random/taxonomy_entry/subject
+	","/user/tsegaran/random/taxonomy_subject/entry./user/tsegaran/random/taxonomy_entry/taxonomy
+	",,
+14,"/protected_sites/natural_or_cultural_site_designation/sites./protected_sites/natural_or_cultural_site_listing/listed_site
+	","/protected_sites/listed_site/designation_as_natural_or_cultural_site./protected_sites/natural_or_cultural_site_listing/designation
+	",,
+15,"/award/ranked_list/ranked_list_items./award/ranking/item
+	","/award/ranked_item/appears_in_ranked_lists./award/ranking/list
+	",,
+16,"/business/industry/companies
+	","/business/business_operation/industry
+	",,
+17,"/tv/tv_genre/programs
+	","/tv/tv_program/genre
+	",,
+18,"/royalty/order_of_chivalry/recipients./royalty/chivalric_order_membership/recipient
+	","/royalty/chivalric_order_member/belongs_to_order./royalty/chivalric_order_membership/order
+	",,
+19,"/music/genre/artists
+	","/music/artist/genre
+	",,
+20,"/base/fight/crime_type/people_convicted_of_this_crime./base/crime/criminal_conviction/guilty_of
+	","/base/fight/crime_type/people_convicted_of_this_crime./base/crime/criminal_conviction/guilty_of
+	",,
+21,"/film/film_distribution_medium/films_distributed_in_this_medium./film/film_film_distributor_relationship/film
+	","/film/film/distributors./film/film_film_distributor_relationship/film_distribution_medium
+	",,
+22,"/film/film_subject/films
+	","/film/film/subjects
+	",,
+23,"/media_common/netflix_genre/titles
+	","/media_common/netflix_title/netflix_genres
+	",,
+24,"/organization/role/leaders./organization/leadership/organization
+	","/organization/organization/leadership./organization/leadership/role
+	",,
+25,"/organization/membership_organization/members./organization/organization_membership/member
+	","/organization/organization_member/member_of./organization/organization_membership/organization
+	",,
+26,"/people/profession/specialization_of
+	","/people/profession/specializations
+	",,
+27,"/language/language_writing_system/languages
+	","/language/human_language/writing_system
+	",,
+28,"/business/job_title/people_with_this_title./business/employment_tenure/company
+	","/business/employer/employees./business/employment_tenure/title
+	",,
+29,"/film/film_job/films_with_this_crew_job./film/film_crew_gig/film
+	","/film/film/other_crew./film/film_crew_gig/film_crew_role
+	",,
+30,"/computer/computer/manufacturer
+	","/computer/computer_manufacturer_brand/computer_models
+	",,
+31,"/location/location/containedby
+	","/location/country/capital
+	",,
+32,"/business/company_type/companies_of_this_type
+	","/organization/organization/legal_structure
+	",,
+33,"/people/ethnicity/people
+	","/people/person/ethnicity
+	",,
+34,"/education/educational_institution/students_graduates./education/education/student
+	","/people/person/education./education/education/institution
+	",,
+35,"/organization/organization_type/organizations_of_this_type
+	","/organization/organization/organization_type
+	",,
+36,"/medicine/symptom/symptom_of
+	","/medicine/disease/symptoms
+	",,
+37,"/base/activism/activism_issue/activists
+	","/base/activism/activist/area_of_activism
+	",,
+38,"/award/award_category/winners./award/award_honor/award_winner
+	","/award/award_winner/awards_won./award/award_honor/award
+	",,
+39,"/organization/organization/geographic_scope
+	","/organization/organization_scope/organizations_with_this_scope
+	",,
+40,"/tv/tv_network/programs./tv/tv_network_duration/program
+	","/tv/tv_program/original_network./tv/tv_network_duration/network
+	",,
+41,"/computer/programming_language_paradigm/languages
+	","/computer/programming_language/language_paradigms
+	",,
+42,"/base/fashionmodels/hair_color/fashion_models_with_this_hair_color
+	","/base/fashionmodels/fashion_model/hair_color
+	",,
+43,"/media_common/media_genre/parent_genre
+	","/media_common/media_genre/child_genres
+	",,
+44,"/media_common/media_genre/child_genres
+	","/media_common/media_genre/parent_genre
+	",,
+45,"/organization/organization/leadership./organization/leadership/role
+	","/organization/role/leaders./organization/leadership/organization
+	","/organization/organization/headquarters./location/mailing_address/citytown
+	",
+46,"/language/language_family/languages
+	","/language/human_language/language_family
+	",,
+47,"/broadcast/content/artist
+	","/broadcast/artist/content
+	",,
+48,"/chemistry/chemical_compound/solubility./chemistry/solubility_relationship/solvent
+	","/food/food/nutrients./food/nutrition_fact/nutrient
+	","/user/tsegaran/random/taxonomy_subject/entry./user/tsegaran/random/taxonomy_entry/taxonomy
+	","/user/mt/default_domain/metabolite/biofluid_location
+	"
+49,"/medicine/medical_treatment/used_to_treat
+	","/medicine/disease/treatments
+	",,
+50,"/user/alexander/philosophy/era/philosophers
+	","/user/alexander/philosophy/philosopher/era
+	",,
+51,"/music/genre/parent_genre
+	","/music/genre/subgenre
+	",,
+52,"/sports/sports_award_type/winners./sports/sports_award/award_winner
+	","/sports/sports_award_winner/awards./sports/sports_award/award
+	",,
+53,"/travel/tourist_attraction/near_travel_destination
+	","/travel/travel_destination/tourist_attractions
+	",,
+54,"/award/award_discipline/awards_in_this_discipline
+	","/award/award_category/disciplines_or_subjects
+	",,
+55,"/user/alexbl/honorary_title/honorary_title/titled_people./user/alexbl/honorary_title/honorary_title_holding/conferred_upon
+	","/user/alexbl/honorary_title/titled_person/honorary_title./user/alexbl/honorary_title/honorary_title_holding/honorary_title
+	",,
+56,"/film/production_company/films
+	","/film/film/production_companies
+	",,
+57,"/education/educational_degree/people_with_this_degree./education/education/institution
+	","/education/educational_institution/students_graduates./education/education/degree
+	",,
+58,"/medicine/disease/includes_diseases
+	","/medicine/disease/parent_disease
+	",,
+59,"/base/yalebase/secret_society/notable_members./base/yalebase/secret_society_membership/member
+	","/base/yalebase/secret_society_member/belonged_to./base/yalebase/secret_society_membership/society
+	",,
+60,"/music/instrument/instrumentalists
+	","/music/group_member/instruments_played
+	",,
+61,"/religion/religion/notable_figures
+	","/people/person/religion
+	",,
+62,"/biology/organism_classification_rank/organism_classifications
+	","/biology/organism_classification/rank
+	",,
+63,"/government/government_agency/jurisdiction
+	","/government/governmental_jurisdiction/agencies
+	",,
+64,"/protected_sites/site_listing_category/listed_sites./protected_sites/natural_or_cultural_site_listing/listed_site
+	","/protected_sites/listed_site/designation_as_natural_or_cultural_site./protected_sites/natural_or_cultural_site_listing/category_or_criteria
+	",,
+65,"/government/political_party/ideology
+	","/government/political_ideology/political_parties
+	",,
+66,"/government/political_ideology/political_parties
+	","/government/political_party/ideology
+	",,
+67,"/award/award_category/disciplines_or_subjects
+	","/award/award_discipline/awards_in_this_discipline
+	",,
+68,"/medicine/medical_specialty/diseases_treated
+	","/medicine/disease/medical_specialties
+	",,
+69,"/time/recurring_event/instances
+	","/time/event/instance_of_recurring_event
+	",,
+70,"/user/robert/us_congress/house_committee/current_members
+	","/user/robert/us_congress/us_representative/committee_memberships
+	",,
+71,"/people/appointed_role/appointment./people/appointment/appointed_by
+	","/people/appointer/appointment_made./people/appointment/appointed_role
+	",,
+72,"/location/country/capital
+	","/base/culturalevent/event/entity_involved
+	","/people/ethnicity/languages_spoken
+	",
+73,"/business/business_operation/industry
+	","/business/industry/companies
+	","/organization/organization/place_founded
+	",
+74,"/government/government_office_category/officeholders./government/government_position_held/jurisdiction_of_office
+	","/government/governmental_jurisdiction/governing_officials./government/government_position_held/basic_title
+	",,
+75,"/base/crime/crime/victim_s
+	","/base/crime/crime_victim/crime
+	",,
+76,"/base/events/type_of_festival/recurring_festivals_of_this_type
+	","/base/events/festival_series/type_of_festival
+	",,
+77,"/location/location/adjoin_s./location/adjoining_relationship/adjoins
+	","/location/location/adjoin_s./location/adjoining_relationship/adjoins
+	",,
+78,"/user/tsegaran/random/taxonomy_subject/entry./user/tsegaran/random/taxonomy_entry/taxonomy
+	","/user/tsegaran/random/subject_taxonomy/entry./user/tsegaran/random/taxonomy_entry/subject
+	","/base/onephylogeny/type_of_thing/things_of_this_type
+	",
+79,"/cvg/cvg_genre/games
+	","/cvg/computer_videogame/cvg_genre
+	",,
+80,"/medicine/disease_cause/diseases
+	","/medicine/disease/causes
+	",,
+81,"/aviation/airline_alliance/member_airlines
+	","/aviation/airline/alliance
+	",,
+82,"/architecture/architectural_style/examples
+	","/architecture/structure/architectural_style
+	",,
+83,"/award/award_category/nominees./award/award_nomination/award_nominee
+	","/award/award_nominee/award_nominations./award/award_nomination/award
+	",,
+84,"/fictional_universe/character_powers/characters_with_this_ability
+	","/fictional_universe/fictional_character/powers_or_abilities
+	",,
+85,"/fictional_universe/fictional_character/character_created_by
+	","/fictional_universe/fictional_character_creator/fictional_characters_created
+	",,
+86,"/film/film_subject/films
+	","/games/game_genre/boardgames
+	",,
+87,"/sports/sports_team/location
+	","/sports/sports_team_location/teams
+	",,
+88,"/time/event/locations
+	","/location/location/events
+	",,
+89,"/fictional_universe/character_occupation/characters_with_this_occupation
+	","/fictional_universe/fictional_character/occupation
+	",,
+90,"/broadcast/tv_station/owner
+	","/broadcast/tv_station_owner/tv_stations
+	",,
+91,"/biology/organism_classification/rank
+	","/biology/organism_classification_rank/organism_classifications
+	",,
+92,"/book/book_subject/works
+	","/book/written_work/subjects
+	",,
+93,"/education/school_mascot/school
+	","/education/educational_institution/mascot
+	",,
+94,"/base/argumentmaps/abstract_moral_dispute/particular_instances
+	","/base/argumentmaps/morally_disputed_activity/instance_of_abstract_moral_dispute
+	",,
+95,"/base/popstra/organization/supporter./base/popstra/support/supporter
+	","/base/popstra/celebrity/supporter./base/popstra/support/supported_organization
+	",,
+96,"/book/school_or_movement/associated_authors
+	","/book/author/school_or_movement
+	",,
+97,"/geography/lake_type/lakes_of_this_type
+	","/geography/lake/lake_type
+	",,
+98,"/media_common/adapted_work/adaptations
+	","/media_common/adaptation/adapted_from
+	",,
+99,"/government/political_party/politicians_in_this_party./government/political_party_tenure/politician
+	","/government/politician/party./government/political_party_tenure/party
+	",,
+100,"/location/location/time_zones
+	","/time/time_zone/locations_in_this_time_zone
+	","/location/location/containedby
+	",
+101,"/business/sponsored_recipient/sponsorship./business/sponsorship/sponsored_by
+	","/business/sponsor/sponsorship./business/sponsorship/sponsored_recipient
+	",,
+102,"/geography/geographical_feature_category/features
+	","/geography/geographical_feature/category
+	",,
+103,"/medicine/type_of_infectious_agent/diseases
+	","/medicine/infectious_disease/infectious_agent_type
+	",,
+104,"/location/location/people_born_here
+	","/people/person/place_of_birth
+	",,
+105,"/visual_art/visual_art_form/artists
+	","/visual_art/visual_artist/art_forms
+	",,
+106,"/fictional_universe/fictional_universe/works_set_here
+	","/fictional_universe/work_of_fiction/part_of_these_fictional_universes
+	",,
+107,"/user/coco/science/concepts_theories/parent_concept
+	","/user/coco/science/concepts_theories/child_concept
+	",,
+108,"/base/infrastructure/power_plant_type/power_station
+	","/base/infrastructure/power_station/fuel_type
+	",,
+109,"/military/armed_force/personnel./military/military_service/rank
+	","/military/rank/used_by_services./military/military_service/military_force
+	","/military/armed_force/personnel./military/military_service/military_person
+	",
+110,"/location/country/form_of_government
+	","/government/form_of_government/countries
+	",,
+111,"/broadcast/distributor/distributes
+	","/broadcast/broadcast/distributor
+	",,
+112,"/business/brand/owner_s./business/company_brand_relationship/company
+	","/business/consumer_company/brands./business/company_brand_relationship/brand
+	",,
+113,"/visual_art/art_period_movement/associated_artists
+	","/visual_art/visual_artist/associated_periods_or_movements
+	",,
+114,"/military/armed_force/military_posts./military/military_post_use/military_post
+	","/military/military_post/used_by_armed_forces./military/military_post_use/armed_force
+	",,
+115,"/military/military_combatant/military_conflicts./military/military_combatant_group/conflict
+	","/military/military_conflict/combatants./military/military_combatant_group/combatants
+	",,
+116,"/transportation/bridge_type/bridges_of_this_type
+	","/transportation/bridge/bridge_type
+	",,
+117,"/sports/sport/teams
+	","/sports/sports_team/sport
+	",,
+118,"/book/magazine_genre/magazines_in_this_genre
+	","/book/magazine/genre
+	",,
+119,"/aviation/aircraft_type/aircraft_of_this_type
+	","/aviation/aircraft_model/aircraft_type
+	",,
+120,"/book/literary_series/author_s
+	","/book/author/series_written_or_contributed_to
+	",,
+121,"/people/person/profession
+	","/people/profession/people_with_this_profession
+	",,
+122,"/music/genre/subgenre
+	","/music/genre/parent_genre
+	",,
+123,"/user/robert/us_congress/congressional_caucus/current_house_members
+	","/user/robert/us_congress/us_representative/congressional_caucus_memberships
+	",,
+124,"/organization/organization/founders
+	","/organization/organization_founder/organizations_founded
+	",,
+125,"/people/profession/specialization_of
+	","/education/field_of_study/subdisciplines
+	",,
+126,"/book/magazine_genre/magazines_in_this_genre
+	","/book/magazine_genre/magazines_in_this_genre
+	",,
+127,"/architecture/architectural_style/architects
+	","/architecture/architect/architectural_style
+	",,
+128,"/language/human_language/main_country
+	","/people/ethnicity/languages_spoken
+	",,
+129,"/organization/role/governors./organization/organization_board_membership/organization
+	","/organization/organization/board_members./organization/organization_board_membership/role
+	",,
+130,"/media_common/literary_genre/books_in_this_genre
+	","/book/book/genre
+	",,
+131,"/protected_sites/iucn_category/protected_areas
+	","/protected_sites/protected_site/iucn_category
+	",,
+132,"/architecture/building_function/buildings
+	","/architecture/building/building_function
+	",,
+133,"/education/field_of_study/students_majoring./education/education/major_field_of_study
+	","/education/field_of_study/students_majoring./education/education/major_field_of_study
+	",,
+134,"/dining/cuisine/ingredients
+	","/food/ingredient/cuisine
+	",,
+135,"/organization/organization/parent./organization/organization_relationship/parent
+	","/organization/organization/child./organization/organization_relationship/child
+	",,
+136,"/common/topic/subjects
+	","/common/topic/subject_of
+	",,
+137,"/location/location/containedby
+	","/film/film/featured_film_locations
+	",,
+138,"/base/petbreeds/dog_coat_color/dog_breeds
+	","/base/petbreeds/dog_breed/color
+	",,
+139,"/projects/project_role/projects./projects/project_participation/participant
+	","/projects/project_participant/projects./projects/project_participation/role
+	",,
+140,"/tv/tv_subject/tv_programs
+	","/tv/tv_program/subjects
+	",,
+141,"/base/popstra/business_location/customer./base/popstra/hangout/customer
+	","/base/popstra/celebrity/hangout./base/popstra/hangout/business_location
+	",,
+142,"/military/armed_force/personnel./military/military_service/military_person
+	","/military/military_person/service./military/military_service/military_force
+	",,
+143,"/architecture/structure/owner./architecture/ownership/owner
+	","/architecture/architectural_structure_owner/structures_owned./architecture/ownership/structure
+	",,
+144,"/medicine/disease/medical_specialties
+	","/medicine/disease/includes_diseases
+	",,
+145,"/government/government_office_or_title/office_holders./government/government_position_held/governmental_body
+	","/government/governmental_body/members./government/government_position_held/office_position_or_title
+	",,
+146,"/religion/religion/is_part_of
+	","/religion/religion/includes
+	",,
+147,"/location/location/people_born_here
+	","/people/person/places_lived./people/place_lived/location
+	",,
+148,"/dining/cuisine/restaurant
+	","/dining/restaurant/cuisine
+	",,
